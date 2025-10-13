@@ -24,6 +24,7 @@ body {
 .center-2 {
   margin: 0 auto;
 }
+
 .mat-body p,
 .mat-body-2 p,
 .mat-typography .mat-body p,
@@ -31,6 +32,7 @@ body {
 .mat-typography p {
   margin: 0;
 }
+
 .mat-mdc-progress-bar.mat-warn {
   --mdc-linear-progress-active-indicator-color: #44ba31;
   --mdc-linear-progress-track-color: #818181;
@@ -65,18 +67,44 @@ body {
 }
 
 
-:root{
+:root {
   --chat--window--bottom: 10%;
   --chat--toggle--background: #793cd4 !important;
   --chat--toggle--hover--background: #793cd4 !important;
   --chat--toggle--active--background: #793cd4 !important;
-  --chat--header--background:#5e17eb !important;
-  --chat--message--user--background:#5e17eb !important;
-  --chat--window--right:2%;
+  --chat--header--background: #5e17eb !important;
+  --chat--message--user--background: #5e17eb !important;
+  --chat--window--right: 2%;
+
+  --cor--teste: yellow;
+
+  --cor-branco-padrao: white;
+  --cor-branco-suave: #f9f9f9;
+
+  --cor-preto-padrao: black;
+  --cor-preto-suave: #3A3A3A;
+
+  --cor-verde-template-txt: #B1FFFF;
+  --cor-verde-template-bg: #0C4A49;
+  --cor-verde-navegacao: #2C7760;
+
+  --cor-linha: #8FCBBF;
+  --cor-linha-cinza: #A2A2A2;
+  --cor-linha-verde-forte: #26988680;
+
+  --border-verde-link: #2F735E;
+
+  --fonte-arial-padrao: arial, sans-serif;
+  --fonte-arial-destaque: Arial Rounded MT Bold;
+
+  --sombra-leve: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  --sombra-fraca: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
 }
 
-.n8n-chat-button, .chat-window-wrapper {
-    margin-bottom: 3% !important;
+.n8n-chat-button,
+.chat-window-wrapper {
+  margin-bottom: 3% !important;
 }
 
 .chat-window {
@@ -85,16 +113,17 @@ body {
 }
 
 @media(max-width: 496px) {
- .n8n-chat-button, .chat-window-wrapper {
+
+  .n8n-chat-button,
+  .chat-window-wrapper {
     margin-bottom: 0% !important;
 
- }
+  }
 
- .chat-window {
-  height: 70vh !important;
-  /* min-height:  calc(100% - var(--chat--window--bottom, var(--chat--spacing)) * 300) !important; */
-  max-height: calc(100% - var(--chat--window--bottom, var(--chat--spacing)) * 2) !important;
- }
+  .chat-window {
+    height: 70vh !important;
+    /* min-height:  calc(100% - var(--chat--window--bottom, var(--chat--spacing)) * 300) !important; */
+    max-height: calc(100% - var(--chat--window--bottom, var(--chat--spacing)) * 2) !important;
+  }
 
-} 
-
+}
