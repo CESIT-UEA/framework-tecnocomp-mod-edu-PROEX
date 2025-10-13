@@ -1,11 +1,3 @@
-:root {
-  --verde: rgba(39, 163, 109, 1);
-  --verde-escuro: rgba(12, 74, 73, 1);
-  --branco: white;
-
-
-}
-
 .container {
   height: 100%;
   background-color: black;
@@ -251,28 +243,35 @@
   height: 230px;
 }
 
-.cargo-membro {
-  background-color: transparent;
-  color: var(--cor-branco-padrao);
-  border: 3px solid var(--cor-branco-padrao);
-  border-radius: 20px;
-  color: white;
 
-  padding: 10px 0px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.nome-membro {
-
-  padding: 5px;
-  color: white;
-  background-color: #000;
-  border-radius: 0 0px 10px 10px;
-}
 
 .ficha-tecnica-container-card-conteudo {
   margin: 10px 0 0 0;
+}
+
+.ficha-tecnica-container-membro {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-verde-escuro);
+  border-radius: 10px;
+  padding: 5px;
+  font-family: var(--fonte-arial-destaque);
+  font-weight: 700;
+
+  cargo-membro {
+    color: var(--cor-branco-padrao);
+
+    color: white;
+    width: 100%;
+  }
+
+  .nome-membro {
+
+
+    color: rgb(255, 255, 255, 0.8);
+    border-radius: 0 0px 10px 10px;
+  }
 }
 
 .ficha-tecnica-indice {

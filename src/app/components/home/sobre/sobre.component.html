@@ -33,55 +33,36 @@
 
       <!-- Simbolo de voltar para o anterior que quando clicado muda a equipe exibida -->
       <div class="ficha-tecnica-container">
-        <img
-          src="../../../../assets/icons/previous2.svg"
-          alt="simbolo de ir para o proximo"
-          (click)="prevVideo()"
-          style="cursor: pointer"
-        />
+        <img src="../../../../assets/icons/previous2.svg" alt="simbolo de ir para o proximo" (click)="prevVideo()"
+          style="cursor: pointer" />
         <!-- Estilo aplicado de acordo com o valor retornado do método elementMembros() -->
-        <div
-          [ngClass]="{
+        <div [ngClass]="{
           'container-membros1': elementMembros() == 1,
           'container-membros2': elementMembros() == 2,
           'container-membros3': elementMembros() == 3,
-          }"
-          class="container-membros"
-        >
+          }" class="container-membros">
           <!-- Percorre o vetor de objetos cardEquipes para exibir o cargo e nome dos membros -->
-          <div
-            class="ficha-tecnica-container-card"
-            *ngFor="let membro of cardEquipes[currentVideoIndex].membros"
-          >
-            <p class="cargo-membro">{{ membro.cargo }}</p>
+          <div class="ficha-tecnica-container-card" *ngFor="let membro of cardEquipes[currentVideoIndex].membros">
             <div class="ficha-tecnica-container-card-conteudo">
-              <div
-                [ngStyle]="{ 'background-image': 'url(' + membro.image + ')' }"
-                class="img-membro"
-              ></div>
-              <p class="nome-membro">{{ membro.nome }}</p>
+              <div [ngStyle]="{ 'background-image': 'url(' + membro.image + ')' }" class="img-membro"></div>
+              <div class="ficha-tecnica-container-membro">
+                <p class="cargo-membro"><strong>{{ membro.cargo }}</strong></p>
+                <p class="nome-membro">{{ membro.nome }}</p>
+              </div>
             </div>
           </div>
         </div>
         <!-- Simbolo de ir para o próximo que quando clicado muda a equipe exibida -->
-        <img
-          (click)="nextVideo()"
-          style="cursor: pointer"
-          src="../../../../assets/icons/next2.svg"
-          alt="simbolo de ir para o proximo"
-        />
+        <img (click)="nextVideo()" style="cursor: pointer" src="../../../../assets/icons/next2.svg"
+          alt="simbolo de ir para o proximo" />
       </div>
       <!-- botões de navegação para trocar a equipe exibida -->
       <div class="navigation-button">
         <ul>
-          <li
-            *ngFor="let video of cardEquipes; index as i"
-            [ngClass]="{
+          <li *ngFor="let video of cardEquipes; index as i" [ngClass]="{
               active: i === currentVideoIndex,
               teste: i !== currentVideoIndex
-            }"
-            (click)="selectVideo(i)"
-          >
+            }" (click)="selectVideo(i)">
             <!-- o índice + 1 para representar o número dos botões -->
             {{ i + 1 }}
           </li>
