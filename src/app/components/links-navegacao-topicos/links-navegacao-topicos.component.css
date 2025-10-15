@@ -17,7 +17,7 @@
       rgba(40, 53, 122, 0.6) 85.46%,
       rgba(51, 68, 153, 0.75) 100%),
     #0f0f0f;
-  padding: 6px 15px;
+  padding: 9px 15px;
   margin: 0 auto;
   cursor: pointer;
   position: absolute;
@@ -38,6 +38,7 @@
   padding: 0 30px;
   border-radius: 6px;
   /* padding-bottom: 10px; */
+  height: 80%;
   width: fit-content;
   justify-self: end;
   cursor: pointer;
