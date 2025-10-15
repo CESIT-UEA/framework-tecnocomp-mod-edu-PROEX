@@ -2,20 +2,17 @@
 <div class="titulo-topico">
   <ul>
     <!-- Nome do tópico da unidade -->
-    <li>{{ this.moduloService.controll_topico + 1 }}. {{ this.nome }}</li>
+    <li style="list-style: none;">{{ this.moduloService.controll_topico + 1 }}. {{ this.nome }}</li>
   </ul>
   <hr />
 </div>
 <app-links-navegacao-topicos class="container-main-conteudo-links-voltar"></app-links-navegacao-topicos>
 <div class="container-main-conteudo">
-  
+
   <div class="div-slide">
     <div class="container-video">
       <!-- chamada do componente slide-unidade para exibir o video do tópico -->
-      <app-slide-unidade
-        [videos]="videos"
-        style="text-align: center"
-      ></app-slide-unidade>
+      <app-slide-unidade [videos]="videos" style="text-align: center"></app-slide-unidade>
     </div>
   </div>
 
@@ -26,55 +23,34 @@
       <!-- Botão que quando clicado vai para o componente saiba-mais -->
       <div class="botoes-cima">
         <button class="textoApoio" (click)="textoApoioClick.emit()">
-          <img
-            src="../../../../../assets/icons/texto-de-apoio.svg"
-            alt="Icone para download do ebook"
-          />
+          <img src="../../../../../assets/icons/texto-de-apoio.svg" alt="Icone para download do ebook" />
           Slide
-          <mat-icon
-            class="concluido"
-            *ngIf="
+          <mat-icon class="concluido" *ngIf="
               this.ltiService.dados_completos.userTopico[
                 this.moduloService.controll_topico
               ].UsuarioTopicos[0].isTextoApoio == true
-            "
-            >check</mat-icon
-          >
+            ">check</mat-icon>
         </button>
         <button class="saibaMais" (click)="linksClick.emit()">
-          <img
-            src="../../../../../assets/icons/saibaMais.svg"
-            alt="Icone para download do ebook"
-          />
+          <img src="../../../../../assets/icons/saibaMais.svg" alt="Icone para download do ebook" />
           Saiba mais
-          <mat-icon
-            class="concluido"
-            *ngIf="
+          <mat-icon class="concluido" *ngIf="
               this.ltiService.dados_completos.userTopico[
                 this.moduloService.controll_topico
               ].UsuarioTopicos[0].isSaibaMais == true
-            "
-            >check</mat-icon
-          >
+            ">check</mat-icon>
         </button>
         <!-- Botão que quando clicado vai para o componente referências -->
       </div>
       <div class="botoes-baixo">
         <button class="referencias" (click)="referenciasClick.emit()">
-          <img
-            src="../../../../../assets/icons/referencias.svg"
-            alt="Icone para download do ebook"
-          />
+          <img src="../../../../../assets/icons/referencias.svg" alt="Icone para download do ebook" />
           Referências
-          <mat-icon
-            class="concluido"
-            *ngIf="
+          <mat-icon class="concluido" *ngIf="
               this.ltiService.dados_completos.userTopico[
                 this.moduloService.controll_topico
               ].UsuarioTopicos[0].isReferencias == true
-            "
-            >check</mat-icon
-          >
+            ">check</mat-icon>
         </button>
       </div>
       <!-- Botão que quando clicado vai para o componente texto de apoio -->
@@ -83,8 +59,7 @@
     <div class="position">
       <section class="buttons-final">
         <!-- Botão que quando clicado vai para o componente de atividade -->
-        <button
-          *ngIf="
+        <button *ngIf="
             this.ltiService.verificarTodosVideosCompletos(this.videos) &&
             this.ltiService.dados_completos.userTopico[
               this.moduloService.controll_topico
@@ -92,21 +67,13 @@
             this.ltiService.dados_completos.userTopico[
               this.moduloService.controll_topico
             ].UsuarioTopicos[0].encerrado != true
-          "
-          class="atividade-botao active"
-          (click)="atividadeClick.emit()"
-        >
-          <img
-            src="assets/icons/atividade.svg"
-            alt="Icone para ir para a atividade da unidade"
-            width="22px"
-            height="24px"
-          />
+          " class="atividade-botao active" (click)="atividadeClick.emit()">
+          <img src="assets/icons/atividade.svg" alt="Icone para ir para a atividade da unidade" width="22px"
+            height="24px" />
           ATIVIDADE
         </button>
 
-        <button
-          *ngIf="
+        <button *ngIf="
             this.ltiService.verificarTodosVideosCompletos(this.videos) &&
             this.ltiService.dados_completos.userTopico[
               this.moduloService.controll_topico
@@ -114,69 +81,37 @@
             this.ltiService.dados_completos.userTopico[
               this.moduloService.controll_topico
             ].UsuarioTopicos[0].encerrado == false
-          "
-          class="atividade-botao active-incorreto"
-          (click)="atividadeClick.emit()"
-        >
-          <img
-            src="../../../../../assets/img/erradoAtividade.png"
-            alt="Icone para ir para a atividade da unidade"
-            width="22px"
-            height="24px"
-          />
+          " class="atividade-botao active-incorreto" (click)="atividadeClick.emit()">
+          <img src="../../../../../assets/img/erradoAtividade.png" alt="Icone para ir para a atividade da unidade"
+            width="22px" height="24px" />
           Ops! Refazer a Atividade
         </button>
 
-        <button
-          *ngIf="
+        <button *ngIf="
             this.ltiService.verificarTodosVideosCompletos(this.videos) &&
             this.ltiService.dados_completos.userTopico[
               this.moduloService.controll_topico
             ].UsuarioTopicos[0].encerrado == true
-          "
-          class="atividade-botao active-correto"
-          (click)="atividadeClick.emit()"
-        >
-          <img
-            src="../../../../../assets/img/checkAtividade.png"
-            alt="Icone para ir para a atividade da unidade"
-            width="22px"
-            height="24px"
-          />
+          " class="atividade-botao active-correto" (click)="atividadeClick.emit()">
+          <img src="../../../../../assets/img/checkAtividade.png" alt="Icone para ir para a atividade da unidade"
+            width="22px" height="24px" />
           Acertou! Ver resposta
         </button>
 
-        <button
-          class="atividade-botao disabled"
-          *ngIf="!this.ltiService.verificarTodosVideosCompletos(this.videos)"
-          (click)="clicarVideos()"
-        >
-          <img
-            src="assets/icons/atividade.svg"
-            alt="Icone para ir para a atividade da unidade"
-            width="22px"
-            height="24px"
-          />
+        <button class="atividade-botao disabled" *ngIf="!this.ltiService.verificarTodosVideosCompletos(this.videos)"
+          (click)="clicarVideos()">
+          <img src="assets/icons/atividade.svg" alt="Icone para ir para a atividade da unidade" width="22px"
+            height="24px" />
           ATIVIDADE
         </button>
 
         <!-- Botão para download do e-book do tópico -->
-        <a
-          href="{{
+        <a href="{{
             this.ltiService.dados_completos.topicos?.[this.moduloService.controll_topico]?.ebookUrlGeral
-          }}"
-          target="_blank"
-        >
+          }}" target="_blank">
           <button class="ebook-botao">
-            <a download="E-book Teste.PDF"
-              >E-book Tópico {{ this.moduloService.controll_topico + 1 }}</a
-            >
-            <img
-              src="assets/icons/download.svg"
-              alt="Icone para download do ebook"
-              width="22px"
-              height="24px"
-            />
+            <img src="assets/icons/download.svg" alt="Icone para download do ebook" width="22px" height="24px" />
+            <a download="E-book Teste.PDF">E-book Tópico {{ this.moduloService.controll_topico + 1 }}</a>
           </button>
         </a>
       </section>

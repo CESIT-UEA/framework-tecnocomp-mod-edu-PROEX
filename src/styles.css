@@ -81,16 +81,19 @@ body {
   --cor-branco-padrao: white;
   --cor-branco-suave: #f9f9f9;
 
+
   --cor-preto-padrao: black;
   --cor-preto-suave: #3A3A3A;
+
 
   --cor-verde-template-txt: #B1FFFF;
   --cor-verde-template-bg: #0C4A49;
   --cor-verde-navegacao: #2C7760;
-
+  --cor-verde-txt: rgba(47, 115, 94, 1);
   --cor-verde-escuro: rgba(12, 74, 73, 1);
 
   --cor-linha: #8FCBBF;
+  --cor-linha-forte: #269886;
 
   --cor-linha-cinza: #A2A2A2;
   --cor-linha-verde-forte: #26988680;
@@ -100,6 +103,8 @@ body {
   --fonte-arial-padrao: arial, sans-serif;
   --fonte-arial-destaque: Arial Rounded MT Bold;
 
+  --sombra-muit-forte: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  --sombra-forte: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.5);
   --sombra-leve: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   --sombra-fraca: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 

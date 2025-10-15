@@ -11,14 +11,16 @@
   border-radius: 20px 0 0 0;
   width: 320px;
 }
+
 .container-foto-header {
   display: flex;
   padding: 2px;
   align-items: center;
   gap: 5px;
   border-radius: 20px;
-  background: #131313;
+  background: var(--cor-branco-padrao);
 }
+
 .foto-header {
   display: flex;
   justify-content: center;
@@ -26,10 +28,11 @@
   width: 28px;
   height: 28px;
   color: black;
-  background-color: white;
+  background-color: var(--cor-branco-padrao);
   border-radius: 28px;
-  border: 1px solid var(--Primaria, #9665df);
+  border: 1.5px solid var(--Primaria, rgba(0, 102, 50, 1));
 }
+
 .menu-user {
   width: 270px;
   height: 175px;
@@ -42,35 +45,43 @@
   border: 1px solid var(--Primaria, #9665df);
   background: var(--Background, #131313);
 }
+
 .header nav {
   width: 20%;
   display: flex;
   align-items: center;
 }
+
 .end-navbar {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-around;
 }
+
 .mat-drawer-container {
   background-color: transparent;
   height: 100%;
 }
+
 .header {
   height: 10vh;
   display: flex;
   align-items: center;
-  background-color: black;
+  background-image: url("../../../../assets/fundo_header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-content: space-between;
   padding: 5px 0;
 }
+
 .header .logo {
-  max-height: 80px;
+  max-height: 60px;
   margin-left: 1rem;
   cursor: pointer;
   padding: 5px 0;
 }
+
 #icon {
   color: #fff;
   cursor: pointer;
@@ -78,6 +89,7 @@
   width: 30px;
   height: 30px;
 }
+
 .icon-home {
   width: 30px;
   height: 30px;
@@ -85,25 +97,25 @@
   color: white;
   cursor: pointer;
 }
+
 .container-main-conteudo-links-voltar {
   display: grid;
   align-items: center;
   color: white;
   height: 10vh;
-  padding-top: calc(2% - 5px); 
+  padding-top: calc(2% - 5px);
   position: relative;
 }
+
 .button {
   border-radius: 8px;
-  background: linear-gradient(
-      90deg,
+  background: linear-gradient(90deg,
       rgba(92, 51, 153, 0.75) 0%,
       rgba(71, 42, 125, 0.61) 14.78%,
       rgba(57, 36, 107, 0.53) 24.39%,
       rgba(29, 38, 92, 0.45) 57.95%,
       rgba(40, 53, 122, 0.6) 85.46%,
-      rgba(51, 68, 153, 0.75) 100%
-    ),
+      rgba(51, 68, 153, 0.75) 100%),
     #0f0f0f;
   padding: 6px 15px;
   margin: 0 auto;
@@ -111,6 +123,7 @@
   position: absolute;
   left: 40%;
 }
+
 .link-proximo {
   display: inline-grid;
   grid-template-columns: auto auto;
@@ -140,19 +153,24 @@
   justify-self: start;
   cursor: pointer;
 }
+
 .container-links {
   grid-template-columns: auto auto;
   justify-content: space-between;
 }
+
 .sozinho-proximo {
   justify-self: end;
 }
+
 .opactiy-active {
   opacity: 0.5;
 }
+
 .bg-container {
-  background-color: #131313;
+  background-color: var(--cor-branco-suave);
 }
+
 .container-foto-header-active {
   display: inline-flex;
   padding: 14px 1px;
@@ -168,6 +186,7 @@
   width: 270px;
   height: 175px;
 }
+
 .cima {
   display: flex;
   width: 100%;
@@ -176,6 +195,7 @@
   padding: 0 10px;
   color: white;
 }
+
 .meio {
   display: flex;
   width: 100%;
@@ -184,12 +204,15 @@
   padding: 0 10px;
   color: rgba(234, 224, 249, 0.58);
 }
+
 .mat-mdc-progress-spinner {
   background-color: #281446;
 }
+
 .mat-mdc-progress-spinner {
   --mdc-circular-progress-active-indicator-color: #58db43;
 }
+
 .progress-spinner {
   position: absolute;
   top: 43%;
@@ -203,14 +226,15 @@
   }
 }
 
-@media (max-width: 600px){
-  .container-foto-header{
-    margin: 0  0 0 1rem;
+@media (max-width: 600px) {
+  .container-foto-header {
+    margin: 0 0 0 1rem;
   }
-  #icon{
+
+  #icon {
     margin-right: 1rem;
   }
-  
+
 }
 
 .button-finalizar-box {
@@ -231,17 +255,20 @@
   border: none;
   cursor: pointer;
 }
+
 .button-finalizar-desabilitado {
   border-radius: 6px;
   opacity: 0.5;
   background: #793cd4;
   box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.25);
 }
+
 .button-finalizar-nao-avaliado {
   border-radius: 6px;
   background: #793cd4;
   box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.25);
 }
+
 .button-finalizar-avaliado {
   border-radius: 6px;
   border: 1px solid #74CC66;
@@ -249,27 +276,31 @@
   color: #74CC66;
 }
 
-@media(max-width: 489px){
-  .links{
+@media(max-width: 489px) {
+  .links {
     display: none;
   }
 }
 
 
-@media(max-width: 375px){
-  .header .logo{
+@media(max-width: 375px) {
+  .header .logo {
     padding: 10px 0;
   }
+
   /* .container-main-conteudo-links-voltar{
     padding-top: calc(18% - 5px);
 } */
 }
 
-@media(max-width: 350px){
-  .link-proximo, .link-voltar{
+@media(max-width: 350px) {
+
+  .link-proximo,
+  .link-voltar {
     font-size: 12px;
   }
-  .header .logo{
+
+  .header .logo {
     padding: 15px 0;
   }
 }
