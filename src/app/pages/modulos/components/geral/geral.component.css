@@ -15,7 +15,7 @@
 .container-main-conteudo {
   display: flex;
   justify-content: space-evenly;
-  border-bottom: 2px solid #222222;
+  border-bottom: 1.5px solid rgba(143, 203, 191, 1);
   padding-bottom: 20px;
   height: 90%;
   align-items: center;
@@ -221,7 +221,9 @@
 
 
 .active {
-  background: var(--2, #793cd4);
+  background: linear-gradient(0deg, #2F735E, #2F735E),
+    linear-gradient(90deg, #2F735E 0%, #196D53 100%);
+
 }
 
 .disabled {

@@ -5,16 +5,8 @@
   align-items: center;
   gap: 10px;
   border-radius: 8px;
-  border: 1px solid var(--Primaria, #9665df);
-  background: linear-gradient(
-      167deg,
-      rgba(61, 34, 102, 0.7) 3.02%,
-      rgba(34, 25, 72, 0.42) 24.84%,
-      rgba(16, 19, 53, 0.24) 54.42%,
-      rgba(11, 20, 69, 0.37) 77.21%,
-      rgba(34, 45, 102, 0.7) 100%
-    ),
-    #000;
+  border: 1px solid var(--Primaria, rgb(57, 169, 53));
+  background-color: var(--cor-branco-padrao);
   position: fixed;
   right: 8%;
   top: 2%;
@@ -23,47 +15,74 @@
   z-index: 2;
   cursor: pointer;
 }
+
 .nome p {
-  color: white;
+  color: rgba(3, 66, 47, 1);
   margin-top: 15px;
+  font-size: 1rem;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
 .cima {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
-  color: white;
+  color: rgba(3, 66, 47, 1);
+  font-family: var(--fonte-arial-destaque);
+  font-weight: bold;
+  font-size: 1rem;
 }
-.cima-p{
+
+.cima-p {
   margin-left: 15px;
 }
+
 .meio {
   display: flex;
   padding: 15px 30px;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  color: white;
+  color: rgba(3, 66, 47, 1);
+  font-family: var(--fonte-arial-destaque);
+  font-size: 1rem;
+  font-weight: bold;
   border-radius: 8px;
-border: 1px solid var(--Primaria, #9665DF);
-margin: 10px 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  box-shadow: var(--sombra-forte);
+  margin: 10px 15px;
 }
+
 .mat-mdc-progress-spinner {
-  background-color: #281446;
+  background-color: var(--cor-branco-padrao);
+  box-shadow: var(--sombra-fraca);
 }
+
 .mat-mdc-progress-spinner {
   --mdc-circular-progress-active-indicator-color: #58db43;
 }
-.spinner{
+
+.spinner {
   position: relative;
 }
+
 .progress-spinner {
   position: absolute;
   top: 27%;
-  right: 20%;
+  /*   right: 20%; */
   font-size: 16px;
+  margin-left: 39%;
+  font-family: var(--fonte-arial-destaque);
+  font-size: 1rem;
 }
+
 .foto-header {
   display: flex;
   justify-content: center;
@@ -73,7 +92,7 @@ margin: 10px 15px;
   color: black;
   background-color: white;
   border-radius: 28px;
-  border: 3px solid var(--Primaria, #9665df);
+  border: 3px solid var(--Primaria, rgba(57, 169, 53, 1));
   margin: 0 auto;
   font-size: 40px;
   font-weight: 700;

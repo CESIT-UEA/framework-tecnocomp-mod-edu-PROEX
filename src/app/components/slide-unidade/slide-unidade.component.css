@@ -62,10 +62,10 @@
   height: 25px;
   font-weight: 600;
   line-height: normal;
- /*  color: var(--cor-verde-txt); */
+  /*  color: var(--cor-verde-txt); */
   cursor: pointer;
   /*  border: 1px solid #793cd4; */
- /*  background-color: var(--cor-branco-padrao); */
+  /*  background-color: var(--cor-branco-padrao); */
   box-shadow: var(--sombra-forte);
   position: relative;
   /* Permite posicionamento relativo */
@@ -101,25 +101,27 @@
   /* Posiciona o ícone em relação ao li */
   top: -5px;
   /* Ajuste para mover para cima */
-  right: -20px;
+  right: -9px;
   /* Ajuste para mover para a direita */
-  font-size: 14px;
+  font-size: 1rem;
   /* Ajuste o tamanho do ícone, se necessário */
   color: #58DB43;
-  background-color: blueviolet;
+  background-color: transparent;
 }
 
 .naoConcluido {
   border: none;
   color: var(--cor-verde-txt);
   background-color: var(--cor-branco-padrao);
+
+
 }
 
 .active {
   background-color: rgba(6, 142, 115, 1);
-  color: fff;
-  /*  border: 2px solid white; */
+  color: white;
 }
+
 
 .loading {
   width: 100%;
