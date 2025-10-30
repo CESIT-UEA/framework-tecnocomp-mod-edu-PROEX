@@ -1,7 +1,7 @@
 <div class="container">
   <div class="sobre-nos">
     <div class="titulos">
-      <h2 style="margin-top: 1.5rem;">Sobre</h2>
+      <h2 style="margin-top: 1.5rem;">Sobre Nós</h2>
     </div>
     <section class="section">
       <section class="descricao">
@@ -16,7 +16,7 @@
             conhecimentos.
           </p>
         </div>
-        <p style="font-size: 18px;">Versão da Plataforma: 1.0.0</p>
+        <p class="versao-plataforma">Versão da Plataforma: 1.0.0</p>    
       </section>
       <img src="../../../../assets/img/logo_tec.png" class="logo" alt="" />
     </section>
@@ -29,12 +29,12 @@
 
     <div class="content-container-ficha-tecnica-equipe-caixa-teste">
       <!-- Nome de uma equipe é exibida de acordo com o valor da variável currentVideoIndex -->
-      <h1>{{ cardEquipes[currentVideoIndex].equipe | uppercase }}</h1>
+      <h1>{{ cardEquipes[currentVideoIndex].equipe}}</h1>
 
       <!-- Simbolo de voltar para o anterior que quando clicado muda a equipe exibida -->
       <div class="ficha-tecnica-container">
-        <img src="../../../../assets/icons/previous2.svg" alt="simbolo de ir para o proximo" (click)="prevVideo()"
-          style="cursor: pointer" />
+        <img src="{{imgpreviou2}}" alt="simbolo de ir para o proximo" (click)="prevVideo()"
+         [style.cursor]="cursorDisable ? 'default' : 'pointer'"/>
         <!-- Estilo aplicado de acordo com o valor retornado do método elementMembros() -->
         <div [ngClass]="{
           'container-membros1': elementMembros() == 1,
@@ -46,14 +46,14 @@
             <div class="ficha-tecnica-container-card-conteudo">
               <div [ngStyle]="{ 'background-image': 'url(' + membro.image + ')' }" class="img-membro"></div>
               <div class="ficha-tecnica-container-membro">
-                <p class="cargo-membro"><strong>{{ membro.cargo }}</strong></p>
+                <p class="cargo-membro">{{ membro.cargo }}</p>
                 <p class="nome-membro">{{ membro.nome }}</p>
               </div>
             </div>
           </div>
         </div>
         <!-- Simbolo de ir para o próximo que quando clicado muda a equipe exibida -->
-        <img (click)="nextVideo()" style="cursor: pointer" src="../../../../assets/icons/next2.svg"
+        <img (click)="nextVideo()" [style.cursor]="cursorDisable ? 'default' : 'pointer'" src="{{imgpreviou}}"
           alt="simbolo de ir para o proximo" />
       </div>
       <!-- botões de navegação para trocar a equipe exibida -->

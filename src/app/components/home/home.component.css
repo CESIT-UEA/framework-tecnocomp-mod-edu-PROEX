@@ -19,6 +19,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .content-container-condition {
   height: 90vh;
 }
@@ -31,28 +32,29 @@
   padding: 0 40px;
   align-items: center;
 }
+
 .voltar-ava {
   height: 10vh;
   color: white;
   text-align: center;
 }
+
 .voltar-ava .button {
   border-radius: 8px;
-  background: linear-gradient(
-      90deg,
+  background: linear-gradient(90deg,
       rgba(92, 51, 153, 0.75) 0%,
       rgba(71, 42, 125, 0.61) 14.78%,
       rgba(57, 36, 107, 0.53) 24.39%,
       rgba(29, 38, 92, 0.45) 57.95%,
       rgba(40, 53, 122, 0.6) 85.46%,
-      rgba(51, 68, 153, 0.75) 100%
-    ),
+      rgba(51, 68, 153, 0.75) 100%),
     #0f0f0f;
   width: fit-content;
   padding: 6px 15px;
   margin: 0 auto;
   cursor: pointer;
 }
+
 /* Mat-Sidenav */
 mat-sidenav {
   height: 100vh;
@@ -73,7 +75,8 @@ section.content-container-ficha-tecnica {
 app-video-section iframe {
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9; /* Mantém proporção padrão de vídeos */
+  aspect-ratio: 16 / 9;
+  /* Mantém proporção padrão de vídeos */
 }
 
 .links {
@@ -81,21 +84,29 @@ app-video-section iframe {
   gap: 40px;
 }
 
-.btn-ficha, .btn-home, .btn-sobre {
-  color: #fff;
+.btn-ficha,
+.btn-home,
+.btn-sobre {
+  color: #ffffff86;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   font-weight: normal;
   cursor: pointer;
   display: inline-block;
 }
-.btn-ficha:hover, .btn-home:hover, .btn-sobre:hover {
-  border-bottom: 3px solid #793cd4;
+
+.btn-ficha:hover,
+.btn-home:hover,
+.btn-sobre:hover {
+  border-bottom: 3px solid #ffffff;
   padding-bottom: 3px;
   width: fit-content;
 }
 
 .active-topico-container {
-  border-bottom: 3px solid #793cd4;
+  border-bottom: 3px solid #ffffff;
+  color: white;
   padding-bottom: 3px;
   width: fit-content;
 }
@@ -107,36 +118,46 @@ app-video-section iframe {
   align-items: center;
   justify-content: space-between;
 }
+
 .end-navbar {
   display: flex;
   align-items: center;
   gap: 40px;
   margin-right: 35px;
 }
+
 .mat-drawer-container {
   background-color: transparent;
   height: 100%;
 }
+
 .header {
   display: flex;
   align-items: center;
-  background-color: transparent;
+  background-image: url("../../../assets/fundo_header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-content: space-between;
-  border-bottom: 2px solid #1c1c1c;
+
   height: 10vh;
   padding: 5px 0;
 }
-.header-fixed{
+
+.header-fixed {
   position: fixed;
-  background-color: black;
+  background-image: url("../../../assets/fundo_header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 40px;
 }
+
 .header img {
   max-height: 80px;
   padding: 5px 0;
   margin-left: 1rem;
   cursor: pointer;
 }
+
 #icon {
   color: #fff;
   cursor: pointer;
@@ -144,14 +165,16 @@ app-video-section iframe {
   width: 30px;
   height: 30px;
 }
+
 .container-foto-header {
   display: flex;
   padding: 2px;
   align-items: center;
   gap: 5px;
   border-radius: 20px;
-  background: #131313;
+  background: #ffffff;
 }
+
 .foto-header {
   display: flex;
   justify-content: center;
@@ -161,8 +184,9 @@ app-video-section iframe {
   color: black;
   background-color: white;
   border-radius: 28px;
-  border: 1px solid var(--Primaria, #9665df);
+  border: 1.5px solid rgba(0, 102, 50, 1);
 }
+
 /* Grid geral */
 .content-container-section {
   display: grid;
@@ -178,6 +202,7 @@ app-video-section iframe {
   flex-direction: column;
   justify-content: center;
 }
+
 .container-direito {
   height: 100%;
   display: flex;
@@ -195,6 +220,7 @@ app-video-section iframe {
 .text-unidade {
   color: #9665df;
 }
+
 .position {
   max-width: 680px;
   width: 80%;
@@ -202,11 +228,11 @@ app-video-section iframe {
 }
 
 .container-download-app {
-    position: fixed;
-    justify-content: end;
-    padding-right: 1rem;
-    right: 0;
-    top: 13%;
+  position: fixed;
+  justify-content: end;
+  padding-right: 1rem;
+  right: 0;
+  top: 13%;
 }
 
 
@@ -259,9 +285,11 @@ app-video-section iframe {
   .imagem-acima {
     display: none;
   }
+
   .links {
     display: none;
   }
+
   .header nav {
     width: fit-content;
   }
@@ -277,7 +305,7 @@ app-video-section iframe {
     height: 70px;
   }
 
-  .container-esquerdo{
+  .container-esquerdo {
     row-gap: 2rem;
   }
 
@@ -286,7 +314,7 @@ app-video-section iframe {
     padding: 10px;
   }
 
-  .text-unidade{
+  .text-unidade {
     font-size: 1.5rem;
   }
 
@@ -294,4 +322,3 @@ app-video-section iframe {
     display: none;
   }
 }
-

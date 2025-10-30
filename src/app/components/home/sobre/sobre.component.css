@@ -1,14 +1,14 @@
 .container {
   height: 100%;
-  background-color: black;
-  color: white;
+  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
   padding-top: 40px;
 }
 
 .sobre-nos {
   width: 100%;
-  background: linear-gradient(#3D2266B2, #2219486C, #1013353E, #0B14455E, #222D66B2);
+  background-color: rgba(249, 255, 249, 1);
 }
 
 .section {
@@ -23,10 +23,12 @@
 .logo {
   width: 250px;
   height: 200px;
+  
 }
 
 .titulo {
-  border-top: 2px solid #ffffff;
+  border-top: 2px solid rgba(143, 203, 191, 1);
+
 }
 
 .titulos {
@@ -35,17 +37,19 @@
 }
 
 .titulos>h2 {
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: 700;
   padding-top: 45px;
+  color: rgba(62, 151, 123, 1);
 }
 
 .titulo {
-  background-image: linear-gradient(#9580FF, #FFFFFF);
-  background-clip: text;
-  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
-  color: transparent;
+  background-clip: text;
+  font-size: 2.1875rem;
+  font-weight: 700;
+  color: rgba(47, 115, 94, 1);
   padding: 30px 0;
 }
 
@@ -53,9 +57,25 @@
 .descricao-imagem {
   display: flex;
   column-gap: 10%;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
   padding: 10px 0 40px 0;
+  color: rgba(3, 66, 47, 1);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+
+  p {
+    width: 75%;
+  }
+}
+
+
+
+
+.versao-plataforma {
+  font-size: 1.125rem;
+  color: rgba(3, 66, 47, 1);
+  font-weight: 400;
 }
 
 .descricao {
@@ -63,7 +83,9 @@
 }
 
 .descricao-titulo {
-  font-size: 25px;
+  font-size: 1.25rem;
+  color: rgba(3, 66, 47, 1);
+  font-weight: bold;
 }
 
 .card-p {
@@ -166,7 +188,6 @@
 .content-container-ficha-tecnica-equipe {
   height: 90%;
   width: 100%;
-  background: rgb(101, 49, 176);
   background-image: url("../../../../assets/img/ficha-tecnica/fundo_sobre.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -184,14 +205,19 @@
   width: 100%;
 }
 
+/* Título do slide do Sobre */
 .content-container-ficha-tecnica-equipe-caixa-teste h1 {
-  background-color: transparent;
-  color: var(--cor-branco-padrao);
-  border: 3px solid var(--cor-branco-padrao);
-  border-radius: 20px;
-  color: white;
-  width: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
   text-align: center;
+  font-size: 1.5rem;
+
+  background-color: transparent;
+  color: white;
+  border: 3px solid white;
+  border-radius: 20px;
+
+  width: 40%;
   margin: 0 auto;
   margin-top: 20px;
   padding: 5px 20px;
@@ -241,6 +267,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 230px;
+  border-radius: 10px;
 }
 
 
@@ -253,22 +280,19 @@
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  background-color: var(--cor-verde-escuro);
+  background-color: rgba(12, 74, 73, 1);
   border-radius: 10px;
   padding: 5px;
-  font-family: var(--fonte-arial-destaque);
+  font-family: Arial Rounded MT Bold, sans-serif;
   font-weight: 700;
 
-  cargo-membro {
-    color: var(--cor-branco-padrao);
-
+  .cargo-membro {
     color: white;
+    font-weight: 700;
     width: 100%;
   }
 
   .nome-membro {
-
-
     color: rgb(255, 255, 255, 0.8);
     border-radius: 0 0px 10px 10px;
   }
@@ -328,6 +352,8 @@
   align-items: center;
   justify-content: center;
 }
+
+
 
 @media(max-width: 705px) {
   .content-container-ficha-tecnica-equipe-caixa-teste {

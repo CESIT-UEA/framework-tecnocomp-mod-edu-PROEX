@@ -1,26 +1,26 @@
-.container{
+.container {
   width: 100%;
-  background-color: #1B1B23;
+  background-color: white;
 }
+
 .foto-apoio {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(
-      167deg,
-      rgba(61, 34, 102, 0.7) 3.02%,
-      rgba(34, 25, 72, 0.42) 24.84%,
-      rgba(16, 19, 53, 0.24) 54.42%,
-      rgba(11, 20, 69, 0.37) 77.21%,
-      rgba(34, 45, 102, 0.7) 100%
-    ),
-    #000;
+  background-color: rgba(249, 255, 249, 1);
 }
+
 .foto-apoio img {
   width: 100%;
   height: 100%;
   padding: 40px 0;
+}
+
+.imagem {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
 }
 
 .texto {
@@ -31,59 +31,82 @@
   align-items: center;
   justify-content: start;
 }
+
 .texto p {
   margin-bottom: 16px;
 }
+
+.linha-divisao {
+  width: 100%;
+  height: 0.5px;
+  background-color: rgba(0, 0, 0, 0.171);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4);
+  border: none;
+}
+
 .icon {
   text-align: end;
 }
-.blocos{
+
+.blocos {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
-.bloco{
+
+.bloco {
   width: 100%;
   height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
-  color: white;
+  align-items: start;
+  color: rgba(3, 66, 47, 1);
   font-size: 15px;
   padding: 20px;
-}
-.bloco h2{
-  width: 100%;
-  font-size: 15px;
-  border-bottom: 1px solid #9665DF;
+
+  h2 {
+    width: 100%;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(121, 193, 78, 1);
+    white-space: nowrap;
+  }
 }
 
-@media (max-width: 1100px){
+
+
+@media (max-width: 1100px) {
   .texto {
     flex-direction: column;
   }
 }
-@media (max-width: 800px){
-  .blocos{
+
+@media (max-width: 800px) {
+  .blocos {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 600px){
-  .blocos{
+
+@media (max-width: 600px) {
+  .blocos {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 450px){
-  .blocos{
+
+@media (max-width: 450px) {
+  .blocos {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-  .bloco{
+
+  .bloco {
     height: 140px;
     padding: 10px;
   }
+
   .texto p {
     margin-bottom: 5px;
   }
