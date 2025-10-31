@@ -2,26 +2,33 @@
   height: 100%;
   display: block;
 }
+
 .header-menu {
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   text-align: end;
 }
+
 .parte-cima {
-  background-color: #232324;
+  background: var(--cor-branco-padrao);
   border-radius: 20px 0 0 0;
+  border-bottom: 1px solid rgba(143, 203, 191, 1);
   height: 25%;
+
 }
+
 .titulo-topico {
-  font-size: 18px;
-  font-family: Arial;
+  font-size: 1.125rem;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
   width: 80%;
-  color: #b4a1e5;
   margin-left: 20px;
+  color: var(--cor-verde-txt);
 }
+
 .close {
   font-size: 30px;
   justify-self: end;
@@ -29,25 +36,26 @@
   margin-top: 5px;
   cursor: pointer;
 }
+
 .progresso {
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
-  color: #cdcdcd;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 10px 25px;
   padding-bottom: 0;
   gap: 5px;
+  color: var(--cor-verde-escuro-forte);
+  font-size: 0.875rem;
 }
+
 .p-progresso {
-  background-color: #232324;
-  color: #b4a1e5;
+  color: var(--cor-verde-txt);
   text-align: center;
   padding-bottom: 10px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  font-family: Arial;
 }
+
 input[type="checkbox"] {
   background-color: transparent;
   border: 1px solid white;
@@ -58,6 +66,8 @@ input[type="checkbox"] {
   width: 80%;
   margin: 0 auto;
   padding: 4px 0;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
 .texto-progresso {
@@ -68,30 +78,36 @@ input[type="checkbox"] {
   height: 100%;
   overflow-y: scroll;
 }
+
 .container-topicos {
   height: 50%;
-  background-color: #171719;
+  background-color: var(--cor-branco-suave);
 }
+
 .container-topico::-webkit-scrollbar-track {
   background-color: #171719;
 }
+
 .container-topico::-webkit-scrollbar {
   width: 8px;
   background: #6a6a6a;
 }
+
 .container-topico::-webkit-scrollbar-thumb {
   background: #6a6a6a;
   border-radius: 35px;
 }
+
 .topico-container {
   border-radius: 8px;
   width: 95%;
   max-width: 300px;
   height: 70px;
-  color: #fff;
+  color: var(--cor-verde-txt);
   margin: 15px auto;
   padding: 16px 10px;
-  font-family: Arial;
+  font-family: var(--fonte-arial-padrao);
+  font-weight: 400;
   gap: 10px;
   font-size: 16px;
   font-style: normal;
@@ -99,39 +115,52 @@ input[type="checkbox"] {
   display: flex;
   align-items: center;
   outline: none;
-  background-color: #232324;
+  background-color: var(--cor-branco-padrao);
+  box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.25);
   cursor: auto;
 }
 
 .hover:hover {
-  background-color: #19191a;
+  background: linear-gradient(0deg, #2F735E, #2F735E), linear-gradient(90deg, #2F735E 0%, #196D53 100%);
+  color: var(--cor-branco-padrao);
   cursor: pointer;
+
+  .caixa {
+    border-color: var(--cor-branco-padrao);
+  }
 }
+
 .active-topico-container {
-  border: 2px solid var(--Primaria, #9665df);
-  background: #232324;
+  background-color: var(--cor-branco-padrao);
+  color: var(--cor-verde-txt);
   box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.25);
   font-weight: bold;
 }
+
 .caixa {
   width: 16px;
   height: 16px;
   border-radius: 50px;
-  border: 1px solid white;
+  border: 1px solid var(--cor-verde-escuro-forte);
   position: relative;
+
 }
+
+
 .caixa mat-icon {
   font-size: 22px;
   color: #58db43;
   position: absolute;
   top: -35%;
 }
+
 .topico-container p {
   outline: none;
   width: 93%;
   padding: 20px 5px;
   font-size: 15px;
 }
+
 .btn-forum {
   background-color: #262626;
   color: #9665df;
@@ -143,6 +172,7 @@ input[type="checkbox"] {
   margin-bottom: 20px;
   font-family: "Arial" 16px;
 }
+
 .container-topico a,
 .moodle a {
   text-decoration: none;
@@ -153,19 +183,22 @@ input[type="checkbox"] {
   cursor: pointer;
   text-decoration: underline;
 }
+
 .outros-links {
   padding: 15px 0;
-  width: 100%;
+  width: 97.7%;
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
-  background-color: #171719;
+  background-color: var(--cor-branco-suave);
   height: 25%;
 }
+
 .outros-links h3 {
   padding-top: 5px;
   width: 90%;
   margin: 0 auto;
 }
+
 .moodle {
   display: flex;
   height: 34px;
@@ -174,7 +207,7 @@ input[type="checkbox"] {
   gap: 8px;
   align-self: stretch;
   border-radius: 5px;
-  background: #232324;
+  background: var(--cor-branco-padrao);
   box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.25);
   padding: 0 20px;
   width: 90%;
@@ -182,10 +215,13 @@ input[type="checkbox"] {
   cursor: pointer;
   margin-bottom: 15px;
 }
+
 .moodle a {
-  color: #c3a1f5;
+  color: var(--cor-verde-txt);
   margin-left: 5px;
   outline: none;
+  font-family: var(--fonte-arial-padrao);
+  font-weight: 700;
 }
 
 .disabled-link {

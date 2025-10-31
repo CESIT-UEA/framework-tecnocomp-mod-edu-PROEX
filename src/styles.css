@@ -1,5 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-* {
+@import url('./assets/styles/_variaveis.css');
+
+/* You can add global styles to this file, and also import other style files */* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -101,7 +102,7 @@ body {
   --border-verde-link: #2F735E;
 
   --fonte-arial-padrao: arial, sans-serif;
-  --fonte-arial-destaque: Arial Rounded MT Bold;
+  --fonte-arial-destaque: 'ArialRoundedBold', sans-serif;
 
   --sombra-muit-forte: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   --sombra-forte: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.5);
@@ -118,7 +119,7 @@ body {
 .chat-window {
   height: 500px !important;
   max-height: 70vh !important;
-  
+
 }
 
 @media(max-width: 496px) {

@@ -22,14 +22,14 @@
 
 .logo {
   width: 250px;
-  height: 200px;
+  height: 240px;
   
 }
-
+/* 
 .titulo {
   border-top: 2px solid rgba(143, 203, 191, 1);
 
-}
+} */
 
 .titulos {
   width: 90%;
@@ -41,6 +41,8 @@
   font-weight: 700;
   padding-top: 45px;
   color: rgba(62, 151, 123, 1);
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(143, 203, 191, 1);
 }
 
 .titulo {
@@ -66,6 +68,7 @@
 
   p {
     width: 75%;
+    text-align: justify;
   }
 }
 

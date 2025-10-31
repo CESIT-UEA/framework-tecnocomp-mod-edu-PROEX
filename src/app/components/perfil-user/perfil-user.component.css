@@ -24,6 +24,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: var(--fonte-arial-destaque);
+  font-weight: 400;
 }
 
 .cima {
