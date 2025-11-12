@@ -80,10 +80,10 @@
             this.ltiService.dados_completos.userTopico[
               this.moduloService.controll_topico
             ].UsuarioTopicos[0].encerrado == false
-          " class="atividade-botao active-incorreto" (click)="atividadeClick.emit()">
+          " class="atividade-botao active-incorreto botao-estilo" (click)="atividadeClick.emit()">
           <img src="../../../../../assets/img/erradoAtividade.png" alt="Icone para ir para a atividade da unidade"
-            width="22px" height="24px" />
-          Ops! Refazer a Atividade
+            width="18px" height="18px" />
+          Ops! Refazer Atividade
         </button>
 
         <button *ngIf="
@@ -105,7 +105,7 @@
         </button>
 
         <!-- Botão para download do e-book do tópico -->
-        <a href="{{
+        <a  style="text-decoration: none" href="{{
             this.ltiService.dados_completos.topicos?.[this.moduloService.controll_topico]?.ebookUrlGeral
           }}" target="_blank">
           <button class="ebook-botao botao-estilo">

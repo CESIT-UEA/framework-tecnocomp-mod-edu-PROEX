@@ -15,6 +15,7 @@
   border-radius: 20px 0 0 0;
   border-bottom: 1px solid rgba(143, 203, 191, 1);
   height: 25%;
+  width: 97.7%;
 
 }
 
@@ -116,7 +117,8 @@ input[type="checkbox"] {
   align-items: center;
   outline: none;
   background-color: var(--cor-branco-padrao);
-  box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--sombra-fraca);
+  /*   box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.25); */
   cursor: auto;
 }
 
@@ -133,7 +135,8 @@ input[type="checkbox"] {
 .active-topico-container {
   background-color: var(--cor-branco-padrao);
   color: var(--cor-verde-txt);
-  box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--sombra-fraca);
+  /*   box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.25); */
   font-weight: bold;
 }
 
@@ -208,7 +211,8 @@ input[type="checkbox"] {
   align-self: stretch;
   border-radius: 5px;
   background: var(--cor-branco-padrao);
-  box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--sombra-fraca);
+  /*   box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.25); */
   padding: 0 20px;
   width: 90%;
   margin: 0 auto;
@@ -226,4 +230,9 @@ input[type="checkbox"] {
 
 .disabled-link {
   opacity: 0.6;
+}
+
+.mat-mdc-progress-bar.mat-warn {
+  --mdc-linear-progress-track-color: white;
+  box-shadow: var(--sombra-fraca);
 }

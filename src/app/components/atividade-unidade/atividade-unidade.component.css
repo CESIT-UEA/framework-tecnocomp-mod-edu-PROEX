@@ -1,5 +1,11 @@
+:host {
+  display: block;
+  background-color: white;
+  padding: 1rem;
+}
+
 p {
-  color: #FFF;
+  color: #000;
   font-family: Arial;
   line-height: normal;
   font-size: 22px;
@@ -20,6 +26,7 @@ p {
   background: #4F4F4F;
   margin-bottom: 15px;
   align-items: center;
+  min-height: 80px;
 }
 
 .pergunta {
