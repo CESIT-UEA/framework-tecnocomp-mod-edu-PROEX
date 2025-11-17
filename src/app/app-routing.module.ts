@@ -15,6 +15,8 @@ import { TopicoComponent } from './personalizavel/modulo/topico/topico.component
 import { PaginaInicialComponent } from './components/pagina-inicial/pagina-inicial.component';
 import { CadastroAvaComponent } from './components/cadastro-ava/cadastro-ava.component';
 import { ModuloConcluidoComponent } from './components/modulo-concluido/modulo-concluido.component';
+import { FichaTecnicaComponent } from './Rc_Proex/Proex_telas/MÓDULO EDUCACIONAL/ficha-tecnica/ficha-tecnica.component';  
+
 
 const routes: Routes = [
   { path: '', component: PaginaInicialComponent },
@@ -22,6 +24,7 @@ const routes: Routes = [
   { path: 'ava/editar/:id', component: CadastroAvaComponent },
   { path: 'ava/adicionar', component: CadastroAvaComponent },
   { path: 'teorias-da-aprendizagemHome', component: HomeComponent },
+  { path: 'ficha-tecnica', component: FichaTecnicaComponent },
   {
     path: 'teorias-da-aprendizagem',
     component: AprendizagemEInformaticaComponent,

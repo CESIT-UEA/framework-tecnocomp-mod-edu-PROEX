@@ -1,0 +1,85 @@
+main {
+    padding: 3.7rem 7.2rem 4.75rem 7.2rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--tertiary-color);
+    flex-wrap: wrap;
+  }
+  
+  .titulo {
+    margin-bottom: 1.5rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--tertiary-color);
+  }
+  
+  .ficha-item {
+    padding: 3.8rem 0;
+    border-top: 2px solid var(--linha-color);
+  }
+  
+  .none {
+    border-top: 2px solid var(--teciary-color);
+  }
+  
+  .ficha-item h2 {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: var(--teciary-color);
+  }
+  
+  .ficha-item p {
+    font-weight: 400;
+  }
+  
+  .ficha-item dt {
+    margin-top: 4.1rem;
+    font-weight: 400;
+    color: var(--teciary-color);
+  }
+  
+  .ficha-item dd {
+    padding-top: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .ficha-item ul {
+    list-style-type: disc;
+  }
+  
+  .ficha-item ul li {
+    list-style-type: none;
+  }
+  
+  .ficha-item li {
+    margin-top: 1.2rem;
+  }
+  
+  .ficha-item address {
+    margin-top: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    font-family: (--fonte-primaria);
+    color: var(--cor-parafrafo);
+  }
+  
+  .imgg {
+    margin-top: 1.5rem;
+    font-weight: 400;
+  }
+  
+  .img_licenca {
+    width: 11%;
+  }
+  
+  .ficha-item h2,
+  .ficha-item p,
+  .ficha-item ul,
+  .ficha-item dt,
+  .ficha-item dd,
+  .ficha-item address {
+    font-size: 1.8em;
+  }
+  
+  .ficha-item img {
+    margin-top: 1.5rem;
+  }

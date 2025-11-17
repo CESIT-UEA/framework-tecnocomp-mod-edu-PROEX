@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação De Modulo</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Proex/MÓDULO EDUCACIONAL/Apresentacao-Modulo/apresentacao_modulo.css">
+</head>
+
+
+<body>
+    <header class="header-container">
+    <img class="logo" src="/assets/ComunsReutilizaveis/uea_01.svg" alt="Logo UEA">  
+
+    <nav class="nav-links" aria-label="Menu principal">
+        <a class="ini pagina-atual" href="/Proex/MÓDULO EDUCACIONAL/Apresentacao-Modulo/apresentacao_modulo.html">Início</a>
+        <a class="tec" href="/Proex/MÓDULO EDUCACIONAL/Ficha-tecnica/ficha_tecnica.html">Ficha Técnica</a>
+        <a class="sob" href="/sobre/sobre.html">Sobre</a>
+    </nav>
+
+    <div class="user-menu">
+        <button type="button" class="img-perfil" aria-label="Acessar perfil do usuário">
+            <img src="/assets/ComunsReutilizaveis/Login.svg" alt="">
+        </button>
+
+        <button type="button" class="img-menu" aria-label="Abrir menu de navegação">
+            <img src="/assets/ComunsReutilizaveis/menu.svg" alt="">
+        </button>
+    </div>
+  </header>
+
+    <main>
+        <section class="container">
+            <div class="video-apresentacao" aria-labelledby="section-title">
+                <h1 id="section-title" class="titulo">Teorias da Aprendizagem</h1>
+                <p class="descricao">Assista o vídeo da apresentação do curso</p>
+        
+                <iframe 
+                    class="aula" 
+                    src="" 
+                    title="Vídeo de apresentação do curso Teorias da Aprendizagem"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="botoes">
+                <button type="button" class="btn continuar">Iniciar</button>
+                <button type="button" class="btn ebook">
+                    E-book do Módulo
+                    <img class="download" src="/assets/ModuloSvgGeral/ebook-baixar.svg" alt="Baixar E-book do Módulo">
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Menu lateral acionado pelo botão .img-menu -->
+  <div class="menu-backdrop" hidden></div>
+  <aside class="menu-panel" aria-hidden="true" aria-label="Menu do módulo">
+    <button type="button" class="menu-close" aria-label="Fechar menu">×</button>
+    <h2 class="menu-title">Teorias da Aprendizagem</h2>
+    <div id="progresso" class="menu-progress">
+      <div class="dav">
+      <span class="menu-progress-label">Progresso:</span>
+      <div class="menu-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" role="progressbar">
+        <div id="progressoBarra" class="menu-progress-fill" style="width:0%"></div>
+      </div>
+      <span id="progressoTexto" class="menu-progress-label zer">0%</span>
+    </div>
+      <span id="topicosConcluidosTexto" class="menu-progress-text">0 / 4 Tópicos Concluídos</span>
+    </div>
+    <nav class="menu-topicos" aria-label="Tópicos do módulo">
+      <button type="button" class="menu-item" data-topico="1">1. Behaviorismo
+        <img class="bolinha" src="/assets/ComunsReutilizaveis/bolinha_feito.svg" alt="">
+      </button>
+      <button type="button" class="menu-item" data-topico="2">2. Construtivismo
+        <img class="bolinha" src="/assets/ComunsReutilizaveis/bolinha_feito.svg" alt="">
+      </button>
+      <button type="button" class="menu-item" data-topico="3">3. Socioconstrutivismo
+        <img class="bolinha" src="/assets/ComunsReutilizaveis/bolinha_feito.svg" alt="">
+      </button>
+      <button type="button" class="menu-item" data-topico="4">4. Construcionismo
+        <img class="bolinha" src="/assets/ComunsReutilizaveis/bolinha_feito.svg" alt="">
+      </button>
+    </nav>
+    <div class="menu-links">
+      <h3 class="menu-links-title">Links Úteis</h3>
+      <div class="add_icone">
+        <img src="/assets/ComunsReutilizaveis/Mask group.svg" alt="">
+        <a class="menu-link" href="/Proex/MÓDULO EDUCACIONAL/Ficha-tecnica/ficha_tecnica.html">Ficha Técnica</a>
+      </div>
+      <div class="add_icone">
+        <img src="/assets/ComunsReutilizaveis/Mask group (1).svg" alt="">
+        <a class="menu-link" href="/sobre/sobre.html">Sobre</a>
+      </div>
+      <div class="add_icone">
+        <img src="/assets/ComunsReutilizaveis/Mask group (2).svg" alt="">
+        <a class="menu-link" href="#">Suporte</a>
+      </div>
+    </div>
+  </aside>
+
+</body>
+
+</html>
+
