@@ -17,12 +17,13 @@
   justify-content: space-evenly;
   border-bottom: 1.5px solid rgba(143, 203, 191, 1);
   padding-bottom: 20px;
-  height: 90%;
+  height: 86%;
   align-items: center;
 }
 
 .container-video {
   height: 100%;
+
 }
 
 .div-slide {
@@ -34,6 +35,7 @@
   width: 100%;
 }
 
+/* Titulo */
 .titulo-topico ul li {
   list-style: none;
 
@@ -63,164 +65,136 @@
 }
 
 .botoes {
+  /* Aqui fica os botoes */
   padding: 30px;
   display: grid;
   align-items: center;
   border-radius: 15px;
   background: var(--cor-braco-padrao);
   box-shadow: var(--sombra-leve);
-  height: 100%;
+  height: 98%;
   align-self: flex-start;
-  width: 100%;
-  max-width: 300px;
+  max-width: fit-content;
+  /*  max-width: 300px; */
 
-}
-
-.title {
-  color: var(--cor-verde-txt);
-  text-align: center;
-  font-family: Arial;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  padding-bottom: 5px;
-  border-bottom: 2px solid var(--cor-linha-forte);
-}
-
-.section-texto {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-
-}
-
-/* .botoes-cima {
-  display: flex;
-  justify-content: space-around;
-} */
-
-.botao-estilo {
-  width: 100%;
-  height: 36px;
-  padding: 20px 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 0.5rem;
-
-  font-family: var(--fonte-arial-destaque);
-  font-weight: 400 !important;
-  font-size: 0.9375rem;
-  color: var(--cor-verde-txt);
-
-  box-shadow: var(--sombra-forte);
-  border-radius: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  position: relative;
-
-}
-
-.botoes-cima {
-
-  .saibaMais,
-  .referencias,
-  .textoApoio {
-    /* display: flex;
-  flex-shrink: 0; */
-    margin: 1em auto;
-    background: var(--cor-braco-padrao);
-  }
-}
-
-
-
-
-
-.box {
-  position: absolute;
-  top: 5px;
-  /* Ajuste para mover para cima */
-  right: 5px;
-  border: 1.5px solid white;
-  border-radius: 50px;
-  width: 15px;
-  height: 15px;
-}
-
-.concluido {
-  position: absolute;
-  top: -5px;
-  right: -1px;
-  font-size: 27px;
-  color: #58DB43;
-}
-
-.buttons-final {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  margin-left: auto;
-  margin-right: auto;
-  font-family: Arial;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-
-  box-shadow: none;
-  width: 212px;
-
-  button.atividade-botao {
-    margin-top: 63px;
-    margin-bottom: 17px;
-
-    text-transform: capitalize;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-
-    white-space: nowrap;
-    font-size: 0.9375rem;
-    box-shadow: none;
-  }
-
-
-  button.ebook-botao {
-    display: flex;
-    justify-self: center;
-    align-content: center;
-    width: 212px;
-
-    background-color: transparent;
-    border-color: rgba(47, 115, 94, 1);
-    cursor: pointer;
-    white-space: nowrap;
-  }
-
-  button.ebook-botao a {
-    display: inline-flex;
+  .title {
     color: var(--cor-verde-txt);
-    font-family: var(--fonte-arial-destaque) !important;
-    font-weight: 400 !important;
     text-align: center;
     font-family: Arial;
-    font-size: 0.9375rem;
+    font-size: 18px;
     font-style: normal;
+    font-weight: 700;
     line-height: normal;
-    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--cor-linha-forte);
   }
-}
 
+  .section-texto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .botoes-cima {
+
+    .saibaMais,
+    .referencias,
+    .textoApoio {
+      margin: 1em auto;
+    }
+  }
+
+  &.botao-estilo button {
+    max-width: 210px;
+    min-width: 200px;
+    min-height: 36px;
+    max-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0.5rem;
+
+    font-family: var(--fonte-arial-destaque);
+    font-weight: 400 !important;
+    font-size: 0.9375rem;
+    color: var(--cor-verde-txt);
+    background: var(--cor-braco-padrao);
+    box-shadow: var(--sombra-forte);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .box {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 1.5px solid white;
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .concluido {
+    position: absolute;
+    top: -5px;
+    right: -1px;
+    font-size: 27px;
+    color: #58DB43;
+  }
+
+  .buttons-final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    box-shadow: none;
+
+    button.atividade-botao {
+      margin: 63px 0 17px;
+      white-space: normal;
+    }
+
+    button.ebook-botao {
+      display: flex;
+      justify-self: center;
+      align-content: center;
+
+      background-color: transparent;
+      box-shadow: none;
+      border: 2px solid rgba(47, 115, 94, 1) !important;
+
+      a {
+        display: inline-flex;
+        color: var(--cor-verde-txt);
+      }
+    }
+  }
+
+  .active-incorreto {
+    background-color: #de3535 !important;
+    color: white !important;
+  }
+
+  .active-correto {
+    background-color: #58DB43 !important;
+    color: white !important;
+  }
+
+}
 
 .active {
   background: linear-gradient(0deg, #2F735E, #2F735E),
@@ -382,19 +356,13 @@
     height: 40vh;
   }
 
-  .botoes-cima {
-    width: 67%;
-    margin: 5px 0;
-  }
-
+  .botoes-cima,
   .botoes-baixo {
-    width: 33%;
     margin: 5px 0;
   }
 
   .botoes {
     max-width: none;
-    width: 90%;
     padding: 1.2rem 1rem;
   }
 

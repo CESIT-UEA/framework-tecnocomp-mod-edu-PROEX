@@ -1,6 +1,6 @@
 <div class="video-container" *ngIf="!isLoading; else loading">
   <!-- Iframe para o player -->
-  <div id="player"></div>
+  <div id="player" style="border-top-left-radius: 25px; border-top-right-radius: 25px;"></div>
 </div>
 
 <!-- Navegação entre os vídeos -->
@@ -11,30 +11,22 @@
     </p>
   </div>
   <div class="box-navigate-right">
-    <mat-icon
-      class="mat-18 voltar"
-      (click)="this.ltiService.voltar()"
+    <mat-icon class="mat-18 voltar" (click)="this.ltiService.voltar()"
       [ngClass]="{ disabled: this.ltiService.currentVideoIndex == 0 }">
       arrow_back
     </mat-icon>
     <ul>
-      <li
-        *ngFor="let video of videos; index as i"
-        [ngClass]="{
+      <li *ngFor="let video of videos; index as i" [ngClass]="{
           naoConcluido: !videos[i].UsuarioVideos[0].completo,
           active: this.ltiService.currentVideoIndex == i
-        }"
-        (click)="selectVideo(i)">
+        }" (click)="selectVideo(i)">
         {{ i + 1 }}
         <mat-icon class="concluido" *ngIf="videos[i].UsuarioVideos[0].completo">
           check
         </mat-icon>
       </li>
     </ul>
-    <mat-icon
-      class="mat-18 proximo"
-      (click)="this.ltiService.proximo()"
-      [ngClass]="{
+    <mat-icon class="mat-18 proximo" (click)="this.ltiService.proximo()" [ngClass]="{
         disabled: this.ltiService.currentVideoIndex + 1 == videos.length
       }">
       arrow_forward

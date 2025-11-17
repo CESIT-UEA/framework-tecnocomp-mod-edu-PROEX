@@ -1,13 +1,13 @@
 .container-main-conteudo-links-voltar {
-  display: grid;
+  display: flex;
   align-items: center;
+  justify-content: flex-end;
   color: var(--cor-branco-padrao);
-  height: 10vh;
-  padding-top: calc(2% - 5px);
-  position: relative;
-  float: right;
-  margin-right: 40px;
-  margin-top: 5px;
+
+  min-height: 10vh;
+  max-height: 10vh;
+  /*  padding-top: calc(2% - 5px); */
+  /* margin-top: 5px; */
 }
 
 .button {
@@ -15,8 +15,6 @@
   padding: 9px 15px;
   margin: 0 auto;
   cursor: pointer;
-  position: absolute;
-  left: 40%;
 }
 
 .link-proximo {
@@ -152,3 +150,4 @@
     padding: 15px 0;
   }
 }
+
