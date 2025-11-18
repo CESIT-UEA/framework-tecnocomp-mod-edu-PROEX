@@ -21,7 +21,7 @@
     --cor-verde-txt: rgba(47, 115, 94, 1);
     --cor-verde-escuro: rgba(12, 74, 73, 1);
     --cor-verde-escuro-forte: rgba(3, 66, 47, 1);
-
+    --cor-cinza-padrao: rgba(103, 103, 103, 1);
     /* 
 
     */
@@ -31,7 +31,7 @@
 
     --cor-linha-cinza: rgb(162, 162, 162);
     --cor-linha-verde-forte: rgba(38, 152, 134, 0.502);
-     
+
     --border-verde-link: #2F735E;
 
     --fonte-arial-padrao: arial, sans-serif;
@@ -43,7 +43,7 @@
     --sombra-fraca: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
-app-atividade{
+app-atividade {
     background-color: white !important;
     min-height: 100vh;
 
