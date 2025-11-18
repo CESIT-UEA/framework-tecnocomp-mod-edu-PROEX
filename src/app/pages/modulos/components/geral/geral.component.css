@@ -42,7 +42,7 @@
   text-align: center;
   color: #2f735e;
   padding: 30px 0 0 0;
-  font-family: minhaFonte;
+  font-family: var(--fonte-arial-destaque);
   font-size: 25px;
   margin-bottom: 10px;
 }
@@ -346,15 +346,34 @@
     min-height: 90vh;
   }
 
+  /* Título */
+  .titulo-topico ul li {
+
+    text-align: center;
+
+    padding: 30px 0 0 0;
+    margin-bottom: 80px;
+    font-size: 22.4px;
+    margin-bottom: 10px;
+  }
+
   .container-main-conteudo {
     width: 100%;
     flex-grow: 1;
   }
 
+  /* Vídeo */
   .div-slide {
     width: 90%;
     height: 40vh;
+
+    .container-video {
+      width: 82%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
+
 
   .botoes-cima,
   .botoes-baixo {
@@ -366,10 +385,16 @@
     padding: 1.2rem 1rem;
   }
 
+
+
+  .buttons-final {
+    margin-top: -4rem;
+  }
+
   .section-texto {
     flex-direction: row;
     gap: 0;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   .saibaMais {
@@ -388,6 +413,7 @@
 
   .container-main-conteudo-links-voltar {
     display: initial;
+    order: 1;
   }
 
 }
