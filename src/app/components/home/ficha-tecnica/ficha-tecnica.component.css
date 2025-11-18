@@ -1,18 +1,11 @@
 .container {
-  background: linear-gradient(
-      167deg,
-      rgba(61, 34, 102, 0.7) 3.02%,
-      rgba(34, 25, 72, 0.42) 24.84%,
-      rgba(16, 19, 53, 0.24) 54.42%,
-      rgba(11, 20, 69, 0.37) 77.21%,
-      rgba(34, 45, 102, 0.7) 100%
-    ),
-    #000;
-  color: white;
+  background-color: var(--cor-branco-suave);
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   padding-top: 40px;
 }
+
 .container-conteudo {
   width: 90%;
   margin: 0 auto;
@@ -25,6 +18,7 @@
   line-height: normal;
   padding-bottom: 40px;
 }
+
 .container-cima h1 {
   color: #ffffff;
   font-family: Arial;
@@ -33,24 +27,28 @@
   font-weight: 700;
   line-height: normal;
 }
+
 .container-cima p {
   margin: 40px 0;
 }
+
 .container-conteudo .bloco {
   margin: 40px 0;
 }
-.bloco p{
+
+.bloco p {
   color: #AAA;
 }
-h2{
+
+h2 {
   margin-top: 40px;
 }
 
-.laboratorios .bloco p{
+.laboratorios .bloco p {
   margin: 10px 0;
 }
 
-hr{
+hr {
   height: 2px;
   background-color: #FFFFFF26;
   border: none;
@@ -59,7 +57,7 @@ hr{
 
 
 @media (max-width: 489px) {
-  .container-cima h1{
+  .container-cima h1 {
     margin-top: 1.5rem;
-  } 
+  }
 }
