@@ -8,6 +8,7 @@
   max-height: 10vh;
   /*  padding-top: calc(2% - 5px); */
   /* margin-top: 5px; */
+
 }
 
 .button {
@@ -32,6 +33,9 @@
   width: fit-content;
   justify-self: end;
   cursor: pointer;
+  font-size: 1.125rem;
+  height: 40px;
+  
 }
 
 .link-voltar {
@@ -150,4 +154,3 @@
     padding: 15px 0;
   }
 }
-

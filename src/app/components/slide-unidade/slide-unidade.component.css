@@ -212,3 +212,20 @@
     }
   }
 }
+
+@media (min-width:500px) and (max-width: 945px) {
+
+  .navigation-button,
+  .box-navigate-right {
+    padding: 1.2rem;
+
+  }
+
+  .video-container {
+    #player {
+      border-top-left-radius: 1px !important;
+      border-top-right-radius: 1px !important;
+    }
+  }
+
+}

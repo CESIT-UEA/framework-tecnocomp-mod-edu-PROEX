@@ -19,11 +19,20 @@
   padding-bottom: 20px;
   height: 86%;
   align-items: center;
+
+  @media (min-width:500px) and (max-width: 945px) {
+    min-width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    height: 86%;
+  }
+
 }
+
+
 
 .container-video {
   height: 100%;
-
 }
 
 .div-slide {
@@ -33,6 +42,31 @@
 
 .titulo-topico {
   width: 100%;
+
+  /* Tamanho para telas Gigantes */
+  @media (min-width: 1575px) {
+    padding-top: 20px;
+    padding-bottom: 35px;
+
+    li {
+      font-size: 2rem !important;
+    }
+  }
+
+  /* Tamanho para telas de 1025px a 1574px */
+  @media (min-width: 1025px) and (max-width: 1574px) {
+
+
+    li {
+      font-size: 1.7rem !important;
+    }
+  }
+
+  /* Tamanho para telas de Tablets */
+  @media (min-width:500px) and (max-width: 945px) {
+    text-wrap: nowrap;
+  }
+
 }
 
 /* Titulo */
@@ -45,6 +79,16 @@
   font-family: var(--fonte-arial-destaque);
   font-size: 25px;
   margin-bottom: 10px;
+
+  /* Tamanho para telas de Tablets */
+  @media (min-width:500px) and (max-width: 945px) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: 1025px) and (max-width: 1574px) {
+    font-size: 1.7rem;
+  }
+
 }
 
 /* .titulo-topico ul li:before {
@@ -77,16 +121,34 @@
   max-width: fit-content;
   /*  max-width: 300px; */
 
+  /* Tamanho para tablets */
+  @media(min-width:500px) and (max-width: 945px) {
+    max-width: max-content;
+    padding-bottom: 10px;
+    min-height: min-content;
+  }
+
+
+  /* Título */
   .title {
     color: var(--cor-verde-txt);
     text-align: center;
     font-family: Arial;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     padding-bottom: 5px;
     border-bottom: 2px solid var(--cor-linha-forte);
+
+    @media (min-width: 1575px) {
+      font-size: 1.7rem;
+    }
+
+    /* Tamanho para telas de 1025px a 1574px */
+    @media (min-width: 1025px) and (max-width: 1574px) {
+      font-size: 1.2rem;
+    }
   }
 
   .section-texto {
@@ -98,20 +160,37 @@
     align-items: center;
   }
 
+  /* Espaço entre os botoes */
   .botoes-cima {
 
     .saibaMais,
     .referencias,
     .textoApoio {
       margin: 1em auto;
+
+      @media (min-width: 1575px) {
+        margin: 20px auto;
+
+        /* Imagem dentro dos elementos do botão */
+        img {
+          width: 20px;
+        }
+      }
+
+      /* Tamanho para telas de 1025px a 1574px */
+      @media (min-width: 1025px) and (max-width: 1574px) {
+        margin: 12px auto;
+
+        img {
+          width: 16px;
+        }
+      }
     }
   }
 
   &.botao-estilo button {
-    max-width: 210px;
     min-width: 200px;
     min-height: 36px;
-    max-height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,6 +208,22 @@
     border: none;
     cursor: pointer;
     position: relative;
+
+    /* Tamanho para telas Gigantes */
+    @media (min-width: 1575px) {
+      min-width: 315px;
+      min-height: 43px;
+      font-size: 22px;
+
+    }
+
+    /* Tamanho para telas de 1025px a 1574px */
+    @media (min-width: 1025px) and (max-width: 1574px) {
+      min-width: 220px;
+      min-height: 38px;
+      font-size: 16px;
+    }
+
   }
 
   .box {
@@ -166,6 +261,10 @@
     button.atividade-botao {
       margin: 63px 0 17px;
       white-space: normal;
+
+      @media (min-width: 1025px) and (max-width: 1574px) {
+        margin-top: 35px;
+      }
     }
 
     button.ebook-botao {
