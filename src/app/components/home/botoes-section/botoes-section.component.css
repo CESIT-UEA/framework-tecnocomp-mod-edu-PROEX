@@ -44,11 +44,10 @@
   margin: 0 auto;
   color: #fff;
   font-family: minhaFonte;
-  border: 3px solid #2F735E;
+  border: 3px solid var(--border-verde-link);
   font-size: 0.8rem;
   font-style: normal;
   font-weight: 500;
-  background: linear-gradient(to right, #5e2fa5 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
@@ -56,21 +55,12 @@
 }
 
 .button-section .button-group .download-button p {
-  color: #fff;
-}
-
-
-.button-section .button-group .download-button:hover {
-  background-position: left bottom;
-  color: black;
-  font-weight: 400;
-  line-height: normal;
-  border: 1.738px solid #50288d;
+  color: var(--border-verde-link);
 }
 
 .button-section .button-group .start-button {
   border-radius: 0.49963rem;
-  background: #793CD4;
+  background:var(--border-verde-link);
   font-family: Arial, Helvetica, sans-serif;
   color: var(--Terciaria, #fff);
   text-align: center;

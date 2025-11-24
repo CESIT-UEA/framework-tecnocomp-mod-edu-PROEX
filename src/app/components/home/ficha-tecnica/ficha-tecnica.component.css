@@ -2,7 +2,7 @@
   background-color: var(--cor-branco-suave);
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 5rem;
 }
 
 .container-conteudo {
@@ -15,7 +15,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-bottom: 40px;
 }
 
 .container-cima h1 {

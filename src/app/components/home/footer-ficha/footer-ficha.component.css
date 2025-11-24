@@ -9,12 +9,12 @@
   flex-direction: column;
   align-items: center;
   background-color: rgba(249, 255, 249, 1);
+  padding: 73px 0 98px 0;
 }
 
 .foto-apoio img {
   width: 100%;
   height: 100%;
-  padding: 40px 0;
 }
 
 .imagem {
