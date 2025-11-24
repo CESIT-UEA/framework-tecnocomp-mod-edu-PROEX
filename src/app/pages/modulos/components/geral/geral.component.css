@@ -20,12 +20,7 @@
   height: 86%;
   align-items: center;
 
-  @media (min-width:500px) and (max-width: 945px) {
-    min-width: fit-content;
-    margin: 0 auto;
-    padding-bottom: 50px;
-    height: 86%;
-  }
+
 
 }
 
@@ -62,10 +57,8 @@
     }
   }
 
-  /* Tamanho para telas de Tablets */
-  @media (min-width:500px) and (max-width: 945px) {
-    text-wrap: nowrap;
-  }
+
+
 
 }
 
@@ -80,10 +73,8 @@
   font-size: 25px;
   margin-bottom: 10px;
 
-  /* Tamanho para telas de Tablets */
-  @media (min-width:500px) and (max-width: 945px) {
-    font-size: 1.25rem;
-  }
+
+
 
   @media (min-width: 1025px) and (max-width: 1574px) {
     font-size: 1.7rem;
@@ -119,16 +110,8 @@
   height: 98%;
   align-self: flex-start;
   max-width: fit-content;
+
   /*  max-width: 300px; */
-
-  /* Tamanho para tablets */
-  @media(min-width:500px) and (max-width: 945px) {
-    max-width: max-content;
-    padding-bottom: 10px;
-    min-height: min-content;
-  }
-
-
   /* Título */
   .title {
     color: var(--cor-verde-txt);
@@ -271,6 +254,7 @@
       display: flex;
       justify-self: center;
       align-content: center;
+
 
       background-color: transparent;
       box-shadow: none;
@@ -554,4 +538,76 @@
   .link-proximo {
     font-size: 13px;
   }
+}
+
+/* Telas para celulares Grandes */
+@media (min-width: 490px) and (max-width: 768px) {
+  :host {
+    display: flex;
+    flex-direction: column;
+    height: initial;
+    min-height: 90vh;
+  }
+
+  .titulo-topico ul li {
+    text-align: center;
+    padding: 30px 0 0 0;
+    margin-bottom: 80px;
+    font-size: 22.4px;
+    margin-bottom: 10px;
+  }
+
+  .container-main-conteudo {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .div-slide {
+    width: 90%;
+    height: 40vh;
+
+    .container-video {
+      width: 82%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .botoes-cima,
+  .botoes-baixo {
+    margin: 5px 0;
+  }
+
+  .botoes {
+    max-width: none;
+    padding: 1.2rem 1rem;
+  }
+
+  .buttons-final {
+    margin-top: -4rem;
+  }
+
+  .section-texto {
+    flex-direction: row;
+    gap: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .saibaMais {
+    margin: 0 0.2rem;
+  }
+
+  .buttons-final {
+    align-items: center;
+    img{
+      margin-left: 30px;
+    }
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
 }
