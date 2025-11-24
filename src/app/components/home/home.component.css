@@ -95,6 +95,19 @@ app-video-section iframe {
 
 .active-topico-container {
   border-bottom: 3px solid #FFFFFF;
+}
+
+.btn-ficha:hover,
+.btn-home:hover,
+.btn-sobre:hover {
+  border-bottom: 3px solid #ffffff;
+  padding-bottom: 3px;
+  width: fit-content;
+}
+
+.active-topico-container {
+  border-bottom: 3px solid #ffffff;
+  color: white;
   padding-bottom: 3px;
   width: fit-content;
 }
