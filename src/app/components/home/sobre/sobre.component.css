@@ -195,6 +195,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  margin-bottom: 73px;
 }
 
 .content-container-ficha-tecnica-equipe .content-container-ficha-tecnica-equipe-caixa {

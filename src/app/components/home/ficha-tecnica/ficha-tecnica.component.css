@@ -54,6 +54,10 @@ hr {
   outline: none;
 }
 
+.img_licenca {
+  margin-bottom: 34px;
+}
+
 
 @media (max-width: 489px) {
   .container-cima h1 {
