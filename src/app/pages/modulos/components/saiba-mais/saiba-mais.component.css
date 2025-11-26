@@ -3,13 +3,15 @@
   background-color: black;
   display: block;
 }
+
 .header-atividade {
   display: grid;
   height: 10vh;
   grid-template-columns: 95% 5%;
   width: 100%;
   justify-content: center;
-  background-color: #161616;
+  background-image: url('../../../../../assets/header_cima.svg');
+  background-size: cover;
   align-items: center;
 }
 
@@ -22,13 +24,11 @@
 
 .header-links p {
   font-size: 30px;
-  color: #B3B3B3;
+  color: #fff;
 }
 
-
-
 .container-links-p {
-  color:  #B3B3B3;
+  color:  #03422F;
   font-family: Arial;
   font-size: 24px;
   font-style: normal;
@@ -41,9 +41,11 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: 100%;
   text-align: center;
   padding: 10px;
-  color:white
+  background-color: #fff;
+  color:#03422F;
 }
 .container-links-text a{
   text-decoration: none;
@@ -52,9 +54,9 @@
 }
 
 .container-links-text-caixa{
-  border: 1px solid #9665DF;
   width: 60%;
   margin-top: 15px;
+  border: 3px solid #39A935;
   border-radius: 10px;
 }
 
@@ -62,7 +64,7 @@
   text-align: left;
   width: 70%;
   padding: 10px;
-  color: #FBFBFB;
+  color: #03422F;
 }
 
 .container-links-text-caixa-descricao2{
@@ -71,13 +73,13 @@
 
 .container-links-text-caixa-descricao1{
   padding-top: 10px;
-  color:#B3B3B3;
+  color:#2F735E;
 }
 
 
 .container-links-text-caixa a{
   display: inline-block;
-  background-color: #9665DF;
+  background-color: #2F735E;
   padding: 5px 10px;
   margin-bottom: 10px;
   border-radius: 5px;
