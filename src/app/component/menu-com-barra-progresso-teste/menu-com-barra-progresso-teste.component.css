@@ -77,11 +77,14 @@ input[type="checkbox"] {
 
 .container-topico {
   height: 100%;
+  width: 100%;
   overflow-y: scroll;
+  scrollbar-gutter: stable;
 }
 
 .container-topicos {
   height: 50%;
+  width: 100%;
   background-color: var(--cor-branco-suave);
 }
 
@@ -123,7 +126,7 @@ input[type="checkbox"] {
 }
 
 .hover:hover {
-  background: linear-gradient(0deg, #2F735E, #2F735E), linear-gradient(90deg, #2F735E 0%, #196D53 100%);
+  background: linear-gradient(0deg, var(--border-verde-link), var(--border-verde-link)), linear-gradient(90deg, var(--border-verde-link) 0%, #196D53 100%);
   color: var(--cor-branco-padrao);
   cursor: pointer;
 
@@ -189,7 +192,7 @@ input[type="checkbox"] {
 
 .outros-links {
   padding: 15px 0;
-  width: 97.7%;
+  width: 100%;
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
   background-color: var(--cor-branco-suave);

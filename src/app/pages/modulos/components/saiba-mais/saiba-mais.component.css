@@ -73,13 +73,13 @@
 
 .container-links-text-caixa-descricao1{
   padding-top: 10px;
-  color:#2F735E;
+  color: var(--border-verde-link);
 }
 
 
 .container-links-text-caixa a{
   display: inline-block;
-  background-color: #2F735E;
+  background-color: var(--border-verde-link);
   padding: 5px 10px;
   margin-bottom: 10px;
   border-radius: 5px;

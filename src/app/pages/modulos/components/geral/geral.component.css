@@ -67,7 +67,7 @@
   list-style: none;
 
   text-align: center;
-  color: #2f735e;
+  color: var(--border-verde-link);
   padding: 30px 0 0 0;
   font-family: var(--fonte-arial-destaque);
   font-size: 25px;
@@ -95,7 +95,7 @@
   margin: auto;
   margin-bottom: 10px;
   border-radius: 10px;
-  background-color: #26988680;
+  background-color: var(--cor-linha-verde-forte);
   border: none;
 }
 
@@ -280,8 +280,8 @@
 }
 
 .active {
-  background: linear-gradient(0deg, #2F735E, #2F735E),
-    linear-gradient(90deg, #2F735E 0%, #196D53 100%);
+  background: linear-gradient(0deg, var(--border-verde-link), var(--border-verde-link)),
+    linear-gradient(90deg, var(--border-verde-link) 0%, #196D53 100%);
 
 }
 

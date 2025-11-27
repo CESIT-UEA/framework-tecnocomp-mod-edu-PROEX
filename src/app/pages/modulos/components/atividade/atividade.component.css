@@ -95,7 +95,7 @@
   width: 100px;
   height: 35px;
   color: var(--cor-branco-padrao);
-  background: linear-gradient(90deg, #2F735E 0%, #196D53 100%);
+  background: linear-gradient(90deg, var(--border-verde-link) 0%, #196D53 100%);
   outline: none;
   border-radius: 5px;
   margin: 0 auto;
