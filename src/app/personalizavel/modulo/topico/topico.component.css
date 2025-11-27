@@ -76,10 +76,10 @@
 }
 
 .header .logo {
-  max-height: 60px;
-  margin-left: 1rem;
+  max-height: 57px;
+  margin-left: 2.5rem;
   cursor: pointer;
-  padding: 5px 0;
+  padding: 4px 0;
 }
 
 #icon {
