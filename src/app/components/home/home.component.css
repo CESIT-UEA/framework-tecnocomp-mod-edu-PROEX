@@ -52,7 +52,6 @@
   cursor: pointer;
 }
 
-/* Mat-Sidenav */
 mat-sidenav {
   height: 100vh;
   background-color: transparent;
@@ -61,7 +60,7 @@ mat-sidenav {
 
 .imagem-acima {
   align-self: center;
-  margin-bottom: 70px;
+  margin-bottom: -40px;
 }
 
 section.content-container-ficha-tecnica {
@@ -262,10 +261,6 @@ app-video-section iframe {
 
   .container-esquerdo h1 {
     font-size: 30px;
-  }
-
-  .imagem-acima {
-    margin-bottom: 50px;
   }
 
 }
