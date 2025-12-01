@@ -1,40 +1,39 @@
 :host {
-  height: 100%;
   display: block;
+  height: 100%;
 }
 
 .header-menu {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: end;
+  color: white;
 }
 
 .parte-cima {
-  background: var(--cor-branco-padrao);
+  width: 100%;
+  height: 25%;
   border-radius: 20px 0 0 0;
   border-bottom: 1px solid rgba(143, 203, 191, 1);
-  height: 25%;
-  width: 97.7%;
-
+  background: var(--cor-branco-padrao);
 }
 
 .titulo-topico {
-  font-size: 1.125rem;
+  width: 80%;
+  margin-left: 1.25rem;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.13rem;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
-  width: 80%;
-  margin-left: 20px;
   color: var(--cor-verde-txt);
 }
 
 .close {
-  font-size: 30px;
   justify-self: end;
-  margin-right: 15px;
-  margin-top: 5px;
+  margin-top: 0.31rem;
+  margin-right: 0.94rem;
+  font-size: 1.88rem;
   cursor: pointer;
 }
 
@@ -42,45 +41,48 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 10px 25px;
+  padding: 0.63rem 1.56rem;
   padding-bottom: 0;
-  gap: 5px;
+  gap: 0.31rem;
   color: var(--cor-verde-escuro-forte);
-  font-size: 0.875rem;
+  font-size: 0.88rem;
 }
 
 .p-progresso {
-  color: var(--cor-verde-txt);
+  padding-bottom: 0.63rem;
   text-align: center;
-  padding-bottom: 10px;
-  font-size: 0.875rem;
+  color: var(--cor-verde-txt);
+  font-size: 0.88rem;
   font-weight: 400;
 }
 
 input[type="checkbox"] {
+  margin: 0.94rem;
   background-color: transparent;
   border: 1px solid white;
-  margin: 15px;
 }
 
 .barra-progresso {
   width: 80%;
   margin: 0 auto;
-  padding: 4px 0;
+  padding: 0.25rem 0;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
 }
 
 .texto-progresso {
-  padding: 4px 0;
+  padding: 0.25rem 0;
 }
 
 .container-topico {
+  width: 100%;
   height: 100%;
   overflow-y: scroll;
+  scrollbar-gutter: stable;
 }
 
 .container-topicos {
+  width: 100%;
   height: 50%;
   background-color: var(--cor-branco-suave);
 }
@@ -90,7 +92,7 @@ input[type="checkbox"] {
 }
 
 .container-topico::-webkit-scrollbar {
-  width: 8px;
+  width: 0.5rem;
   background: #6a6a6a;
 }
 
@@ -100,32 +102,30 @@ input[type="checkbox"] {
 }
 
 .topico-container {
-  border-radius: 8px;
-  width: 95%;
-  max-width: 300px;
-  height: 70px;
-  color: var(--cor-verde-txt);
-  margin: 15px auto;
-  padding: 16px 10px;
-  font-family: var(--fonte-arial-padrao);
-  font-weight: 400;
-  gap: 10px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: normal;
   display: flex;
   align-items: center;
-  outline: none;
+  width: 95%;
+  max-width: 18.75rem;
+  height: 4.38rem;
+  margin: 0.94rem auto;
+  padding: 1rem 0.63rem;
+  gap: 0.63rem;
+  border-radius: 8px;
   background-color: var(--cor-branco-padrao);
   box-shadow: var(--sombra-fraca);
-  /*   box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.25); */
+  outline: none;
+  font-family: var(--fonte-arial-padrao);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--cor-verde-txt);
   cursor: auto;
 }
 
 .hover:hover {
-  background: linear-gradient(0deg, #2F735E, #2F735E), linear-gradient(90deg, #2F735E 0%, #196D53 100%);
-  color: var(--cor-branco-padrao);
   cursor: pointer;
+  background: linear-gradient(0deg, var(--border-verde-link), var(--border-verde-link)), linear-gradient(90deg, var(--border-verde-link) 0%, #196D53 100%);
+  color: var(--cor-branco-padrao);
 
   .caixa {
     border-color: var(--cor-branco-padrao);
@@ -134,46 +134,45 @@ input[type="checkbox"] {
 
 .active-topico-container {
   background-color: var(--cor-branco-padrao);
-  color: var(--cor-verde-txt);
   box-shadow: var(--sombra-fraca);
-  /*   box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.25); */
   font-weight: bold;
+  color: var(--cor-verde-txt);
 }
 
 .caixa {
-  width: 16px;
-  height: 16px;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50px;
   border: 1px solid var(--cor-verde-escuro-forte);
-  position: relative;
-
 }
 
 
 .caixa mat-icon {
-  font-size: 22px;
-  color: #58db43;
   position: absolute;
   top: -35%;
+  font-size: 1.38rem;
+  color: #58db43;
 }
 
 .topico-container p {
-  outline: none;
   width: 93%;
-  padding: 20px 5px;
-  font-size: 15px;
+  padding: 1.25rem 0.31rem;
+  outline: none;
+  font-size: 0.94rem;
 }
 
 .btn-forum {
-  background-color: #262626;
-  color: #9665df;
   width: 80%;
+  margin-bottom: 1.25rem;
+  padding: 0.63rem;
   border-radius: 5px;
-  padding: 10px;
   outline: none;
   border: none;
-  margin-bottom: 20px;
-  font-family: "Arial" 16px;
+  background-color: #262626;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #9665df;
 }
 
 .container-topico a,
@@ -188,44 +187,43 @@ input[type="checkbox"] {
 }
 
 .outros-links {
-  padding: 15px 0;
-  width: 97.7%;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 16px;
-  background-color: var(--cor-branco-suave);
+  width: 100%;
   height: 25%;
+  padding: 0.94rem 0;
+  background-color: var(--cor-branco-suave);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
 }
 
 .outros-links h3 {
-  padding-top: 5px;
   width: 90%;
   margin: 0 auto;
+  padding-top: 0.31rem;
 }
 
 .moodle {
   display: flex;
-  height: 34px;
-  justify-content: center;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
   align-self: stretch;
+  width: 90%;
+  height: 2.13rem;
+  margin: 0 auto;
+  margin-bottom: 0.94rem;
+  padding: 0 1.25rem;
+  gap: 0.5rem;
   border-radius: 5px;
   background: var(--cor-branco-padrao);
   box-shadow: var(--sombra-fraca);
-  /*   box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.25); */
-  padding: 0 20px;
-  width: 90%;
-  margin: 0 auto;
   cursor: pointer;
-  margin-bottom: 15px;
 }
 
 .moodle a {
-  color: var(--cor-verde-txt);
-  margin-left: 5px;
+  margin-left: 0.31rem;
   outline: none;
   font-family: var(--fonte-arial-padrao);
   font-weight: 700;
+  color: var(--cor-verde-txt);
 }
 
 .disabled-link {

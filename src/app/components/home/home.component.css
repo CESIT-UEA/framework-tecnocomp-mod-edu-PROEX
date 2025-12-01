@@ -52,7 +52,6 @@
   cursor: pointer;
 }
 
-/* Mat-Sidenav */
 mat-sidenav {
   height: 100vh;
   background-color: transparent;
@@ -61,7 +60,7 @@ mat-sidenav {
 
 .imagem-acima {
   align-self: center;
-  margin-bottom: 70px;
+  margin-bottom: -40px;
 }
 
 section.content-container-ficha-tecnica {
@@ -91,6 +90,10 @@ app-video-section iframe {
   font-weight: normal;
   cursor: pointer;
   display: inline-block;
+}
+
+.active-topico-container {
+  border-bottom: 3px solid #FFFFFF;
 }
 
 .btn-ficha:hover,
@@ -150,8 +153,8 @@ app-video-section iframe {
 
 .header img {
   max-height: 80px;
-  padding: 5px 0;
-  margin-left: 1rem;
+  padding: 4px 0;
+  margin-left: 2.5rem;
   cursor: pointer;
 }
 
@@ -258,10 +261,6 @@ app-video-section iframe {
 
   .container-esquerdo h1 {
     font-size: 30px;
-  }
-
-  .imagem-acima {
-    margin-bottom: 50px;
   }
 
 }

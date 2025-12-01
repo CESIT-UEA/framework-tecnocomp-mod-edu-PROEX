@@ -1,15 +1,17 @@
 :host{
   height: 100%;
-  background-color: black;
+  background-color: #fff;
   display: block;
 }
+
 .header-atividade {
   display: grid;
   height: 10vh;
   grid-template-columns: 95% 5%;
   width: 100%;
   justify-content: center;
-  background-color: #161616;
+  background-image: url('../../../assets/header_cima.svg');
+  background-size: cover;
   align-items: center;
 }
 
@@ -22,7 +24,7 @@
 
 .header-links p {
   font-size: 30px;
-  color: #B3B3B3;
+  color: #fff;
 }
 .teste{
   height: 90vh;

@@ -7,7 +7,8 @@
   display: grid;
   height: 64px;
   width: 100%;
-  background-color: #131313;
+  background-image: url('../../../../../assets/header_cima.svg');
+  background-size: cover;
 }
 
 .header-atividade img {
@@ -53,12 +54,14 @@
 
 .container-links-text {
   width: 100%;
+  height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+  background-color: #fff;
 }
 
 .container-links-text-p {
-  color: #fbfbfb;
+  color: #03422F;
   font-size: 21px;
   text-align: center;
   padding: 30px;
@@ -79,12 +82,13 @@
   width: 80%;
   list-style: none;
   margin: 0 auto;
-  background-color: #242228;
-  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
 }
 
 .container-links-text-lista li img {
-  border: 3px solid #9665df;
+  border: 3px solid var(--border-verde-link);
   border-radius: 15px;
   max-width: auto;
   margin-right: 15px;
@@ -96,7 +100,7 @@
   font-size: 14px;
   text-align: left;
   margin: 0 auto;
-  color: #cccccc;
+  color: #696969;
 }
 .referencias-div {
 min-height: 160px;

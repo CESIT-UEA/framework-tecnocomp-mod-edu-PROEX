@@ -8,6 +8,7 @@
 
 .sobre-nos {
   width: 100%;
+  margin-top: 5rem;
   background-color: rgba(249, 255, 249, 1);
 }
 
@@ -39,7 +40,6 @@
 .titulos>h2 {
   font-size: 2.1875rem;
   font-weight: 700;
-  padding-top: 45px;
   color: rgba(62, 151, 123, 1);
   padding-bottom: 1rem;
   border-bottom: 2px solid rgba(143, 203, 191, 1);
@@ -195,6 +195,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  margin-bottom: 73px;
 }
 
 .content-container-ficha-tecnica-equipe .content-container-ficha-tecnica-equipe-caixa {
@@ -374,8 +375,7 @@
   }
 
   .logo {
-    height: 230px;
-    margin-bottom: 1.5rem;
+    width: 200px;
   }
 
   .descricao {
