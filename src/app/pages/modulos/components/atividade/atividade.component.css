@@ -160,9 +160,15 @@
   line-height: 150%;
   color: var(--cor-branco-padrao);
   font-size: 40px;
-  background-image: url("../../../../../assets/icons/fundo_alternativas.svg");
+  /*  background-image: url("../../../../../assets/icons/fundo_alternativas.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  /* Se a cor do background não tiver igual a do figma apaga essa linha de baixo e descomenta a de cima */
+  /*background: linear-gradient(90deg, rgb(33, 98, 118), rgb(32, 109, 114), rgb(35, 119, 112), rgb(36, 128, 108), rgb(44, 127, 96)); */
+  background: linear-gradient(90deg, rgba(32, 99, 119, 1) , rgba(36, 126, 110, 1) , rgb(36, 131, 110), rgb(39, 163, 109));
+
+
+
   display: flex;
   height: 100%;
   width: 100%;
@@ -199,8 +205,10 @@
 }
 
 @media (max-width: 489px) {
+  
   .container-atividade {
-    width: 90%;
+   width: 90%;
+
   }
 
   .texto-cima {
@@ -228,5 +236,9 @@
 
   .respostaCorreta {
     margin-right: 1.5rem;
+  }
+
+  .btn-submit{
+    margin-bottom: 10px;
   }
 }

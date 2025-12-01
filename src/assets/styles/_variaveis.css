@@ -45,6 +45,6 @@
 
 app-atividade {
     background-color: white !important;
-    min-height: 100vh;
+    min-height: max-content;
 
 }
