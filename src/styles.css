@@ -101,8 +101,8 @@ body {
 
   --border-verde-link: #2F735E;
 
-  --fonte-arial-padrao: arial, sans-serif;
-  --fonte-arial-destaque: 'ArialRoundedBold', sans-serif;
+  --fonte-arial-padrao: arial;
+  --fonte-arial-destaque: 'ArialRoundedBold';
 
   --sombra-muit-forte: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   --sombra-forte: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.5);

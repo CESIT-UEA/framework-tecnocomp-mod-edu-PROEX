@@ -3,7 +3,7 @@
   <section class="button-section">
     <div class="button-group">
       <button *ngIf="getVerificaCompleto() == false" class="start-button" (click)="getVerificaCompleto()" [routerLink]="urlInicio">
-        {{this.ltiService.dados_completos.userTopico[0].UsuarioTopicos[0].encerrado == true ? "CONTINUAR" :"INICIAR"}}
+        {{this.ltiService.dados_completos.userTopico[0].UsuarioTopicos[0].encerrado == true ? "INICIAR" :"CONTINUAR"}}
       </button>
       <button
        *ngIf="getVerificaCompleto() == true" class="concluido" (click)="getVerificaCompleto()" [routerLink]="urlInicio">
