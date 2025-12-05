@@ -78,8 +78,8 @@ mat-sidenav {
 .text p {
   font-size: 2rem;
   line-height: 3rem;
-  font-weight: 600;
-  font-family: minhaFonte;
+  font-weight: 400;
+  font-family: var(--fonte-arial-padrao);
 }
 
 .text-unidade {

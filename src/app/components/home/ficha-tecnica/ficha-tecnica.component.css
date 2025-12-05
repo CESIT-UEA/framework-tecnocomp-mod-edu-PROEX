@@ -21,7 +21,7 @@
   color: var(--cor-cinza-padrao);
   font-family: var(--fonte-arial-padrao);
   font-size: 35px;
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
   line-height: normal;
 }
@@ -35,11 +35,14 @@
 }
 
 .bloco p {
-  color: #AAA;
+  color: #676767;
 }
 
 h2 {
   margin-top: 40px;
+  font-family: var(--fonte-arial-padrao);
+  font-weight: 700;
+  font-style: bold;
 }
 
 .laboratorios .bloco p {

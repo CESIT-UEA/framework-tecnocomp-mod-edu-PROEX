@@ -34,9 +34,6 @@
 
     --border-verde-link: #2F735E;
 
-    --fonte-arial-padrao: arial, sans-serif;
-    --fonte-arial-destaque: 'ArialRoundedBold', sans-serif;
-
     --sombra-muit-forte: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     --sombra-forte: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.5);
     --sombra-leve: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
