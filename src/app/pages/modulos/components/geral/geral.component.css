@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: minhaFonte;
   src: url("../../../../../assets/fonteProjeto.ttf");
 }
@@ -112,7 +112,7 @@
   max-width: fit-content;
 
   /*  max-width: 300px; */
-  /* Título */
+  /* TÃ­tulo */
   .title {
     color: var(--cor-verde-txt);
     text-align: center;
@@ -143,7 +143,7 @@
     align-items: center;
   }
 
-  /* Espaço entre os botoes */
+  /* EspaÃ§o entre os botoes */
   .botoes-cima {
 
     .saibaMais,
@@ -154,7 +154,7 @@
       @media (min-width: 1575px) {
         margin: 20px auto;
 
-        /* Imagem dentro dos elementos do botão */
+        /* Imagem dentro dos elementos do botÃ£o */
         img {
           width: 20px;
         }
@@ -244,6 +244,9 @@
     button.atividade-botao {
       margin: 63px 0 17px;
       white-space: normal;
+      background-color: var(--cor-verde-txt);
+      color: white;
+      ;
 
       @media (min-width: 1025px) and (max-width: 1574px) {
         margin-top: 35px;
@@ -429,64 +432,93 @@
     min-height: 90vh;
   }
 
-  /* Título */
+  .container-main-conteudo {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .div-slide {
+    width: 90%;
+    height: 40vh;
+
+    .container-video {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   .titulo-topico ul li {
-
     text-align: center;
-
     padding: 30px 0 0 0;
     margin-bottom: 80px;
     font-size: 22.4px;
     margin-bottom: 10px;
   }
 
-  .container-main-conteudo {
-    width: 100%;
-    flex-grow: 1;
+  .botoes {
+    max-width: none;
+    padding: 1.2rem 1rem;
+    width: 90%;
+
+    .botoes-cima {
+      margin: 5px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 14px;
+
+      .saibaMais,
+      .referencias,
+      .textoApoio {
+        min-width: 35% !important;
+        min-height: 70px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        font-size: 14px !important;
+
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .botoes-baixo {
+      margin: 5px 0;
+
+      button {
+        width: 87%;
+      }
+    }
+
+    .buttons-final {
+      margin-top: -4rem;
+    }
+
   }
 
-  /* Vídeo */
-  .div-slide {
-    width: 90%;
-    height: 40vh;
+  .botao-estilo .buttons-final {
+    align-items: center;
 
-    .container-video {
-      width: 82%;
-      margin-left: auto;
-      margin-right: auto;
+    button {
+      min-width: 300px;
+    }
+
+    .ebook-botao img {
+      margin-left: 22%;
     }
   }
 
 
-  .botoes-cima,
-  .botoes-baixo {
-    margin: 5px 0;
-  }
 
-  .botoes {
-    max-width: none;
-    padding: 1.2rem 1rem;
-  }
-
-
-
-  .buttons-final {
-    margin-top: -4rem;
-  }
-
-  .section-texto {
+  /*  .section-texto {
     flex-direction: row;
     gap: 0;
     margin-bottom: 0.5rem;
-  }
+  } */
 
-  .saibaMais {
-    margin: 0 0.2rem;
-  }
-
-  .buttons-final {
-    align-items: center;
-  }
 
   a {
     display: block;
@@ -494,11 +526,11 @@
     text-align: center;
   }
 
+  /* Footer */
   .container-main-conteudo-links-voltar {
     display: initial;
     order: 1;
   }
-
 }
 
 
@@ -599,7 +631,8 @@
 
   .buttons-final {
     align-items: center;
-    img{
+
+    img {
       margin-left: 30px;
     }
   }
@@ -608,6 +641,105 @@
     display: block;
     width: 100%;
     text-align: center;
+  }
+
+}
+
+
+@media (min-width: 385px) and (max-width: 489px) {
+  .botoes {
+    .botoes-cima {
+      gap: 17px;
+
+      .saibaMais,
+      .referencias,
+      .textoApoio {
+        min-width: 39% !important;
+        font-size: 14px !important;
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 490px) and (max-width: 640px) {
+  :host {
+    display: flex;
+    flex-direction: column;
+    height: initial;
+    min-height: 90vh;
+  }
+
+  .container-main-conteudo {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .div-slide {
+    width: 90%;
+    height: 40vh;
+
+    .container-video {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .titulo-topico ul li {
+    text-align: center;
+    padding: 30px 0 0 0;
+    margin-bottom: 80px;
+    font-size: 22.4px;
+    margin-bottom: 10px;
+  }
+
+  .botoes {
+    max-width: none;
+    padding: 1.2rem 1rem;
+    width: 90%;
+
+    .botoes-cima {
+      margin: 5px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 24px;
+
+      .saibaMais,
+      .referencias,
+      .textoApoio {
+        min-width: 35% !important;
+        min-height: 70px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        font-size: 14px !important;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+
+    .buttons-final {
+      margin-top: -4rem;
+    }
+
+  }
+
+  .botao-estilo .buttons-final {
+    align-items: center;
+
+    button {
+      min-width: 300px;
+    }
+
+    .ebook-botao img {
+      margin-left: 22%;
+    }
   }
 
 }

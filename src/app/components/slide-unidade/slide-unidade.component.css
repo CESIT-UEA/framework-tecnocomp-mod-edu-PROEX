@@ -8,8 +8,8 @@
   height: 90%;
 
   #player {
-    border-top-left-radius: 25px !important;
-    border-top-right-radius: 25px !important;
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
   }
 }
 
@@ -207,8 +207,8 @@
 
   .video-container {
     #player {
-      border-top-left-radius: 1px !important;
-      border-top-right-radius: 1px !important;
+      border-top-left-radius: 10px !important;
+      border-top-right-radius: 10px !important;
     }
   }
 }
@@ -223,8 +223,8 @@
 
   .video-container {
     #player {
-      border-top-left-radius: 1px !important;
-      border-top-right-radius: 1px !important;
+      border-top-left-radius: 10px !important;
+      border-top-right-radius: 10px !important;
     }
   }
 
