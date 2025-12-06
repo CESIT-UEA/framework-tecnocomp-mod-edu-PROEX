@@ -52,7 +52,7 @@
 .blocos {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--fonte-arial-padrao);
   font-weight: 400;
 }
 
@@ -72,6 +72,8 @@
     font-size: 0.94rem;
     border-bottom: 1px solid rgba(121, 193, 78, 1);
     white-space: nowrap;
+    font-family: var(--fonte-arial-padrao);
+    font-weight: 700;
   }
 }
 
