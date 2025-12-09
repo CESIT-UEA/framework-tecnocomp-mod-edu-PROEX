@@ -17,6 +17,7 @@
   justify-content: space-evenly;
   border-bottom: 1.5px solid rgba(143, 203, 191, 1);
   padding-bottom: 20px;
+  margin: 32.5px 0;
   height: 86%;
   align-items: center;
 
@@ -151,10 +152,10 @@
     .saibaMais,
     .referencias,
     .textoApoio {
-      margin: 1em auto;
+      margin: 1.5rem auto;
 
       @media (min-width: 1575px) {
-        margin: 20px auto;
+        margin: 1.5rem auto;
 
         /* Imagem dentro dos elementos do botÃ£o */
         img {
@@ -164,7 +165,7 @@
 
       /* Tamanho para telas de 1025px a 1574px */
       @media (min-width: 1025px) and (max-width: 1574px) {
-        margin: 12px auto;
+        margin: 1.5rem auto;
 
         img {
           width: 16px;

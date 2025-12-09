@@ -25,11 +25,11 @@
 .header-links p {
   font-size: 30px;
   color: #fff;
-}
+}     
 
 .container-links-p {
   color:  #03422F;
-  font-family: Arial;
+  font-family: var(--fonte-arial-padrao);
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
