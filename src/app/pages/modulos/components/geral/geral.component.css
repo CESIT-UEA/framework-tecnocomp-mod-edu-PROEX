@@ -17,7 +17,7 @@
   justify-content: space-evenly;
   border-bottom: 1.5px solid rgba(143, 203, 191, 1);
   padding-bottom: 20px;
-  margin: 32.5px 0;
+  /* margin: 32.5px 0; */
   height: 86%;
   align-items: center;
 
@@ -146,16 +146,17 @@
     align-items: center;
   }
 
-  /* EspaÃ§o entre os botoes */
+  /* Espaço entre os botoes */
   .botoes-cima {
 
     .saibaMais,
     .referencias,
     .textoApoio {
-      margin: 1.5rem auto;
+      /*   margin: 1.5rem auto; */
+      margin: 1rem auto;
 
       @media (min-width: 1575px) {
-        margin: 1.5rem auto;
+        margin: 20px auto;
 
         /* Imagem dentro dos elementos do botÃ£o */
         img {
@@ -165,7 +166,8 @@
 
       /* Tamanho para telas de 1025px a 1574px */
       @media (min-width: 1025px) and (max-width: 1574px) {
-        margin: 1.5rem auto;
+        /* margin: 1.5rem auto; */
+        margin: 12px auto;
 
         img {
           width: 16px;
@@ -457,7 +459,7 @@
     margin-bottom: 80px;
     font-size: 22.4px;
     margin-bottom: 10px;
-    
+
   }
 
   .botoes {
