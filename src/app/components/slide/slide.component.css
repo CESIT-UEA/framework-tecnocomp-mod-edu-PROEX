@@ -21,11 +21,16 @@
   justify-content: center;
   gap: 10px;
   align-items: center;
+  font-family: var(--fonte-arial-destaque);
+  font-weight: 400;
+  font-style: normal;
 }
 
 .header-links p {
-  font-size: 30px;
+  font-size: 24px;
   color: #fff;
+  font-family: var(--fonte-arial-destaque);
+  font-weight: 400;
 }
 
 .teste {

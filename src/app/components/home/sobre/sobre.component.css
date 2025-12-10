@@ -196,7 +196,7 @@
 }
 
 .content-container-ficha-tecnica-equipe {
-  height: 90%;
+  height: 100%;
   width: 100%;
   background-image: url("../../../../assets/img/ficha-tecnica/fundo_sobre.svg");
   background-repeat: no-repeat;
@@ -230,8 +230,8 @@
 
   width: 40%;
   margin: 0 auto;
-  margin-top: 20px;
-  padding: 5px 20px;
+  margin-top: 78px;
+  padding: 10px 40px;
 }
 
 .ficha-tecnica-container {
@@ -244,7 +244,7 @@
 
 .container-membros {
   display: grid;
-  padding: 30px 0;
+  padding: 37px 0 63px 0;
   margin: 0 auto;
   column-gap: 30px;
 }
@@ -277,7 +277,7 @@
   background-image: url('../../../../assets/img/foto-design.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 230px;
+  height: 18rem;
   border-radius: 10px;
 }
 
@@ -297,11 +297,12 @@
   background-color: rgba(12, 74, 73, 1);
   border-radius: 10px;
   padding: 5px;
-  font-family: Arial Rounded MT Bold;
+  font-family: var(--fonte-arial-padrao);
   font-weight: 700;
 
   .cargo-membro {
-    color: white;
+    color: #FFFFFF;
+    font-family: var(--fonte-arial-padrao);
     font-weight: 700;
     width: 100%;
   }
@@ -309,6 +310,8 @@
   .nome-membro {
     color: rgb(255, 255, 255, 0.8);
     border-radius: 0 0px 10px 10px;
+    font-family: var(--fonte-arial-padrao);
+    font-weight: 400;
   }
 }
 
@@ -333,7 +336,7 @@
   gap: 40px;
   width: fit-content;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-bottom: 63px;
 }
 
 .navigation-button ul li {

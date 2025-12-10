@@ -17,6 +17,7 @@
   justify-content: space-evenly;
   border-bottom: 1.5px solid rgba(143, 203, 191, 1);
   padding-bottom: 20px;
+  margin: 32.5px 0;
   height: 86%;
   align-items: center;
 
@@ -70,6 +71,7 @@
   color: var(--border-verde-link);
   padding: 30px 0 0 0;
   font-family: var(--fonte-arial-destaque);
+  font-weight: 400;
   font-size: 25px;
   margin-bottom: 10px;
 
@@ -116,13 +118,14 @@
   .title {
     color: var(--cor-verde-txt);
     text-align: center;
-    font-family: Arial;
     font-size: 1.125rem;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     padding-bottom: 5px;
     border-bottom: 2px solid var(--cor-linha-forte);
+    font-family: var(--fonte-arial-padrao);
+    font-style: normal;
+    font-weight: 700;
 
     @media (min-width: 1575px) {
       font-size: 1.7rem;
@@ -149,10 +152,10 @@
     .saibaMais,
     .referencias,
     .textoApoio {
-      margin: 1em auto;
+      margin: 1.5rem auto;
 
       @media (min-width: 1575px) {
-        margin: 20px auto;
+        margin: 1.5rem auto;
 
         /* Imagem dentro dos elementos do botÃ£o */
         img {
@@ -162,7 +165,7 @@
 
       /* Tamanho para telas de 1025px a 1574px */
       @media (min-width: 1025px) and (max-width: 1574px) {
-        margin: 12px auto;
+        margin: 1.5rem auto;
 
         img {
           width: 16px;
