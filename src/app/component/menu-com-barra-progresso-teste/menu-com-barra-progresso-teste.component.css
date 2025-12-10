@@ -35,6 +35,7 @@
   margin-right: 0.94rem;
   font-size: 1.88rem;
   cursor: pointer;
+  color: rgba(3, 66, 47, 1);
 }
 
 .progresso {
@@ -233,4 +234,10 @@ input[type="checkbox"] {
 .mat-mdc-progress-bar.mat-warn {
   --mdc-linear-progress-track-color: white;
   box-shadow: var(--sombra-fraca);
+}
+
+@media (max-width: 640px) {
+  .topico-container {
+    max-width: none;
+  }
 }

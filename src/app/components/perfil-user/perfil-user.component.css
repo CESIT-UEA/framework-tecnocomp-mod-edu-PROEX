@@ -5,7 +5,10 @@
   align-items: center;
   gap: 10px;
   border-radius: 8px;
-  border: 1px solid var(--Primaria, rgb(57, 169, 53));
+  border: 3px solid;
+  border-image-source: linear-gradient(180deg, #1A6D53 0%, #39A935 100%);
+  border-image-slice: 1;
+
   background-color: var(--cor-branco-padrao);
   position: fixed;
   right: 8%;
@@ -14,6 +17,7 @@
   padding-bottom: 20px;
   z-index: 2;
   cursor: pointer;
+
 }
 
 .nome p {

@@ -215,9 +215,7 @@
 
 .progress-spinner {
   position: absolute;
-  top: 43%;
-  right: 10%;
-  font-size: 16px;
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {
@@ -226,7 +224,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .container-foto-header {
     margin: 0 0 0 1rem;
   }
@@ -235,6 +233,9 @@
     margin-right: 1rem;
   }
 
+  .menu {
+    width: 100%;
+  }
 }
 
 .button-finalizar-box {

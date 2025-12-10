@@ -2,41 +2,49 @@
   font-family: minhaFonte;
   src: url("../../../assets/fonteProjeto.ttf");
 }
+
 .mat-drawer-container {
   background-color: transparent;
   height: 100%;
 }
+
 mat-sidenav {
   height: 90%;
   background-color: #131313;
   border-radius: 20px 0;
 }
+
 .btn-ficha {
   color: #fff;
   font-size: 16px;
   cursor: pointer;
 }
+
 .header nav {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .end-navbar {
   display: flex;
   align-items: center;
 }
+
 .header {
   display: flex;
   align-items: center;
   background-color: transparent;
   justify-content: space-between;
 }
+
 .header img {
   max-height: 80px;
   margin-left: 1rem;
   height: 40px;
 }
+
 .menu-teste {
   display: flex;
   justify-content: flex-end;
@@ -101,3 +109,8 @@ mat-sidenav {
   }
 }
 
+@media (max-width: 640px) {
+  mat-sidenav {
+    width: 100%;
+  }
+}

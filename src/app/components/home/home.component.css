@@ -320,3 +320,9 @@ app-video-section iframe {
     display: none;
   }
 }
+
+@media (max-width: 640px) {
+  mat-sidenav {
+    width: 100%;
+  }
+}

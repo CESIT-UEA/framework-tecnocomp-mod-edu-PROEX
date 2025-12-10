@@ -10,8 +10,9 @@
   grid-template-columns: 95% 5%;
   width: 100%;
   justify-content: center;
-  background-image: url('../../../../../assets/header_cima.svg');
+  background-image: url('../../../../../assets/fundo_header.png');
   background-size: cover;
+  background-position: 58% center;
   align-items: center;
 }
 

@@ -2,11 +2,13 @@
   font-family: minhaFonte;
   src: url('../../../assets/fonteProjeto.ttf');
 }
+
 mat-sidenav {
   height: 90%;
   background-color: #131313;
   border-radius: 20px 0;
 }
+
 a svg {
   position: relative;
   right: 4%;
@@ -78,7 +80,8 @@ a svg {
   grid-template-columns: auto auto;
   justify-content: space-between;
 }
-.user{
+
+.user {
   display: inline-block;
   color: black;
   font-weight: bold;
@@ -87,9 +90,15 @@ a svg {
   border: 1px solid #9665DF;
   border-radius: 50%;
 }
+
 @media (max-width: 425px) {
   .text {
     margin-left: 0;
   }
 }
 
+@media (max-width: 640px) {
+  mat-sidenav {
+    width: 100%;
+  }
+}
