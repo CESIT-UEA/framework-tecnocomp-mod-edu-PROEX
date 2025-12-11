@@ -201,6 +201,7 @@ app-video-section iframe {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 }
 
 .container-direito {
@@ -208,6 +209,7 @@ app-video-section iframe {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: calc(40vh - 15.47vw - 2px);
 }
 
 .container-esquerdo h1 {
