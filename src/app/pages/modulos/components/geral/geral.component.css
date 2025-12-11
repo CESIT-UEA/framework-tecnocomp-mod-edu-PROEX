@@ -89,6 +89,10 @@
   border-radius: 10px;
   background-color: var(--cor-linha-verde-forte);
   border: none;
+
+  @media (max-width: 640px){
+    width: 100%;
+  }
 }
 
 .botoes {

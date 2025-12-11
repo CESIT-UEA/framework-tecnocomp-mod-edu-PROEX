@@ -27,7 +27,7 @@
 }
 
 .header-links p {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #fff;
   font-family: var(--fonte-arial-destaque);
   font-weight: 400;
@@ -37,7 +37,6 @@
   height: 90vh;
   background-color: white  !important;
 }
-
 
 @media (max-width: 800px) {
   .header-atividade {
