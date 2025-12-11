@@ -20,11 +20,7 @@
   /* margin: 32.5px 0; */
   height: 86%;
   align-items: center;
-
-
-
 }
-
 
 
 .container-video {
@@ -58,9 +54,6 @@
     }
   }
 
-
-
-
 }
 
 /* Titulo */
@@ -74,9 +67,6 @@
   font-weight: 400;
   font-size: 25px;
   margin-bottom: 10px;
-
-
-
 
   @media (min-width: 1025px) and (max-width: 1574px) {
     font-size: 1.7rem;
@@ -535,8 +525,9 @@
   /* Footer */
   .container-main-conteudo-links-voltar {
     display: initial;
-    order: 1;
+    /* Estilo da Navegação para celular em app-links-navegacao-topicos*/
   }
+
 }
 
 
@@ -561,6 +552,7 @@
   } */
 }
 
+/* Correção de problemas de telas pequenas */
 @media(max-width: 350px) {
 
   .saibaMais,
@@ -578,7 +570,7 @@
   }
 }
 
-/* Telas para celulares Grandes */
+/* Telas para celulares Grandes incluindo Tablet */
 @media (min-width: 490px) and (max-width: 768px) {
   :host {
     display: flex;
@@ -651,7 +643,7 @@
 
 }
 
-
+/* Correção de problemas de telas pequenas */
 @media (min-width: 385px) and (max-width: 489px) {
   .botoes {
     .botoes-cima {
@@ -668,7 +660,7 @@
 }
 
 
-
+/* Telas para celulares Grandes exceto Tablets */
 @media (min-width: 490px) and (max-width: 640px) {
   :host {
     display: flex;
