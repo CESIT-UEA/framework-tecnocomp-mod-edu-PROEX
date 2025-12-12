@@ -82,7 +82,7 @@
 } */
 
 .titulo-topico hr {
-  width: 87%;
+  width: 89%;
   height: 2px;
   margin: auto;
   margin-bottom: 10px;
@@ -108,7 +108,6 @@
   max-width: fit-content;
 
   /*  max-width: 300px; */
-  /* TÃ­tulo */
   .title {
     color: var(--cor-verde-txt);
     text-align: center;
