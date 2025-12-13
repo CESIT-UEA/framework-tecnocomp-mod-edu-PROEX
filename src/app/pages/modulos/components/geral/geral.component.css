@@ -25,11 +25,19 @@
 
 .container-video {
   height: 100%;
+
+  @media(min-width: 1024px) {
+    height: 90%;
+  }
 }
 
 .div-slide {
   width: 60%;
   height: 100%;
+
+  @media(min-width: 1024px) {
+    height: 90%;
+  }
 }
 
 .titulo-topico {
@@ -82,7 +90,7 @@
 } */
 
 .titulo-topico hr {
-  width: 89%;
+  width: 90%;
   height: 2px;
   margin: auto;
   margin-bottom: 10px;
@@ -90,24 +98,27 @@
   background-color: var(--cor-linha-verde-forte);
   border: none;
 
-  @media (max-width: 640px){
+  @media (max-width: 640px) {
     width: 100%;
   }
 }
 
+/* Aqui fica todos botoes */
 .botoes {
-  /* Aqui fica os botoes */
-  padding: 30px;
-  display: grid;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  justify-content: space-between;
+
+  padding-left: 30px;
+  padding-right: 30px;
   border-radius: 15px;
   background: var(--cor-braco-padrao);
   box-shadow: var(--sombra-leve);
   height: 98%;
-  align-self: flex-start;
   max-width: fit-content;
 
-  /*  max-width: 300px; */
+  /* Titulo */
   .title {
     color: var(--cor-verde-txt);
     text-align: center;
@@ -120,11 +131,12 @@
     font-style: normal;
     font-weight: 700;
 
+    /* Tamanho para telas Gigantes */
     @media (min-width: 1575px) {
       font-size: 1.7rem;
     }
 
-    /* Tamanho para telas de 1025px a 1574px */
+    /* Tamanho para telas grandes */
     @media (min-width: 1025px) and (max-width: 1574px) {
       font-size: 1.2rem;
     }
@@ -139,72 +151,112 @@
     align-items: center;
   }
 
-  /* Espaço entre os botoes */
+  /* Distancia entre os botoes */
+  .botoes-cima,
+  .buttons-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
   .botoes-cima {
 
-    .saibaMais,
-    .referencias,
-    .textoApoio {
-      /*   margin: 1.5rem auto; */
-      margin: 1rem auto;
+    /* Espaço necessário para celulares */
+    @media (max-width: 640px) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
 
+  &.botao-estilo {
+    button {
+      font-family: var(--fonte-arial-destaque);
+      font-weight: 400 !important;
+      font-size: 0.9375rem;
+      color: var(--cor-verde-txt);
+      background: var(--cor-braco-padrao);
+      box-shadow: var(--sombra-forte);
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+
+      min-width: 200px;
+      min-height: 36px;
+      margin-left: auto;
+      margin-right: auto;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* Distancia entre os Icones do botão e o texto*/
+      gap: 0.5rem;
+
+      /* Tamanho para telas Gigantes */
       @media (min-width: 1575px) {
-        margin: 20px auto;
-
-        /* Imagem dentro dos elementos do botÃ£o */
-        img {
-          width: 20px;
-        }
+        min-width: 315px;
+        min-height: 43px;
+        font-size: 22px;
       }
 
       /* Tamanho para telas de 1025px a 1574px */
       @media (min-width: 1025px) and (max-width: 1574px) {
-        /* margin: 1.5rem auto; */
-        margin: 12px auto;
+        min-width: 220px;
+        min-height: 38px;
+        font-size: 16px;
+      }
+    }
 
-        img {
-          width: 16px;
+    .box {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      border: 1.5px solid white;
+      border-radius: 50px;
+      width: 15px;
+      height: 15px;
+    }
+
+    .concluido {
+      position: absolute;
+      top: -5px;
+      right: -1px;
+      font-size: 27px;
+      color: #58DB43;
+    }
+
+    /* Botôes do final */
+    .buttons-final {
+      font-family: Arial;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      box-shadow: none;
+
+
+      button.atividade-botao {
+        white-space: normal;
+        background-color: var(--cor-verde-txt);
+        color: white;
+      }
+
+      button.ebook-botao {
+        display: flex;
+        justify-self: center;
+        align-content: center;
+
+        background-color: transparent;
+        box-shadow: none;
+        border: 2px solid rgba(47, 115, 94, 1) !important;
+
+        a {
+          display: inline-flex;
+          color: var(--cor-verde-txt);
         }
       }
     }
-  }
-
-  &.botao-estilo button {
-    min-width: 200px;
-    min-height: 36px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 0.5rem;
-
-    font-family: var(--fonte-arial-destaque);
-    font-weight: 400 !important;
-    font-size: 0.9375rem;
-    color: var(--cor-verde-txt);
-    background: var(--cor-braco-padrao);
-    box-shadow: var(--sombra-forte);
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    position: relative;
-
-    /* Tamanho para telas Gigantes */
-    @media (min-width: 1575px) {
-      min-width: 315px;
-      min-height: 43px;
-      font-size: 22px;
-
-    }
-
-    /* Tamanho para telas de 1025px a 1574px */
-    @media (min-width: 1025px) and (max-width: 1574px) {
-      min-width: 220px;
-      min-height: 38px;
-      font-size: 16px;
-    }
-
   }
 
   .box {
@@ -225,49 +277,6 @@
     color: #58DB43;
   }
 
-  .buttons-final {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Arial;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    box-shadow: none;
-
-    button.atividade-botao {
-      margin: 63px 0 17px;
-      white-space: normal;
-      background-color: var(--cor-verde-txt);
-      color: white;
-      ;
-
-      @media (min-width: 1025px) and (max-width: 1574px) {
-        margin-top: 35px;
-      }
-    }
-
-    button.ebook-botao {
-      display: flex;
-      justify-self: center;
-      align-content: center;
-
-
-      background-color: transparent;
-      box-shadow: none;
-      border: 2px solid rgba(47, 115, 94, 1) !important;
-
-      a {
-        display: inline-flex;
-        color: var(--cor-verde-txt);
-      }
-    }
-  }
-
   .active-incorreto {
     background-color: #de3535 !important;
     color: white !important;
@@ -283,7 +292,6 @@
 .active {
   background: linear-gradient(0deg, var(--border-verde-link), var(--border-verde-link)),
     linear-gradient(90deg, var(--border-verde-link) 0%, #196D53 100%);
-
 }
 
 .disabled {

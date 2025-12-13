@@ -11,6 +11,10 @@
     border-top-left-radius: 15px !important;
     border-top-right-radius: 15px !important;
   }
+
+  @media (min-width: 1024px){
+    height: 100%;
+  }
 }
 
 
