@@ -130,6 +130,8 @@
     font-family: var(--fonte-arial-padrao);
     font-style: normal;
     font-weight: 700;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 
     /* Tamanho para telas Gigantes */
     @media (min-width: 1575px) {
@@ -182,16 +184,19 @@
       border: none;
       cursor: pointer;
 
-      min-width: 200px;
-      min-height: 36px;
-      margin-left: auto;
-      margin-right: auto;
-
       display: flex;
       justify-content: center;
       align-items: center;
       /* Distancia entre os Icones do botão e o texto*/
       gap: 0.5rem;
+      /* Não remova o position relative */
+      position: relative;
+
+
+      min-width: 200px;
+      min-height: 36px;
+      margin-left: auto;
+      margin-right: auto;
 
       /* Tamanho para telas Gigantes */
       @media (min-width: 1575px) {
@@ -200,7 +205,7 @@
         font-size: 22px;
       }
 
-      /* Tamanho para telas de 1025px a 1574px */
+      /*amanho para telas de 1025px a 1574px */
       @media (min-width: 1025px) and (max-width: 1574px) {
         min-width: 220px;
         min-height: 38px;
@@ -234,6 +239,7 @@
       font-weight: 400;
       line-height: normal;
       box-shadow: none;
+      padding-bottom: 1.5rem;
 
 
       button.atividade-botao {
@@ -277,38 +283,30 @@
     color: #58DB43;
   }
 
+  /* Classes de estado dos botões - Simplificado e Agrupado */
+  .active {
+    background: linear-gradient(0deg, var(--border-verde-link), var(--border-verde-link)),
+      linear-gradient(90deg, var(--border-verde-link) 0%, #196D53 100%);
+  }
+
+  .disabled {
+    box-shadow: -5.574px 5.574px 5.574px 0px rgba(0, 0, 0, 0.25);
+    opacity: 0.5;
+    background: var(--2, rgba(47, 115, 94, 1));
+  }
+
   .active-incorreto {
     background-color: #de3535 !important;
     color: white !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* Largura agora é controlada pelo pai (botao-estilo) */
   }
 
   .active-correto {
     background-color: #58DB43 !important;
     color: white !important;
   }
-
-}
-
-.active {
-  background: linear-gradient(0deg, var(--border-verde-link), var(--border-verde-link)),
-    linear-gradient(90deg, var(--border-verde-link) 0%, #196D53 100%);
-}
-
-.disabled {
-  box-shadow: -5.574px 5.574px 5.574px 0px rgba(0, 0, 0, 0.25);
-  opacity: 0.5;
-  background: var(--2, rgba(47, 115, 94, 1));
-}
-
-.active-incorreto {
-  background-color: #de3535;
-  width: 220px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.active-correto {
-  background-color: #58DB43;
 }
 
 .container-main-conteudo-link {
@@ -499,15 +497,11 @@
         width: 87%;
       }
     }
-
-    .buttons-final {
-      margin-top: -4rem;
-    }
-
   }
 
   .botao-estilo .buttons-final {
     align-items: center;
+
 
     button {
       min-width: 300px;
@@ -625,7 +619,8 @@
   }
 
   .buttons-final {
-    margin-top: -4rem;
+    /* margin-top: -4rem; */
+    /* Removido para evitar sobreposição */
   }
 
   .section-texto {
@@ -734,7 +729,8 @@
 
 
     .buttons-final {
-      margin-top: -4rem;
+      /* margin-top: -4rem; */
+      /* Removido para evitar sobreposição */
     }
 
   }
