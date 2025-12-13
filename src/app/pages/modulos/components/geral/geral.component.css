@@ -133,14 +133,19 @@
     padding-top: 2rem;
     padding-bottom: 1rem;
 
+    /* Tamanho para telas de Celular */
+    @media (max-width: 640px) {
+      padding-top: 5px;
+    }
+
+    /* Tamanho para telas de Computadores */
+    @media (min-width: 1025px) and (max-width: 1574px) {
+      font-size: 1.2rem;
+    }
+
     /* Tamanho para telas Gigantes */
     @media (min-width: 1575px) {
       font-size: 1.7rem;
-    }
-
-    /* Tamanho para telas grandes */
-    @media (min-width: 1025px) and (max-width: 1574px) {
-      font-size: 1.2rem;
     }
   }
 
@@ -241,6 +246,11 @@
       box-shadow: none;
       padding-bottom: 1.5rem;
 
+
+      /* Tamanho para telas de Celulares */
+      @media (max-width: 640px) {
+        padding-bottom: 0;
+      }
 
       button.atividade-botao {
         white-space: normal;
@@ -618,11 +628,6 @@
     padding: 1.2rem 1rem;
   }
 
-  .buttons-final {
-    /* margin-top: -4rem; */
-    /* Removido para evitar sobreposição */
-  }
-
   .section-texto {
     flex-direction: row;
     gap: 0;
@@ -726,13 +731,6 @@
         }
       }
     }
-
-
-    .buttons-final {
-      /* margin-top: -4rem; */
-      /* Removido para evitar sobreposição */
-    }
-
   }
 
   .botao-estilo .buttons-final {
