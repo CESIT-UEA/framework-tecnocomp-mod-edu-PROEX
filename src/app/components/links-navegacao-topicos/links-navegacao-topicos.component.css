@@ -9,7 +9,15 @@
   /*  padding-top: calc(2% - 5px); */
   /* margin-top: 5px; */
 
+  /* Layout para celulares */
+  @media (max-width: 640px) {
+    color: transparent;
+    min-height: 3vh;
+    max-height: 3vh;
+  }
 }
+
+
 
 .button {
   border-radius: 8px;
@@ -35,7 +43,27 @@
   cursor: pointer;
   font-size: 1.125rem;
   height: 40px;
-  
+
+  /* Layout para celulares */
+  @media (max-width: 640px) {
+    background-color: transparent;
+    padding: 0;
+    background-image: url('../../../assets/icons/voltarUnidade_verde.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    margin-top: 0;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: 25px;
+    font-size: 0;
+    overflow: hidden;
+
+    img {
+      display: none;
+    }
+  }
 }
 
 .link-voltar {
