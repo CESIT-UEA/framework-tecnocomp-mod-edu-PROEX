@@ -65,8 +65,10 @@
 .container-links-text-p {
   color: #03422F;
   font-size: 21px;
-  text-align: center;
-  padding: 30px;
+  text-align: justify;
+  line-height: 1.5rem;
+  padding: 46px;
+  margin: 0 90px;
 }
 
 .container-links-text-lista {
