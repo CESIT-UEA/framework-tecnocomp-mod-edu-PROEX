@@ -87,7 +87,7 @@ app-video-section iframe {
   font-size: 16px;
   font-family: var(--fonte-arial-destaque);
   font-weight: 400;
-  font-weight: normal;
+  font-style: normal;
   cursor: pointer;
   display: inline-block;
 }
@@ -99,7 +99,7 @@ app-video-section iframe {
 .btn-ficha:hover,
 .btn-home:hover,
 .btn-sobre:hover {
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 3px solid #FFFFFF;
   padding-bottom: 3px;
   width: fit-content;
 }
@@ -216,6 +216,7 @@ app-video-section iframe {
   text-align: center;
   font-size: 36px;
   font-family: "minhaFonte";
+  color: var(--border-verde-link);
   padding: 20px;
 }
 
