@@ -29,7 +29,7 @@ i {
   width: 100%;
   height: 100%;
   border: 3px solid var(--border-verde-video);
-  border-radius: 0.625rem;
+  border-radius: 0.95rem;
   box-shadow: 1px 0px 7px 0px rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: 1px 0px 7px 0px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 1px 0px 7px 0px rgba(255, 255, 255, 0.75);
