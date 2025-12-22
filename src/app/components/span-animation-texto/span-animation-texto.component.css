@@ -1,31 +1,31 @@
-.container{
-  height: 500px;
-  background-color: black;
+.container {
+  height: 31.25rem;
   border: 1px solid #3C2859;
+  background-color: black;
 }
 
-.container-titulo{
+.container-titulo {
   display: flex;
   justify-content: space-between;
   background-color: #905cde;
 }
 
-.container-titulo h1,mat-icon{
+.container-titulo h1,
+mat-icon {
   color: #FFF;
 }
 
-.container ul{
-  margin: 0 0 0 3rem;
-  line-height: 30px;
+.container ul {
+  margin: 0 0 0 1.88rem;
+  line-height: 1.88rem;
   color: #fff;
 }
 
-.container ul li a{
+.container ul li a {
   text-decoration: none;
   color: #905cde;
-  ;
 }
 
-.container ul li a:hover{
+.container ul li a:hover {
   text-decoration: underline;
 }

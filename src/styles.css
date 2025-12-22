@@ -1,9 +1,9 @@
 @import url('./assets/styles/_variaveis.css');
 
 /* You can add global styles to this file, and also import other style files */* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   user-select: none;
 }
 
@@ -44,18 +44,18 @@ body {
 }
 
 .mat-mdc-snack-bar-container .mdc-snackbar__action {
-  --mdc-snackbar-container-color: #2e2e2e;
   border-radius: 5px;
+  --mdc-snackbar-container-color: #2e2e2e;
   color: #793cd4 !important;
 }
 
 .mat-mdc-dialog__title {
-  margin-top: 10px;
+  margin-top: 0.63rem;
 }
 
 .mat-mdc-dialog-container {
   --mdc-dialog-container-color: #2e2e2e;
-  padding: 10px;
+  padding: 0.63rem;
   --mdc-dialog-container-shape: 8px !important;
   --mdc-dialog-container-elevation: -4px 4px 10px 0px rgba(0, 0, 0, 0.5) !important;
 }
@@ -63,7 +63,7 @@ body {
 .mat-mdc-dialog-actions,
 .mdc-dialog__title {
   justify-content: center !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 0.63rem !important;
   color: white !important;
 }
 
@@ -117,9 +117,8 @@ body {
 }
 
 .chat-window {
-  height: 500px !important;
   max-height: 70vh !important;
-
+  height: 31.25rem !important;
 }
 
 @media(max-width: 496px) {

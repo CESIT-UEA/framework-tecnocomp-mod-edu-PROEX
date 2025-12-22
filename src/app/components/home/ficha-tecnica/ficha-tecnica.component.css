@@ -1,37 +1,37 @@
 .container {
-  background-color: var(--cor-branco-suave);
-  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   padding-top: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cor-branco-suave);
 }
 
 .container-conteudo {
   width: 90%;
   margin: 0 auto;
-  padding-top: 40px;
-  color: rgba(3, 66, 47, 1);
+  padding-top: 2.5rem;
   font-family: Arial;
-  font-size: 22px;
+  font-size: 1.38rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: rgba(3, 66, 47, 1);
 }
 
 .container-cima h1 {
-  color: var(--cor-cinza-padrao);
   font-family: var(--fonte-arial-padrao);
-  font-size: 35px;
+  font-size: 2.19rem;
   font-style: bold;
   font-weight: 700;
   line-height: normal;
+  color: var(--cor-cinza-padrao);
 }
 
 .container-cima p {
-  margin: 40px 0;
+  margin: 2.5rem 0;
 }
 
 .container-conteudo .bloco {
-  margin: 40px 0;
+  margin: 2.5rem 0;
 }
 
 .bloco p {
@@ -39,28 +39,34 @@
 }
 
 h2 {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   font-family: var(--fonte-arial-padrao);
   font-weight: 700;
   font-style: bold;
 }
 
+h3 {
+  margin-top: 2.5rem;
+  font-family: var(--fonte-arial-padrao);
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .laboratorios .bloco p {
-  margin: 10px 0;
+  margin: 0.63rem 0;
 }
 
 hr {
   height: 2px;
-  background: rgba(39, 163, 109, 0.53);
-
   border: none;
   outline: none;
+  background: rgba(39, 163, 109, 0.53);
 }
 
 .img_licenca {
-  margin-bottom: 34px;
+  margin-bottom: 2.13rem;
 }
-
 
 @media (max-width: 489px) {
   .container-cima h1 {

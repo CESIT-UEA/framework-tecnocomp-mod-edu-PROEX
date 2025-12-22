@@ -2,63 +2,55 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  color: var(--cor-branco-padrao);
-
   min-height: 10vh;
   max-height: 10vh;
-  /*  padding-top: calc(2% - 5px); */
-  /* margin-top: 5px; */
+  color: var(--cor-branco-padrao);
 
-  /* Layout para celulares */
   @media (max-width: 640px) {
-    color: transparent;
     min-height: 3vh;
     max-height: 3vh;
+    color: transparent;
   }
 }
 
-
-
 .button {
-  border-radius: 8px;
-  padding: 9px 15px;
+  padding: 0.56rem 0.94rem;
   margin: 0 auto;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 .link-proximo {
-  font: normal 400 16px Arial;
   display: inline-grid;
   grid-template-columns: auto auto;
-  background-color: var(--cor-verde-txt);
   align-items: center;
-  margin-right: 55px;
-  text-decoration: none;
-  column-gap: 10px;
-  padding: 0 30px;
-  border-radius: 6px;
-  height: 80%;
-  width: fit-content;
   justify-self: end;
+  width: fit-content;
+  height: 2.5rem;
+  margin-right: 3.44rem;
+  padding: 0 1.88rem;
+  font: normal 400 1rem Arial;
+  font-size: 1.13rem;
+  column-gap: 0.63rem;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: var(--cor-verde-txt);
   cursor: pointer;
-  font-size: 1.125rem;
-  height: 40px;
 
-  /* Layout para celulares */
   @media (max-width: 640px) {
-    background-color: transparent;
+    width: 1.56rem;
+    height: 1.56rem;
+    margin-top: 0;
+    margin-bottom: 0.19rem;
+    margin-left: auto;
+    margin-right: 1.56rem;
     padding: 0;
+    font-size: 0;
+    overflow: hidden;
+    background-color: transparent;
     background-image: url('../../../assets/icons/voltarUnidade_verde.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
-    margin-top: 0;
-    margin-bottom: 3px;
-    margin-left: auto;
-    margin-right: 25px;
-    font-size: 0;
-    overflow: hidden;
 
     img {
       display: none;
@@ -70,14 +62,14 @@
   display: inline-grid;
   grid-template-columns: auto auto;
   align-items: center;
-  text-decoration: none;
-  font-family: Arial;
-  font-size: 16px;
-  line-height: normal;
-  column-gap: 10px;
-  padding-left: 20px;
-  width: fit-content;
   justify-self: start;
+  width: fit-content;
+  padding-left: 1.25rem;
+  column-gap: 0.63rem;
+  font-family: Arial;
+  font-size: 1rem;
+  line-height: normal;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -103,31 +95,31 @@
   position: absolute;
   top: 43%;
   right: 10%;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .button-finalizar-box {
-  margin-left: 20px;
   display: flex;
-  height: 40px;
-  padding: 10px 35px;
-  justify-content: center;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  height: 2.5rem;
+  margin-left: 1.25rem;
+  padding: 0.63rem 2.19rem;
+  gap: 0.5rem;
   flex-shrink: 0;
   cursor: pointer;
 
   button {
-    background-color: transparent;
-    outline: none;
     border: none;
+    outline: none;
+    background-color: transparent;
     cursor: pointer;
   }
 }
 
 .button-finalizar-desabilitado {
-  border-radius: 6px;
   opacity: 0.5;
+  border-radius: 6px;
   background-color: var(--cor-verde-txt);
   box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.25);
 }
@@ -167,18 +159,17 @@
 
 @media (max-width: 375px) {
   .header .logo {
-    padding: 10px 0;
+    padding: 0.63rem 0;
   }
 }
 
 @media (max-width: 350px) {
-
   .link-proximo,
   .link-voltar {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .header .logo {
-    padding: 15px 0;
+    padding: 0.94rem 0;
   }
 }

@@ -1,9 +1,9 @@
 .container {
   height: 100%;
-  background-color: white;
+  padding-top: 2.5rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
-  padding-top: 40px;
+  background-color: white;
 }
 
 .sobre-nos {
@@ -13,25 +13,17 @@
 }
 
 .section {
+  display: flex;
+  align-items: center;
   width: 90%;
   height: 100%;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-
 }
 
 .logo {
-  width: 250px;
-  height: 240px;
-
+  width: 15.63rem;
+  height: 15rem;
 }
-
-/* 
-.titulo {
-  border-top: 2px solid rgba(143, 203, 191, 1);
-
-} */
 
 .titulos {
   width: 90%;
@@ -39,118 +31,110 @@
 }
 
 .titulos h2 {
-  font-size: 2.1875rem;
   font-family: var(--fonte-arial-padrao);
+  font-size: 2.19rem;
   font-weight: 700;
   font-style: bold;
-  color: #3E977B;
   padding-bottom: 1rem;
   border-bottom: 2px solid rgba(143, 203, 191, 1);
+  color: #3E977B;
 }
 
 .titulo {
   font-family: var(--fonte-arial-padrao);
+  font-size: 2.19rem;
   font-weight: 700;
   font-style: bold;
-  font-size: 2.1875rem;
+  padding: 1.88rem 0;
   color: rgba(47, 115, 94, 1);
-  padding: 30px 0;
 }
 
 .descricao-imagem {
   display: flex;
   column-gap: 10%;
-  font-size: 1.25rem;
-  line-height: 30px;
-  padding: 10px 0 40px 0;
-  color: rgba(3, 66, 47, 1);
+  padding: 0.63rem 0 2.5rem 0;
   font-family: var(--fonte-arial-padrao);
+  font-size: 1.25rem;
   font-weight: 700;
+  line-height: 1.88rem;
+  color: rgba(3, 66, 47, 1);
 
   p {
     width: 75%;
-    text-align: justify;
-    font-weight: 400;
-    font-style: normal;
     font-family: var(--fonte-arial-padrao);
     font-size: 1.25rem;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
   }
 }
 
-
-
-
 .versao-plataforma {
-  font-size: 1.125rem;
-  color: rgba(3, 66, 47, 1);
+  font-size: 1.13rem;
   font-weight: 400;
+  color: rgba(3, 66, 47, 1);
 }
 
 .descricao {
-  padding-bottom: 70px;
-  margin-bottom: 184px;
+  margin-bottom: 11.5rem;
+  padding-bottom: 4.38rem;
 }
 
 .descricao-titulo {
-  font-size: 1.25rem;
-  color: rgba(3, 66, 47, 1);
   font-family: var(--fonte-arial-padrao);
+  font-size: 1.25rem;
   font-weight: 700;
   font-weight: bold;
+  color: rgba(3, 66, 47, 1);
 }
 
 .card-p {
-  font-size: 20px;
-  padding: 40px 0;
+  font-size: 1.25rem;
   font-weight: 700;
+  padding: 2.5rem 0;
 }
 
 .card-informacoes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
-  padding-bottom: 50px;
   gap: 15%;
+  padding-bottom: 3.13rem;
 }
 
 .card-1 {
-  background-color: #f1ac7b28;
-  padding: 20px 25px;
-  border-radius: 10px;
+  padding: 1.25rem 1.56rem;
   border: 2px solid #F1AC7B;
+  border-radius: 10px;
+  background-color: #f1ac7b28;
 }
 
 .card-2 {
-  background-color: #7b96f125;
-  padding: 20px 25px;
-  border-radius: 10px;
+  padding: 1.25rem 1.56rem;
   border: 2px solid #7B97F1;
+  border-radius: 10px;
+  background-color: #7b96f125;
 }
 
 .card-3 {
-  background-color: #7bf19a18;
-  padding: 20px 25px;
-  border-radius: 10px;
+  padding: 1.25rem 1.56rem;
   border: 2px solid #7BF19A;
+  border-radius: 10px;
+  background-color: #7bf19a18;
 }
 
 .lista {
-  padding: 30px 0;
+  padding: 1.88rem 0;
 }
-
-/* .lista-elemento {
-  padding: 10px 0;
-} */
-
 
 .img {
   text-align: center;
 }
 
 .card-titulo {
-  text-align: center;
+  font-size: 1.13rem;
   font-weight: 700;
-  font-size: 18px;
+  text-align: center;
 }
 
 .content-container-ficha-tecnica {
@@ -158,38 +142,38 @@
 }
 
 .content-container-ficha-tecnica-inicio {
-  height: 100%;
-  width: 100%;
   display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   background-image: url('../../../../assets/img/ficha-tecnica/fundo-uea-paic3.png');
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: center;
 }
 
 .sobre-imagem {
-  text-align: center;
   width: fit-content;
   margin: 0 auto;
+  text-align: center;
 }
 
 .content-container-ficha-tecnica-inicio .sobre .sobre-imagem img {
   width: 80%;
   height: 60%;
-  padding: 30px;
+  padding: 1.88rem;
 }
 
 .content-container-ficha-tecnica-inicio .sobre .sobre-conteudo p {
-  border: 1px solid #9A9A9A;
-  padding: 20px;
   width: 90%;
-  color: #9A9A9A;
+  margin: 0 auto;
+  padding: 1.25rem;
+  border: 1px solid #9A9A9A;
   font-family: Arial;
-  font-size: 17px;
+  font-size: 1.06rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 0 auto;
+  color: #9A9A9A;
 }
 
 .content-container-ficha-tecnica-inicio .sobre .sobre-conteudo p strong {
@@ -197,17 +181,17 @@
 }
 
 .content-container-ficha-tecnica-equipe {
-  height: 100%;
+  display: flex;
   width: 100%;
+  height: 100%;
+  margin-bottom: 4.56rem;
   background-image: url("../../../../assets/img/ficha-tecnica/fundo_sobre.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  margin-bottom: 73px;
 }
 
 .content-container-ficha-tecnica-equipe .content-container-ficha-tecnica-equipe-caixa {
-  width: 201px;
+  width: 12.56rem;
   background-image: url('../../../../assets/img/nossa_equipe.svg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -217,37 +201,35 @@
   width: 100%;
 }
 
-/* Título do slide do Sobre */
 .content-container-ficha-tecnica-equipe-caixa-teste h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  text-align: center;
-  font-size: 1.5rem;
-
-  background-color: transparent;
-  color: white;
-  border: 3px solid white;
-  border-radius: 20px;
-
   width: 40%;
   margin: 0 auto;
-  margin-top: 78px;
-  padding: 10px 40px;
+  margin-top: 4.88rem;
+  padding: 0.63rem 2.5rem;
+  font-family: var(--fonte-arial-padrao);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: bold;
+  text-align: center;
+  border: 3px solid #FFFFFF;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #FFFFFF;
 }
 
 .ficha-tecnica-container {
   display: grid;
-  height: 70%;
   grid-template-columns: 10% 80% 10%;
   align-items: center;
+  height: 70%;
   text-align: center;
 }
 
 .container-membros {
   display: grid;
-  padding: 37px 0 63px 0;
+  column-gap: 1.88rem;
+  padding: 2.31rem 0 3.94rem 0;
   margin: 0 auto;
-  column-gap: 30px;
 }
 
 .container-membros1 {
@@ -265,93 +247,95 @@
 .ficha-tecnica-container img {
   width: 40%;
   height: 100%;
-  color: white;
   margin: 0 auto;
+  color: white;
 }
 
 .ficha-tecnica-container-card {
-  width: 200px;
-  height: 330px;
+  width: 12.5rem;
+  height: 20.63rem;
 }
 
 .img-membro {
+  height: 18rem;
+  border-radius: 10px;
   background-image: url('../../../../assets/img/foto-design.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 18rem;
-  border-radius: 10px;
 }
 
 .nt {
-  margin-top: 73px;
-  margin-bottom: 98px;
+  display: flex;
+  justify-content: center;
+  margin-top: 4.56rem;
+  margin-bottom: 6.13rem;
 }
 
 .ficha-tecnica-container-card-conteudo {
-  margin: 10px 0 0 0;
+  margin: 0.63rem 0 0 0;
 }
 
 .ficha-tecnica-container-membro {
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(12, 74, 73, 1);
+  margin-top: 0.63rem;
+  padding: 0.31rem;
   border-radius: 10px;
-  padding: 5px;
   font-family: var(--fonte-arial-padrao);
   font-weight: 700;
+  background-color: rgba(12, 74, 73, 1);
 
   .cargo-membro {
-    color: #FFFFFF;
+    width: 100%;
     font-family: var(--fonte-arial-padrao);
     font-weight: 700;
-    width: 100%;
+    color: #FFFFFF;
   }
 
   .nome-membro {
-    color: rgb(255, 255, 255, 0.8);
     border-radius: 0 0px 10px 10px;
     font-family: var(--fonte-arial-padrao);
     font-weight: 400;
+    color: rgb(255, 255, 255, 0.8);
   }
 }
 
 .ficha-tecnica-indice {
   display: flex;
   justify-content: center;
-  column-gap: 100px;
+  column-gap: 6.25rem;
 }
 
 .ficha-tecnica-indice p {
-  padding: 0 5px;
-  border-radius: 50%;
+  padding: 0 0.31rem;
   border: 1px solid white;
+  border-radius: 50%;
   color: white;
 }
 
 .navigation-button ul {
   display: flex;
   justify-content: center;
-  list-style: none;
-  cursor: pointer;
-  gap: 40px;
+  gap: 2.5rem;
   width: fit-content;
   margin: 0 auto;
-  margin-bottom: 63px;
+  margin-bottom: 3.94rem;
+  list-style: none;
+  cursor: pointer;
 }
 
 .navigation-button ul li {
-  border: 2px solid #FFF;
-  border-radius: 100%;
-  width: 30px;
+  width: 1.88rem;
   height: fit-content;
-  margin-top: 5px;
+  margin-top: 0.31rem;
+  padding: 0.25rem;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   line-height: normal;
-  padding: 4px;
   text-align: center;
+  border: 2px solid #FFF;
+  border-radius: 100%;
 }
 
 .teste {
@@ -364,29 +348,28 @@
 }
 
 .content-container-ficha-tecnica-footer {
-  height: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 60%;
 }
 
-
 .foto-apoio {
-  img{
+  img {
     max-width: 100%;
   }
 }
 
-@media(max-width: 705px) {
+@media (max-width: 705px) {
   .content-container-ficha-tecnica-equipe-caixa-teste {
     display: none;
   }
 }
 
-@media(max-width:500px) {
+@media (max-width: 500px) {
   .content-container-ficha-tecnica-inicio .sobre .sobre-conteudo p {
-    font-size: 18px;
+    font-size: 1.13rem;
   }
 
   .section {
@@ -394,23 +377,23 @@
   }
 
   .logo {
-    width: 200px;
+    width: 12.5rem;
   }
 
   .descricao {
-    padding-bottom: 25px;
+    padding-bottom: 1.56rem;
   }
 }
 
-@media(max-width:410px) {
+@media (max-width: 410px) {
   .content-container-ficha-tecnica-equipe .content-container-ficha-tecnica-equipe-caixa {
     background-size: cover;
   }
 }
 
-@media(max-width:700px) {
+@media (max-width: 700px) {
   footer img {
     width: 100%;
-    padding: 20px;
+    padding: 1.25rem;
   }
 }

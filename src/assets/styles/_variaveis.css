@@ -21,7 +21,7 @@
     --cor-verde-txt: rgba(47, 115, 94, 1);
     --cor-verde-escuro: rgba(12, 74, 73, 1);
     --cor-verde-escuro-forte: rgba(3, 66, 47, 1);
-    --cor-cinza-padrao: rgba(103, 103, 103, 1);
+    --cor-cinza-padrao: #676767;
     /* 
 
     */
@@ -33,6 +33,7 @@
     --cor-linha-verde-forte: rgba(38, 152, 134, 0.502);
 
     --border-verde-link: #2F735E;
+    --border-verde-video: #26AA86;
 
     --sombra-muit-forte: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     --sombra-forte: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.5);

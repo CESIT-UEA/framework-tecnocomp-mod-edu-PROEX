@@ -1,53 +1,54 @@
 :host {
-  display: block;
-  background-color: white;
   padding: 1rem;
+  background-color: white;
+  display: block;
 }
 
 p {
-  color: #000;
-  font-family: Arial;
-  line-height: normal;
-  font-size: 22px;
-  font-weight: 400;
-  margin: 20px 0;
   width: 85%;
+  margin: 1.25rem 0;
+  font-family: Arial;
+  font-size: 1.38rem;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
 }
 
-.imgLetras{
-  max-height: 130px;
+.imgLetras {
+  max-height: 8.13rem;
   height: 90%;
 }
 
 .alternativas {
   display: flex;
-  background-color: #4F4F4F;
+  align-items: center;
+  min-height: 5rem;
+  margin-bottom: 0.94rem;
   border-radius: 8px;
   background: #4F4F4F;
-  margin-bottom: 15px;
-  align-items: center;
-  min-height: 80px;
+  background-color: #4F4F4F;
 }
 
 .pergunta {
   width: 90%;
-  margin-left: 10px;
+  margin-left: 0.63rem;
+  font-size: 1.38rem;
   color: white;
-  font-size: 22px;
 }
 
-.atividade-botao{
+.atividade-botao {
   display: flex;
   justify-content: flex-end;
 }
 
-.atividade-botao button{
-  font-size: 20px;
-  width: 91px;
-  height: 35px;
-  color: white;
-  background-color: #9665DF;
+.atividade-botao button {
+  width: 5.69rem;
+  height: 2.19rem;
+  padding: 0;
+  font-size: 1.25rem;
+  border: none;
   border-radius: 5px;
   outline: none;
-  border: none;
+  background-color: #9665DF;
+  color: white;
 }

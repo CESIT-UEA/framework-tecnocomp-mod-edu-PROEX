@@ -1,20 +1,19 @@
-/* Fonte personalizada e estrutura inicial */
 @font-face {
   font-family: minhaFonte;
   src: url("../../../assets/fonteProjeto.ttf");
 }
 
 .main-container {
-  background-color: white;
   width: 100%;
   height: 100vh;
+  background-color: white;
 }
 
 .container-pai {
-  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 90vh;
 }
 
 .content-container-condition {
@@ -22,12 +21,12 @@
 }
 
 .content-container {
-  width: 100%;
-  height: 80vh;
   display: grid;
   grid-template-columns: 60% 40%;
-  padding: 0 40px;
   align-items: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2.5rem;
 }
 
 .voltar-ava {
@@ -38,6 +37,9 @@
 
 .voltar-ava .button {
   border-radius: 8px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.38rem 0.94rem;
   background: linear-gradient(90deg,
       rgba(92, 51, 153, 0.75) 0%,
       rgba(71, 42, 125, 0.61) 14.78%,
@@ -46,50 +48,45 @@
       rgba(40, 53, 122, 0.6) 85.46%,
       rgba(51, 68, 153, 0.75) 100%),
     #0f0f0f;
-  width: fit-content;
-  padding: 6px 15px;
-  margin: 0 auto;
   cursor: pointer;
 }
 
 mat-sidenav {
+  width: 20rem;
   height: 100vh;
   background-color: transparent;
-  width: 320px;
 }
 
 .imagem-acima {
   align-self: center;
-  margin-bottom: -40px;
+  margin-bottom: -2.5rem;
 }
 
 section.content-container-ficha-tecnica {
   height: 100%;
 }
 
-/* Responsividade do iframe do YouTube */
 app-video-section iframe {
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
-  /* Mantém proporção padrão de vídeos */
 }
 
 .links {
   display: flex;
-  gap: 58px;
+  gap: 3.63rem;
 }
 
 .btn-ficha,
 .btn-home,
 .btn-sobre {
-  color: #ffffff86;
-  font-size: 16px;
-  font-family: var(--fonte-arial-destaque);
-  font-weight: 400;
-  font-weight: normal;
-  cursor: pointer;
   display: inline-block;
+  font-family: var(--fonte-arial-destaque);
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff86;
+  cursor: pointer;
 }
 
 .active-topico-container {
@@ -99,78 +96,76 @@ app-video-section iframe {
 .btn-ficha:hover,
 .btn-home:hover,
 .btn-sobre:hover {
-  border-bottom: 3px solid #ffffff;
-  padding-bottom: 3px;
+  border-bottom: 3px solid #FFFFFF;
   width: fit-content;
+  padding-bottom: 0.19rem;
 }
 
 .active-topico-container {
   border-bottom: 3px solid #ffffff;
-  color: white;
-  padding-bottom: 3px;
   width: fit-content;
+  color: white;
+  padding-bottom: 0.19rem;
 }
 
-/* Header e navegação */
 .header nav {
-  width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 60%;
 }
 
 .end-navbar {
   display: flex;
   align-items: center;
-  gap: 40px;
-  margin-right: 35px;
+  gap: 2.5rem;
+  margin-right: 2.19rem;
 }
 
 .mat-drawer-container {
-  background-color: transparent;
   height: 100%;
+  background-color: transparent;
 }
 
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 0.31rem 0;
   background-image: url("../../../assets/fundo_header.png");
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: space-between;
-
-  height: 10vh;
-  padding: 5px 0;
 }
 
 .header-fixed {
   position: fixed;
+  margin-bottom: 2.5rem;
   background-image: url("../../../assets/fundo_header.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 40px;
 }
 
 .header img {
-  max-height: 80px;
-  padding: 4px 0;
+  max-height: 5rem;
   margin-left: 2.5rem;
+  padding: 0.25rem 0;
   cursor: pointer;
 }
 
 #icon {
+  width: 1.88rem;
+  height: 1.88rem;
+  font-size: 2.19rem;
   color: #fff;
   cursor: pointer;
-  font-size: 35px;
-  width: 30px;
-  height: 30px;
 }
 
 .container-foto-header {
   display: flex;
-  padding: 2px;
   align-items: center;
-  gap: 5px;
+  gap: 0.31rem;
+  padding: 0.13rem;
   border-radius: 20px;
   background: #ffffff;
 }
@@ -179,78 +174,75 @@ app-video-section iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 28px;
-  height: 28px;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1.5px solid rgba(0, 102, 50, 1);
+  border-radius: 28px;
   color: black;
   background-color: white;
-  border-radius: 28px;
-  border: 1.5px solid rgba(0, 102, 50, 1);
 }
 
-/* Grid geral */
 .content-container-section {
   display: grid;
-  justify-content: center;
   grid-template-columns: 60% 40%;
+  justify-content: center;
   color: aliceblue;
 }
 
 .container-esquerdo {
-  color: #faf8e6;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+  height: 100%;
+  color: #faf8e6;
 }
 
 .container-direito {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
   padding-top: calc(40vh - 15.47vw - 2px);
 }
 
 .container-esquerdo h1 {
-  text-align: center;
-  font-size: 36px;
   font-family: "minhaFonte";
-  padding: 20px;
+  font-size: 2.25rem;
+  text-align: center;
+  padding: 1.25rem;
+  color: var(--border-verde-link);
 }
 
 .text-unidade {
-  color: var(--cor-verde-txt);
   font-family: var(--fonte-arial-destaque);
   font-size: 2.25rem;
+  color: var(--cor-verde-txt);
 }
 
 .position {
-  max-width: 680px;
   width: 80%;
-  margin: 40px 0 45px 0;
+  max-width: 42.5rem;
+  margin: 2.5rem 0 2.81rem 0;
 }
 
 .container-download-app {
   position: fixed;
-  justify-content: end;
-  padding-right: 1rem;
-  right: 0;
   top: 13%;
+  right: 0;
+  padding-right: 1rem;
+  justify-content: end;
 }
 
-
-/* Responsividade */
 @media (max-width: 1100px) {
   .content-container {
-    padding: 20px;
     grid-template-columns: 55% 45%;
+    padding: 1.25rem;
   }
 
   .button-section img {
     top: 10%;
     left: 66%;
-    height: 300px;
+    height: 18.75rem;
   }
 
   .content-container-ficha-tecnica-inicio .images {
@@ -262,15 +254,14 @@ app-video-section iframe {
   }
 
   .container-esquerdo h1 {
-    font-size: 30px;
+    font-size: 1.88rem;
   }
-
 }
 
 @media (max-width: 899px) {
   .content-container {
     grid-template-columns: 1fr;
-    padding: 20px;
+    padding: 1.25rem;
   }
 
   .content-container-section {
@@ -278,8 +269,8 @@ app-video-section iframe {
   }
 
   .container-esquerdo h1 {
-    font-size: 24px;
-    padding: 10px;
+    font-size: 1.5rem;
+    padding: 0.63rem;
   }
 
   .imagem-acima {
@@ -293,7 +284,6 @@ app-video-section iframe {
   .header nav {
     width: fit-content;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -302,7 +292,7 @@ app-video-section iframe {
   }
 
   .header img {
-    height: 70px;
+    height: 4.38rem;
   }
 
   .container-esquerdo {
@@ -310,8 +300,8 @@ app-video-section iframe {
   }
 
   .container-esquerdo h1 {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 1.25rem;
+    padding: 0.63rem;
   }
 
   .text-unidade {

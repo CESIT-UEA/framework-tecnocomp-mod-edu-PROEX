@@ -1,20 +1,20 @@
 .container-atividade {
+  margin: 3.13rem 0;
   color: white;
-  margin: 50px 0;
 }
 
 .correto {
-  color: green;
   border-color: green;
+  color: green;
 }
 
 .errado {
-  color: red;
   border-color: red;
+  color: red;
 }
 
 .container-resposta {
-  margin-bottom: 35px;
+  margin-bottom: 2.19rem;
   border-radius: 8px;
   background: var(--24, #4F4F4F);
 }
@@ -25,25 +25,24 @@
 }
 
 .container-resposta-conteudo p {
-  padding: 15px 30px;
-  color: #FFF;
+  padding: 0.94rem 1.88rem;
   font-family: Arial;
-  font-size: 22px;
+  font-size: 1.38rem;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1.88rem;
+  color: #FFF;
 }
 
 .corretoVisivel,
 .erradoVisivel {
   display: block;
-  color: #B3B3B3;
-  font-family: Arial;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
   margin: 0 auto;
-  padding: 0 10px;
-  /* 150% */
+  padding: 0 0.63rem;
+  font-family: Arial;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.88rem;
+  color: #B3B3B3;
 }
 
 .corretoVisivel {
@@ -53,23 +52,26 @@
 .erradoVisivel {
   border: 1px solid rgb(175, 12, 12);
 }
-.olhoIMG{
-  padding: 10px;
+
+.olhoIMG {
+  padding: 0.63rem;
 }
+
 .botao {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 
 .botao button {
-  border-radius: 5px;
-  background-color: #361B5E;
-  padding: 6px 17px;
-  outline: none;
+  padding: 0.38rem 1.06rem;
   border: none;
-  color: #818181;
+  border-radius: 5px;
+  outline: none;
   font-family: Arial;
-  font-size: 18px;
+  font-size: 1.13rem;
+  font-weight: 400;
   line-height: normal;
+  background-color: #361B5E;
+  color: #818181;
 }

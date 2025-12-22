@@ -1,20 +1,22 @@
 .container {
   background-color: #131313;
 }
+
 .voltarUnidade {
-  margin: 0 auto;
-  color: white;
-  width: 272px;
-  height: 50px;
-  background-color: transparent;
-  border-radius: 25px;
-  border: 3.75px solid #FFF;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 14px;
+  justify-content: center;
+  width: 17rem;
+  height: 3.13rem;
+  gap: 0.88rem;
+  margin: 0 auto;
+  padding: 0;
+  border: 3.75px solid #FFF;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
 }
 
 .voltarUnidade span {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
