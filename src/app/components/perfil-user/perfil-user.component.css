@@ -1,69 +1,66 @@
 .container-foto-header-active {
   display: inline-flex;
-  padding: 14px 1px;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  border-radius: 8px;
+  width: 17.31rem;
+  gap: 0.63rem;
+  padding: 0.88rem 0.06rem;
+  padding-bottom: 1.25rem;
+  position: fixed;
+  top: 2%;
+  right: 8%;
+  z-index: 2;
   border: 3px solid;
   border-image-source: linear-gradient(180deg, #1A6D53 0%, #39A935 100%);
   border-image-slice: 1;
-
+  border-radius: 8px;
   background-color: var(--cor-branco-padrao);
-  position: fixed;
-  right: 8%;
-  top: 2%;
-  width: 277px;
-  padding-bottom: 20px;
-  z-index: 2;
   cursor: pointer;
-
 }
 
 .nome p {
-  color: rgba(3, 66, 47, 1);
-  margin-top: 15px;
-  font-size: 1rem;
   max-width: 100%;
+  margin-top: 0.94rem;
+  font-family: var(--fonte-arial-destaque);
+  font-size: 1rem;
+  font-weight: 400;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: var(--fonte-arial-destaque);
-  font-weight: 400;
+  color: rgba(3, 66, 47, 1);
 }
 
 .cima {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
-  color: rgba(3, 66, 47, 1);
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0.63rem;
   font-family: var(--fonte-arial-destaque);
-  font-weight: bold;
   font-size: 1rem;
+  font-weight: bold;
+  color: rgba(3, 66, 47, 1);
 }
 
 .cima-p {
-  margin-left: 15px;
+  margin-left: 0.94rem;
 }
 
 .meio {
   display: flex;
-  padding: 15px 30px;
-  justify-content: center;
   align-items: center;
-  gap: 15px;
-  color: rgba(3, 66, 47, 1);
+  justify-content: center;
+  width: calc(100% - 2rem);
+  margin: 0.63rem 0.94rem;
+  padding: 0.94rem 1.88rem;
+  gap: 0.94rem;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
   font-family: var(--fonte-arial-destaque);
   font-size: 1rem;
   font-weight: bold;
-  border-radius: 8px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(255, 255, 255);
   box-shadow: var(--sombra-forte);
-  margin: 10px 15px;
+  color: rgba(3, 66, 47, 1);
 }
 
 .mat-mdc-progress-spinner {
@@ -82,8 +79,6 @@
 .progress-spinner {
   position: absolute;
   top: 27%;
-  /*   right: 20%; */
-  font-size: 16px;
   margin-left: 39%;
   font-family: var(--fonte-arial-destaque);
   font-size: 1rem;
@@ -91,16 +86,16 @@
 
 .foto-header {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  justify-content: center;
+  width: 3.75rem;
+  height: 3.75rem;
+  margin: 0 auto;
+  border: 3px solid var(--Primaria, rgba(57, 169, 53, 1));
+  border-radius: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
   color: black;
   background-color: white;
-  border-radius: 28px;
-  border: 3px solid var(--Primaria, rgba(57, 169, 53, 1));
-  margin: 0 auto;
-  font-size: 40px;
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
 }

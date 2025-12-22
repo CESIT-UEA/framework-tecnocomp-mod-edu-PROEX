@@ -6,36 +6,36 @@
 
 .header-atividade {
   display: grid;
-  height: 10vh;
   grid-template-columns: 95% 5%;
-  width: 100%;
+  align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 10vh;
   background-image: url('../../../assets/fundo_header.png');
   background-size: cover;
   background-position: 58% center;
-  align-items: center;
 }
 
 .header-links {
   display: flex;
-  justify-content: center;
-  gap: 10px;
   align-items: center;
+  justify-content: center;
+  gap: 0.63rem;
   font-family: var(--fonte-arial-destaque);
   font-weight: 400;
   font-style: normal;
 }
 
 .header-links p {
-  font-size: 1.5rem;
-  color: #fff;
   font-family: var(--fonte-arial-destaque);
+  font-size: 1.5rem;
   font-weight: 400;
+  color: #fff;
 }
 
 .teste {
   height: 90vh;
-  background-color: white  !important;
+  background-color: white !important;
 }
 
 @media (max-width: 800px) {
@@ -44,7 +44,7 @@
   }
 }
 
-@media(max-width: 389px) {
+@media (max-width: 389px) {
   .header-atividade {
     grid-template-columns: 85% 15%;
   }

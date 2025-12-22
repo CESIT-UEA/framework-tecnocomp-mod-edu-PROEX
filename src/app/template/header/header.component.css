@@ -4,27 +4,27 @@
 }
 
 .mat-drawer-container {
-  background-color: transparent;
   height: 100%;
+  background-color: transparent;
 }
 
 mat-sidenav {
   height: 90%;
-  background-color: #131313;
   border-radius: 20px 0;
+  background-color: #131313;
 }
 
 .btn-ficha {
+  font-size: 1rem;
   color: #fff;
-  font-size: 16px;
   cursor: pointer;
 }
 
 .header nav {
-  width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 50%;
 }
 
 .end-navbar {
@@ -35,43 +35,42 @@ mat-sidenav {
 .header {
   display: flex;
   align-items: center;
-  background-color: transparent;
   justify-content: space-between;
+  background-color: transparent;
 }
 
 .header img {
-  max-height: 80px;
+  max-height: 5rem;
+  height: 2.5rem;
   margin-left: 1rem;
-  height: 40px;
 }
 
 .menu-teste {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  padding: 0 30px;
+  justify-content: flex-end;
+  padding: 0 1.88rem;
 }
 
 .sidebar {
-  transition: transform 20s ease-in-out;
-  transform: translate(-30%, 100%);
-  width: 350px;
-  border-radius: 10px;
   display: none;
+  width: 21.88rem;
+  border-radius: 10px;
+  transform: translate(-30%, 100%);
   color: #faf8e6;
+  transition: transform 20s ease-in-out;
 }
 
 .sidebar.open {
-  display: block;
   position: fixed;
-  transform: translate(0%, 60%);
   z-index: 999;
-  /* 70% fica igual do ultimo video q mandei pro marcos */
+  display: block;
+  transform: translate(0%, 60%);
 }
 
 .teste {
   position: relative;
-  left: 200px;
+  left: 12.5rem;
 }
 
 #icon {
@@ -79,15 +78,15 @@ mat-sidenav {
 }
 
 .text {
-  color: #faf8e6;
   text-align: center;
+  color: #faf8e6;
 }
 
 .text p {
-  font-size: 2rem;
-  line-height: 3rem;
-  font-weight: 400;
   font-family: var(--fonte-arial-padrao);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
 }
 
 .text-unidade {
@@ -96,7 +95,7 @@ mat-sidenav {
 
 .position {
   width: 62%;
-  padding: 30px 0;
+  padding: 1.88rem 0;
 }
 
 @media (max-width: 425px) {

@@ -14,14 +14,12 @@
 
 .container-main-conteudo {
   display: flex;
-  justify-content: space-evenly;
-  border-bottom: 1.5px solid rgba(143, 203, 191, 1);
-  padding-bottom: 20px;
-  /* margin: 32.5px 0; */
-  height: 86%;
   align-items: center;
+  justify-content: space-evenly;
+  height: 86%;
+  padding-bottom: 1.25rem;
+  border-bottom: 1.5px solid rgba(143, 203, 191, 1);
 }
-
 
 .container-video {
   height: 100%;
@@ -35,204 +33,175 @@
 .titulo-topico {
   width: 100%;
 
-  /* Tamanho para telas Gigantes */
   @media (min-width: 1575px) {
-    padding-top: 20px;
-    padding-bottom: 35px;
+    padding-top: 1.25rem;
+    padding-bottom: 2.19rem;
 
     li {
       font-size: 2rem !important;
     }
   }
 
-  /* Tamanho para telas de 1025px a 1574px */
   @media (min-width: 1025px) and (max-width: 1574px) {
-
-
     li {
       font-size: 1.7rem !important;
     }
   }
-
 }
 
-/* Titulo */
 .titulo-topico ul li {
   list-style: none;
-
+  margin-bottom: 0.63rem;
+  padding: 1.88rem 0 0 0;
+  font-family: var(--fonte-arial-destaque);
+  font-size: 1.56rem;
+  font-weight: 400;
   text-align: center;
   color: var(--border-verde-link);
-  padding: 30px 0 0 0;
-  font-family: var(--fonte-arial-destaque);
-  font-weight: 400;
-  font-size: 25px;
-  margin-bottom: 10px;
 
   @media (min-width: 1025px) and (max-width: 1574px) {
     font-size: 1.7rem;
   }
-
 }
-
-/* .titulo-topico ul li:before {
-  content: "\2022";
-  margin: 0 10px;
-  color: #9665df;
-  list-style: none !important;
-} */
 
 .titulo-topico hr {
   width: 87%;
   height: 2px;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 0.63rem;
+  border: none;
   border-radius: 10px;
   background-color: var(--cor-linha-verde-forte);
-  border: none;
 
-  @media (max-width: 640px){
+  @media (max-width: 640px) {
     width: 100%;
   }
 }
 
 .botoes {
-  /* Aqui fica os botoes */
-  padding: 30px;
   display: grid;
   align-items: center;
-  border-radius: 15px;
-  background: var(--cor-braco-padrao);
-  box-shadow: var(--sombra-leve);
   height: 98%;
+  padding: 1.88rem;
   align-self: flex-start;
   max-width: fit-content;
+  border-radius: 15px;
+  box-shadow: var(--sombra-leve);
+  background: var(--cor-braco-padrao);
 
-  /*  max-width: 300px; */
-  /* TÃ­tulo */
   .title {
-    color: var(--cor-verde-txt);
-    text-align: center;
-    font-size: 1.125rem;
-    font-weight: 700;
-    line-height: normal;
-    padding-bottom: 5px;
-    border-bottom: 2px solid var(--cor-linha-forte);
+    padding-bottom: 0.31rem;
     font-family: var(--fonte-arial-padrao);
+    font-size: 1.13rem;
     font-style: normal;
     font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    border-bottom: 2px solid var(--cor-linha-forte);
+    color: var(--cor-verde-txt);
 
     @media (min-width: 1575px) {
       font-size: 1.7rem;
     }
 
-    /* Tamanho para telas de 1025px a 1574px */
     @media (min-width: 1025px) and (max-width: 1574px) {
       font-size: 1.2rem;
     }
   }
 
   .section-texto {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
   }
 
-  /* Espaço entre os botoes */
   .botoes-cima {
-
     .saibaMais,
     .referencias,
     .textoApoio {
-      /*   margin: 1.5rem auto; */
       margin: 1rem auto;
 
       @media (min-width: 1575px) {
-        margin: 20px auto;
+        margin: 1.25rem auto;
 
-        /* Imagem dentro dos elementos do botÃ£o */
         img {
-          width: 20px;
+          width: 1.25rem;
         }
       }
 
-      /* Tamanho para telas de 1025px a 1574px */
       @media (min-width: 1025px) and (max-width: 1574px) {
-        /* margin: 1.5rem auto; */
-        margin: 12px auto;
+        margin: 0.75rem auto;
 
         img {
-          width: 16px;
+          width: 1rem;
         }
       }
     }
   }
 
   &.botao-estilo button {
-    min-width: 200px;
-    min-height: 36px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    min-width: 12.5rem;
+    min-height: 2.25rem;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
     gap: 0.5rem;
-
-    font-family: var(--fonte-arial-destaque);
-    font-weight: 400 !important;
-    font-size: 0.9375rem;
-    color: var(--cor-verde-txt);
-    background: var(--cor-braco-padrao);
-    box-shadow: var(--sombra-forte);
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
     position: relative;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--fonte-arial-destaque);
+    font-size: 0.94rem;
+    font-weight: 400 !important;
+    box-shadow: var(--sombra-forte);
+    background: var(--cor-braco-padrao);
+    color: var(--cor-verde-txt);
+    cursor: pointer;
 
-    /* Tamanho para telas Gigantes */
     @media (min-width: 1575px) {
-      min-width: 315px;
-      min-height: 43px;
-      font-size: 22px;
-
+      min-width: 19.69rem;
+      min-height: 2.69rem;
+      font-size: 1.38rem;
     }
 
-    /* Tamanho para telas de 1025px a 1574px */
     @media (min-width: 1025px) and (max-width: 1574px) {
-      min-width: 220px;
-      min-height: 38px;
-      font-size: 16px;
+      min-width: 13.75rem;
+      min-height: 2.38rem;
+      font-size: 1rem;
     }
-
   }
 
   .box {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 0.31rem;
+    right: 0.31rem;
+    width: 0.94rem;
+    height: 0.94rem;
     border: 1.5px solid white;
     border-radius: 50px;
-    width: 15px;
-    height: 15px;
   }
 
   .concluido {
     position: absolute;
-    top: -5px;
-    right: -1px;
-    font-size: 27px;
+    top: -0.31rem;
+    right: -0.06rem;
+    font-size: 1.69rem;
     color: #58DB43;
   }
 
   .buttons-final {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
     font-family: Arial;
     font-size: 1rem;
     font-style: normal;
@@ -241,14 +210,14 @@
     box-shadow: none;
 
     button.atividade-botao {
-      margin: 63px 0 17px;
+      margin: 3.94rem 0 1.06rem;
+      padding: 0;
       white-space: normal;
       background-color: var(--cor-verde-txt);
       color: white;
-      ;
 
       @media (min-width: 1025px) and (max-width: 1574px) {
-        margin-top: 35px;
+        margin-top: 2.19rem;
       }
     }
 
@@ -256,11 +225,10 @@
       display: flex;
       justify-self: center;
       align-content: center;
-
-
-      background-color: transparent;
-      box-shadow: none;
+      padding: 0;
       border: 2px solid rgba(47, 115, 94, 1) !important;
+      box-shadow: none;
+      background-color: transparent;
 
       a {
         display: inline-flex;
@@ -278,26 +246,24 @@
     background-color: #58DB43 !important;
     color: white !important;
   }
-
 }
 
 .active {
   background: linear-gradient(0deg, var(--border-verde-link), var(--border-verde-link)),
     linear-gradient(90deg, var(--border-verde-link) 0%, #196D53 100%);
-
 }
 
 .disabled {
-  box-shadow: -5.574px 5.574px 5.574px 0px rgba(0, 0, 0, 0.25);
   opacity: 0.5;
+  box-shadow: -5.574px 5.574px 5.574px 0px rgba(0, 0, 0, 0.25);
   background: var(--2, rgba(47, 115, 94, 1));
 }
 
 .active-incorreto {
+  width: 13.75rem;
+  padding-top: 0.63rem;
+  padding-bottom: 0.63rem;
   background-color: #de3535;
-  width: 220px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .active-correto {
@@ -305,42 +271,41 @@
 }
 
 .container-main-conteudo-link {
-  width: 95%;
   display: flex;
   justify-content: right;
-  padding-bottom: 20px;
-
+  width: 95%;
+  padding-bottom: 1.25rem;
 }
 
 .container-main-conteudo-link-left {
-  width: 95%;
   display: flex;
   justify-content: left;
-  padding-bottom: 20px;
+  width: 95%;
+  padding-bottom: 1.25rem;
 }
 
 .container-main-conteudo-link-ul {
   width: 95%;
-  padding: 0 0 0 50px;
+  padding: 0 0 0 3.13rem;
 }
 
 .container-main-conteudo-links {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .link-proximo {
   display: inline-grid;
   grid-template-columns: auto auto;
   align-items: center;
+  column-gap: 0.63rem;
+  padding-right: 1.25rem;
+  padding-bottom: 0.63rem;
+  font: normal 400 1rem normal Arial;
   text-decoration: none;
   color: #4f4f4f;
-  font: normal 400 16px normal Arial;
-  column-gap: 10px;
-  padding-right: 20px;
-  padding-bottom: 10px;
 }
 
 .container-main-conteudo-links-voltar {
@@ -353,31 +318,37 @@
   display: inline-grid;
   grid-template-columns: auto auto;
   align-items: center;
+  column-gap: 0.63rem;
+  padding-left: 1.25rem;
+  padding-bottom: 0.63rem;
+  font-family: Arial;
+  font-size: 1rem;
+  line-height: normal;
   text-decoration: none;
   color: #fff;
-  font-family: Arial;
-  font-size: 16px;
-  line-height: normal;
-  column-gap: 10px;
-  padding-left: 20px;
-  padding-bottom: 10px;
 }
 
 .linha {
   width: 85%;
   height: 2px;
+  margin: 1.25rem auto;
   border: none;
   outline: none;
-  margin: 20px auto;
-
-  background-color: white;
   opacity: 0.5;
+  background-color: white;
 }
 
 .voltar-ava .button {
-  color: white;
-  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.63rem 0.94rem;
   border-radius: 8px;
+  font-family: Arial;
+  font-size: 0.88rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
   background: linear-gradient(90deg,
       rgba(92, 51, 153, 0.75) 0%,
       rgba(71, 42, 125, 0.61) 14.78%,
@@ -386,23 +357,15 @@
       rgba(40, 53, 122, 0.6) 85.46%,
       rgba(51, 68, 153, 0.75) 100%),
     #0f0f0f;
-  width: 90%;
-  padding: 10px 15px;
-  margin: 0 auto;
-  cursor: pointer;
-
+  color: white;
   color: var(--Terciaria, #fff);
-  font-family: Arial;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {
   .container-main-conteudo {
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 1.25rem;
   }
 
   .botoes {
@@ -423,7 +386,7 @@
   display: none;
 }
 
-@media(max-width: 489px) {
+@media (max-width: 489px) {
   :host {
     display: flex;
     flex-direction: column;
@@ -448,45 +411,42 @@
   }
 
   .titulo-topico ul li {
+    margin-bottom: 0.63rem;
+    padding: 1.88rem 0 0 0;
+    font-size: 1.4rem;
     text-align: center;
-    padding: 30px 0 0 0;
-    margin-bottom: 80px;
-    font-size: 22.4px;
-    margin-bottom: 10px;
-
   }
 
   .botoes {
+    width: 90%;
     max-width: none;
     padding: 1.2rem 1rem;
-    width: 90%;
 
     .botoes-cima {
-      margin: 5px 0;
       display: flex;
       flex-direction: row;
       justify-content: center;
-      gap: 14px;
+      margin: 0.31rem 0;
+      gap: 0.88rem;
 
       .saibaMais,
       .referencias,
       .textoApoio {
         min-width: 35% !important;
-        min-height: 70px !important;
+        min-height: 4.38rem !important;
         display: flex !important;
         flex-direction: column !important;
-        font-size: 14px !important;
-
+        font-size: 0.88rem !important;
 
         img {
-          width: 20px;
-          height: 20px;
+          width: 1.25rem;
+          height: 1.25rem;
         }
       }
     }
 
     .botoes-baixo {
-      margin: 5px 0;
+      margin: 0.31rem 0;
 
       button {
         width: 87%;
@@ -496,14 +456,13 @@
     .buttons-final {
       margin-top: -4rem;
     }
-
   }
 
   .botao-estilo .buttons-final {
     align-items: center;
 
     button {
-      min-width: 300px;
+      min-width: 18.75rem;
     }
 
     .ebook-botao img {
@@ -511,58 +470,37 @@
     }
   }
 
-
-
-  /*  .section-texto {
-    flex-direction: row;
-    gap: 0;
-    margin-bottom: 0.5rem;
-  } */
-
-
   a {
     display: block;
     width: 100%;
     text-align: center;
   }
 
-  /* Footer */
   .container-main-conteudo-links-voltar {
     display: initial;
-    /* Estilo da Navegação para celular em app-links-navegacao-topicos*/
   }
-
 }
 
-
 @media (max-width: 480px) {
-
   .section-texto {
     display: flex;
     flex-direction: column;
   }
 }
 
-@media(max-width: 389px) {
-
+@media (max-width: 389px) {
   .saibaMais,
   .referencias,
   .textoApoio {
-    width: 80px;
+    width: 5rem;
   }
-
-  /* .container-main-conteudo-links-voltar{
-    margin-top: calc(4% - 5px);
-  } */
 }
 
-/* Correção de problemas de telas pequenas */
-@media(max-width: 350px) {
-
+@media (max-width: 350px) {
   .saibaMais,
   .referencias,
   .textoApoio {
-    width: 75px;
+    width: 4.69rem;
   }
 
   .container-main-conteudo {
@@ -570,25 +508,16 @@
   }
 
   .link-proximo {
-    font-size: 13px;
+    font-size: 0.81rem;
   }
 }
 
-/* Telas para celulares Grandes incluindo Tablet */
 @media (min-width: 490px) and (max-width: 768px) {
   :host {
     display: flex;
     flex-direction: column;
     height: initial;
     min-height: 90vh;
-  }
-
-  .titulo-topico ul li {
-    text-align: center;
-    padding: 30px 0 0 0;
-    margin-bottom: 80px;
-    font-size: 22.4px;
-    margin-bottom: 10px;
   }
 
   .container-main-conteudo {
@@ -607,9 +536,16 @@
     }
   }
 
+  .titulo-topico ul li {
+    margin-bottom: 0.63rem;
+    padding: 1.88rem 0 0 0;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
   .botoes-cima,
   .botoes-baixo {
-    margin: 5px 0;
+    margin: 0.31rem 0;
   }
 
   .botoes {
@@ -635,7 +571,7 @@
     align-items: center;
 
     img {
-      margin-left: 30px;
+      margin-left: 1.88rem;
     }
   }
 
@@ -644,27 +580,23 @@
     width: 100%;
     text-align: center;
   }
-
 }
 
-/* Correção de problemas de telas pequenas */
 @media (min-width: 385px) and (max-width: 489px) {
   .botoes {
     .botoes-cima {
-      gap: 17px;
+      gap: 1.06rem;
 
       .saibaMais,
       .referencias,
       .textoApoio {
         min-width: 39% !important;
-        font-size: 14px !important;
+        font-size: 0.88rem !important;
       }
     }
   }
 }
 
-
-/* Telas para celulares Grandes exceto Tablets */
 @media (min-width: 490px) and (max-width: 640px) {
   :host {
     display: flex;
@@ -690,58 +622,54 @@
   }
 
   .titulo-topico ul li {
+    margin-bottom: 0.63rem;
+    padding: 1.88rem 0 0 0;
+    font-size: 1.4rem;
     text-align: center;
-    padding: 30px 0 0 0;
-    margin-bottom: 80px;
-    font-size: 22.4px;
-    margin-bottom: 10px;
   }
 
   .botoes {
+    width: 90%;
     max-width: none;
     padding: 1.2rem 1rem;
-    width: 90%;
 
     .botoes-cima {
-      margin: 5px 0;
       display: flex;
       flex-direction: row;
       justify-content: center;
-      gap: 24px;
+      margin: 0.31rem 0;
+      gap: 1.5rem;
 
       .saibaMais,
       .referencias,
       .textoApoio {
         min-width: 35% !important;
-        min-height: 70px !important;
+        min-height: 4.38rem !important;
         display: flex !important;
         flex-direction: column !important;
-        font-size: 14px !important;
+        font-size: 0.88rem !important;
 
         img {
-          width: 20px;
-          height: 20px;
+          width: 1.25rem;
+          height: 1.25rem;
         }
       }
     }
 
-
     .buttons-final {
       margin-top: -4rem;
     }
-
   }
 
   .botao-estilo .buttons-final {
     align-items: center;
 
     button {
-      min-width: 300px;
+      min-width: 18.75rem;
     }
 
     .ebook-botao img {
       margin-left: 22%;
     }
   }
-
 }
