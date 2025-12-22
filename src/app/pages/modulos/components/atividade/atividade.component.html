@@ -25,10 +25,10 @@
               (resposta === alternativa.descricao &&
                 alternativa.correta == true) ||
               alternativa.correta == true
-                ? '#58DB43'
+                ? 'rgba(68, 168, 52, 1)'
                 : (resposta === alternativa.descricao &&
                   alternativa.correta == false) || this.ltiService.dados_completos?.userTopico?.[this.idTopico]?.UsuarioTopicos[0].resposta_errada != null
-                ? 'red'
+                ? 'rgba(222, 53, 53, 1)'
                 : null,
             border:
               resposta === alternativa.descricao && alternativa.correta == false
@@ -64,12 +64,13 @@
           <div class="texto-cima">
             <p>{{ alternativa.descricao }}</p>
             <mat-icon *ngIf="
-                (resposta === alternativa.descricao &&
-                alternativa.correta == false) || this.ltiService.dados_completos?.userTopico?.[this.idTopico]?.UsuarioTopicos[0].resposta_errada == alternativa.descricao
+                (resposta === alternativa.descricao) || this.ltiService.dados_completos?.userTopico?.[this.idTopico]?.UsuarioTopicos[0].resposta_errada == alternativa.descricao
               " (click)="clickOlho()" [ngStyle]="{
                 color:
-                  (resposta === alternativa.descricao && this.abre == true) || (this.ltiService.dados_completos?.userTopico?.[this.idTopico]?.UsuarioTopicos[0].resposta_errada == alternativa.descricao && this.abre == true || this.abre == null)
-                    ? '#A174E2'
+                  (resposta === alternativa.descricao && alternativa.correta == true && (this.abre == true || this.abre == null))
+                  ? 'rgba(68, 168, 52, 1)'
+                  : ((resposta === alternativa.descricao) || (this.ltiService.dados_completos?.userTopico?.[this.idTopico]?.UsuarioTopicos[0].resposta_errada == alternativa.descricao)) && (this.abre == true || this.abre == null)
+                    ? 'rgba(222, 53, 53, 1)'
                     : this.abre == false
                     ? 'white'
                     : null
@@ -129,10 +130,10 @@
                 (resposta === alternativa.descricao &&
                   alternativa.correta == true) ||
                 alternativa.correta == true
-                  ? '#58DB43'
+                  ? 'rgba(68, 168, 52, 1)'
                   : resposta === alternativa.descricao &&
                     alternativa.correta == false
-                  ? 'red'
+                  ? 'rgba(222, 53, 53, 1)'
                   : null
             }">
             <p *ngIf="
@@ -176,9 +177,10 @@
               <p>{{ alternativa.descricao }}</p>
               <mat-icon (click)="clickOlho()" [ngStyle]="{
                   color:
-                    resposta === alternativa.descricao &&
-                    (this.abre == true || this.abre == null)
+                    (resposta === alternativa.descricao && alternativa.correta == true && (this.abre == true || this.abre == null))
                       ? 'rgba(68, 168, 52, 1)'
+                      : (resposta === alternativa.descricao && (this.abre == true || this.abre == null))
+                      ? 'rgba(222, 53, 53, 1)'
                       : this.abre == false
                       ? 'white'
                       : null

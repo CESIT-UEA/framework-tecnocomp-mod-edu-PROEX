@@ -24,7 +24,7 @@
   justify-content: center;
   gap: 10px;
   align-items: center;
-  
+
 
   p {
     font-size: 24px;
@@ -56,6 +56,22 @@
     align-items: center;
     cursor: pointer;
     font-size: 1rem;
+  }
+
+  @media (max-width: 640px) {
+    &>div {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        order: -2;
+      }
+
+      .butoes {
+        order: -1;
+        padding-bottom: 20px;
+      }
+    }
   }
 }
 
@@ -110,7 +126,7 @@
 }
 
 .respostaErrada {
-  border: 2px solid red;
+  border: 2px solid rgba(222, 53, 53, 1);
   background-color: white !important;
   color: var(--cor-verde-escuro-forte);
 }
@@ -166,7 +182,7 @@
   background-size: cover; */
   /* Se a cor do background não tiver igual a do figma apaga essa linha de baixo e descomenta a de cima */
   /*background: linear-gradient(90deg, rgb(33, 98, 118), rgb(32, 109, 114), rgb(35, 119, 112), rgb(36, 128, 108), rgb(44, 127, 96)); */
-  background: linear-gradient(90deg, rgba(32, 99, 119, 1) , rgba(36, 126, 110, 1) , rgb(36, 131, 110), rgb(39, 163, 109));
+  background: linear-gradient(90deg, rgba(32, 99, 119, 1), rgba(36, 126, 110, 1), rgb(36, 131, 110), rgb(39, 163, 109));
 
 
 
@@ -206,9 +222,9 @@
 }
 
 @media (max-width: 489px) {
-  
+
   .container-atividade {
-   width: 90%;
+    width: 90%;
 
   }
 
@@ -239,7 +255,7 @@
     margin-right: 1.5rem;
   }
 
-  .btn-submit{
+  .btn-submit {
     margin-bottom: 10px;
   }
 }
