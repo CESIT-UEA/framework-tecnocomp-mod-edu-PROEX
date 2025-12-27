@@ -151,6 +151,7 @@
     font-weight: 700;
     padding-top: 2rem;
     padding-bottom: 1rem;
+    color: var(--cor-verde-txt);
 
     /* Tamanho para telas de Celular */
     @media (max-width: 640px) {
@@ -548,7 +549,7 @@
     width: 100%;
     flex-grow: 1;
   }
-
+/* title */
   .div-slide {
     width: 90%;
     height: 40vh;
