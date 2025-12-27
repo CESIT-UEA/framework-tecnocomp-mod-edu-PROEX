@@ -58,7 +58,7 @@
   height: 100%;
 
   @media(min-width: 1024px) {
-    height: 90%;
+    height: 93%;
   }
 }
 
@@ -124,6 +124,12 @@
   background: var(--cor-braco-padrao);
   box-shadow: var(--sombra-leve);
   height: 98%;
+
+  @media (min-width: 1024px) {
+    margin-top: 15px;
+    height: 93%;
+  }
+
   max-width: fit-content;
   border-radius: 15px;
   box-shadow: var(--sombra-leve);
@@ -512,6 +518,7 @@
 }
 
 @media (max-width: 389px) {
+
   .saibaMais,
   .referencias,
   .textoApoio {
@@ -520,6 +527,7 @@
 }
 
 @media (max-width: 350px) {
+
   .saibaMais,
   .referencias,
   .textoApoio {
@@ -549,7 +557,8 @@
     width: 100%;
     flex-grow: 1;
   }
-/* title */
+
+  /* title */
   .div-slide {
     width: 90%;
     height: 40vh;
