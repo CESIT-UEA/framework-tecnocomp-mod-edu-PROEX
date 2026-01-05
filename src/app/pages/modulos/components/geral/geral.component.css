@@ -50,7 +50,7 @@
   height: 100%;
 
   @media(min-width: 1024px) {
-    height: 90%;
+    height: 94%;
   }
 }
 
@@ -58,7 +58,7 @@
   height: 100%;
 
   @media(min-width: 1024px) {
-    height: 93%;
+    height: 89%;
   }
 }
 
@@ -126,8 +126,7 @@
   height: 98%;
 
   @media (min-width: 1024px) {
-    margin-top: 15px;
-    height: 93%;
+    height: 94%;
   }
 
   max-width: fit-content;

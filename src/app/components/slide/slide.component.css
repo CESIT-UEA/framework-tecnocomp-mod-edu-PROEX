@@ -35,7 +35,7 @@
 
 .teste {
   height: 90vh;
-  background-color: white !important;
+  background-color: #f9f9f9 !important;
 }
 
 @media (max-width: 800px) {
