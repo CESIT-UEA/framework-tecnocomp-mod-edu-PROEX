@@ -69,6 +69,19 @@
   line-height: 1.5rem;
   text-align: justify;
   color: #03422F;
+
+  @media (max-width: 640px) {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: justify;
+    margin: 0 auto;
+    width: 95%;
+    padding: 2.2rem 0;
+  }
 }
 
 .container-links-text-lista {
@@ -143,17 +156,21 @@
   .header-links p {
     font-size: 1.1rem;
   }
-
-  .container-links-text-p {
-    font-size: 0.9rem;
-  }
 }
 
 @media (max-width: 640px) {
+  .header-atividade {
+    height: 3.5rem;
+  }
+
   .referencias-div {
     flex-direction: row;
     gap: 0.63rem;
     padding: 0.94rem;
+  }
+
+  .container-links-text-lista {
+    padding-bottom: 1rem;
   }
 }
 
