@@ -312,6 +312,29 @@
         white-space: normal;
         background-color: var(--cor-verde-txt);
         color: white;
+
+        &.active {
+          background: linear-gradient(0deg, var(--border-verde-link), var(--border-verde-link)),
+            linear-gradient(90deg, var(--border-verde-link) 0%, #196D53 100%);
+        }
+
+        &.disabled {
+          box-shadow: -5.574px 5.574px 5.574px 0px rgba(0, 0, 0, 0.25);
+          opacity: 0.5;
+          background: var(--2, rgba(47, 115, 94, 1));
+        }
+
+        &.active-incorreto {
+          background-color: #de3535;
+          color: white;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+
+        &.active-correto {
+          background-color: #58DB43;
+          color: white;
+        }
       }
 
       button.ebook-botao {
@@ -356,30 +379,7 @@
     color: #58DB43;
   }
 
-  /* Classes de estado dos botões - Simplificado e Agrupado */
-  .active {
-    background: linear-gradient(0deg, var(--border-verde-link), var(--border-verde-link)),
-      linear-gradient(90deg, var(--border-verde-link) 0%, #196D53 100%);
-  }
 
-  .disabled {
-    box-shadow: -5.574px 5.574px 5.574px 0px rgba(0, 0, 0, 0.25);
-    opacity: 0.5;
-    background: var(--2, rgba(47, 115, 94, 1));
-  }
-
-  .active-incorreto {
-    background-color: #de3535 !important;
-    color: white !important;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* Largura agora é controlada pelo pai (botao-estilo) */
-  }
-
-  .active-correto {
-    background-color: #58DB43 !important;
-    color: white !important;
-  }
 }
 
 .container-main-conteudo-link {
