@@ -195,6 +195,11 @@ app-video-section iframe {
   justify-content: center;
   height: 100%;
   color: #faf8e6;
+
+  @media (max-width: 640px) {
+    width: 100%;
+
+  }
 }
 
 .container-direito {
@@ -203,6 +208,10 @@ app-video-section iframe {
   justify-content: center;
   height: 100%;
   padding-top: calc(40vh - 15.47vw - 2px);
+
+  @media (max-width: 640px) {
+    padding-top: 0;
+  }
 }
 
 .container-esquerdo h1 {
