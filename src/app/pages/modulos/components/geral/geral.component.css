@@ -85,6 +85,7 @@
       margin-bottom: 80px;
       font-size: 22.4px;
       margin-bottom: 10px;
+
     }
 
     @media (min-width: 1275px) {
@@ -218,7 +219,6 @@
         display: flex;
         flex-direction: column;
         font-size: 14px;
-
       }
 
       img {
@@ -289,7 +289,7 @@
       top: -5px;
       right: -1px;
       font-size: 27px;
-      color: #58DB43;
+      background-image: url(../../../../../assets/check.svg);
     }
 
     /* Botôes do final */
@@ -357,6 +357,50 @@
             margin-left: 22%;
           }
         }
+
+        /* Hover effect para ebook-botao - sempre ativo */
+        &:hover {
+          background-color: #2F735E;
+          color: #ffffff;
+          background-image: url(../../../../../assets/icons/download-branco.svg);
+          background-repeat: no-repeat;
+          background-position: calc(36% - 50px) center;
+          background-size: 22px 24px;
+
+          img {
+            opacity: 0;
+          }
+
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  /* Efeitos hover para textoApoio, saibaMais e referencias - apenas quando módulo NÃO está concluído */
+  &.botao-estilo:not(:has(.buttons-final .atividade-botao.active-correto)) {
+    .textoApoio,
+    .saibaMais,
+    .referencias {
+      &:hover {
+        background-color: #2F735E;
+        color: #ffffff;
+      }
+    }
+  }
+
+  /* Quando módulo está concluído, desabilitar hover e cursor pointer */
+  &.botao-estilo:has(.buttons-final .atividade-botao.active-correto) {
+    .textoApoio,
+    .saibaMais,
+    .referencias {
+      cursor: default;
+
+      &:hover {
+        background-color: var(--cor-braco-padrao);
+        color: var(--cor-verde-txt);
       }
     }
   }
@@ -375,8 +419,8 @@
     position: absolute;
     top: -5px;
     right: -1px;
-    font-size: 27px;
-    color: #58DB43;
+    font-size: 30px;
+    background-image: url(../../../../../assets/check.svg);
   }
 
 
