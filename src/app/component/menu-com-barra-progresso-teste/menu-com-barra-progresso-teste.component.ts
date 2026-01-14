@@ -20,6 +20,8 @@ import { ServiceAppService } from 'src/app/service-app.service';
 })
 export class MenuComBarraProgressoTesteComponent implements OnInit {
   teste: any;
+  /** Quantidade total de módulos do curso (fixo conforme especificação). */
+  readonly totalModulos = 6;
   /**
    * @constructor
    */
@@ -74,13 +76,26 @@ export class MenuComBarraProgressoTesteComponent implements OnInit {
   }
 
   getQuantidadeVideosConcluidos() {
-    let cont = 0;
-    this.ltiService.dados_completos.userTopico.map((topico: any) => {
-      if (topico.UsuarioTopicos[0].encerrado == true) {
-        cont += 1;
-      }
-    });
+    if (!this.ltiService.dados_completos?.userTopico) {
+      return 0;
+    }
 
-    return cont;
+    return this.ltiService.dados_completos.userTopico.reduce(
+      (total: number, topico: any) =>
+        topico?.UsuarioTopicos?.[0]?.encerrado ? total + 1 : total,
+      0
+    );
+  }
+
+  /**
+   * Calcula o progresso de módulos concluídos em porcentagem.
+   * Cada módulo concluído adiciona 16,66% (100 / 6).
+   */
+  getProgressoModulos(): number {
+    const concluido = this.getQuantidadeVideosConcluidos();
+    const progresso = (concluido / this.totalModulos) * 100;
+
+    // Garante limite máximo de 100% e arredonda para duas casas.
+    return Math.min(parseFloat(progresso.toFixed(2)), 100);
   }
 }

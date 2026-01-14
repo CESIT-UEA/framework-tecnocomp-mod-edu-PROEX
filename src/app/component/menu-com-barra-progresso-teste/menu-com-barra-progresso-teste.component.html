@@ -12,9 +12,9 @@
       mode="determinate"
       color="warn"
       this.teste
-      [value]="this.ltiService.dados_completos?.userModulo?.nota"
+      [value]="getProgressoModulos()"
     ></mat-progress-bar>
-    <p>{{ this.ltiService.dados_completos?.userModulo?.nota }}%</p>
+    <p>{{ getProgressoModulos() | number: '1.0-2' }}%</p>
   </div>
   <p class="p-progresso">
     {{ getQuantidadeVideosConcluidos() }} /
@@ -103,6 +103,20 @@
     >
     <a (click)="this.ltiService.sobre()" *ngIf="verificaMenuHome == true"
       >Sobre</a
+    >
+  </div>
+  <div class="moodle">
+    <img
+      src="../../../assets/icons/Mask group.svg"
+      alt="Icone para download do ebook"
+      width="22px"
+      height="24px"
+    />
+    <a (click)="this.ltiService.sobre()" *ngIf="verificaMenuHome == false" routerLink="../"
+      >Suporte</a
+    >
+    <a (click)="this.ltiService.sobre()" *ngIf="verificaMenuHome == true"
+      >Suporte</a
     >
   </div>
 </div>

@@ -34,6 +34,10 @@
   margin: 2.5rem 0;
 }
 
+.nn {
+  margin: 2.5rem 0 0 0;
+}
+
 .bloco p {
   color: #676767;
 }
@@ -53,7 +57,9 @@ h3 {
   font-style: normal;
 }
 
-.laboratorios .bloco p {
+.laboratorios .bloco p,
+.laboratorios .nn p 
+{
   margin: 0.63rem 0;
 }
 

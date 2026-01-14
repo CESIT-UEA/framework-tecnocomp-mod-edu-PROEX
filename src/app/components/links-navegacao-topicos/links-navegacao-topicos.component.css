@@ -13,6 +13,10 @@
   }
 }
 
+.img_voltar {
+  cursor: pointer;
+}
+
 .button {
   padding: 0.56rem 0.94rem;
   margin: 0 auto;
