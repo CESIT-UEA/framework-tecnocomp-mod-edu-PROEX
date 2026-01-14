@@ -8,8 +8,12 @@ button {
   background-color: black;
   cursor: pointer;
 
+  @media (width >=640px) {
+    display: none;
+  }
+
   @media (max-width: 640px) {
     /* Remove a possibilidade de clicar em telas menores */
-   display: none; 
+    display: none;
   }
 }
