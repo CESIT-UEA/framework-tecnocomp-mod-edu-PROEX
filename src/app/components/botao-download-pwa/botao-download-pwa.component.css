@@ -7,4 +7,9 @@ button {
   border-radius: 6px;
   background-color: black;
   cursor: pointer;
+
+  @media (max-width: 640px) {
+    /* Remove a possibilidade de clicar em telas menores */
+   display: none; 
+  }
 }

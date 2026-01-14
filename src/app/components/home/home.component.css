@@ -226,6 +226,11 @@ app-video-section iframe {
   font-family: var(--fonte-arial-destaque);
   font-size: 2.25rem;
   color: var(--cor-verde-txt);
+
+  @media (max-width: 640px) {
+    font-size: 1.4375rem !important;
+  }
+
 }
 
 .position {
