@@ -21,6 +21,9 @@
 }
 
 .button-section .button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -41,7 +44,7 @@
   align-items: center;
   justify-content: center;
   column-gap: 0.5rem;
-  width: 60%;
+  width: 100%;
   height: 2.99rem;
   margin: 0 auto;
   padding: 0.63rem;
@@ -112,6 +115,10 @@
 
 .link {
   text-decoration: none;
+  /* O <a> define o tamanho do "hitbox"; igual ao botão de cima */
+  display: block;
+  width: 60%;
+  margin: 0 auto;
 }
 
 @media (max-width: 899px) {
@@ -134,15 +141,11 @@
   }
 
   .link {
-    display: block;
-    width: 100%;
-  }
-
-  .button-section .button-group .start-button,
-  .button-section .button-group .download-button {
+    /* Mesma largura do botão (regra responsiva) */
     width: 80%;
   }
 
+  /* Botões dentro do group continuam com 80% (inclui start/concluido/download) */
   .button-section .button-group button {
     width: 80%;
   }
