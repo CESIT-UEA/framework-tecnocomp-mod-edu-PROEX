@@ -8,20 +8,46 @@
   font-family: Arial, sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  background: #131313;
+  background: #F9FFF9;
+  position: relative;
 }
 
-.header-atividade {
+.container-modulo-concluido {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  padding: 1.25rem;
-  text-align: end;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.botao-fechar {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.botao-fechar img {
+  width: 24px;
+  height: 24px;
+}
+
+.botao-fechar:hover {
+  opacity: 0.7;
 }
 
 .container {
   width: 100%;
-  padding: 1.25rem;
+  padding: 0;
   text-align: center;
   color: white;
 }
@@ -32,24 +58,39 @@
 
 .descricao-conclusao {
   margin-bottom: 2.5rem;
-  font-family: Arial;
-  font-size: 1.56rem;
-  font-style: normal;
-  font-weight: 700;
+  font-size: 1.75rem;
   line-height: normal;
   text-align: center;
-  color: white;
+}
+
+.descricao-conclusao p {
+  font-family: Arial;
+  font-style: bold;
+  font-weight: 700;
+  color: #03422F;
 }
 
 .descricao-modulo {
-  margin-bottom: 2.5rem;
-  font-family: Arial;
-  font-size: 1.56rem;
-  font-style: normal;
-  font-weight: 700;
+  margin-bottom: 29px;
+  font-size: 1.75rem;
   line-height: normal;
   text-align: center;
-  color: var(--16, #c3a1f5);
+}
+
+.descricao-modulo p {
+  font-family: Arial;
+  font-style: bold;
+  font-weight: 700;
+  color: #2F735E;
+  margin-bottom: 18px;
+}
+
+.descricao-modulo .pontuacao {
+  font-size: 1.5rem;
+  font-family: Arial;
+  font-style: bold;
+  font-weight: 700;
+  color: #03422F;
 }
 
 .pontuacao {
@@ -58,30 +99,25 @@
   justify-content: center;
   margin-top: 0.63rem;
   gap: 0.94rem;
-  font-family: Arial;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
   line-height: normal;
   text-align: center;
-  color: var(--Terciaria, #fff);
 }
 
 .pontuacao .value {
   font-family: Arial;
   font-size: 1.56rem;
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
   line-height: normal;
   text-align: center;
-  color: #53cc3f;
+  color: #44A834;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 52%;
 }
 
 .avaliacao-modulo {
@@ -89,13 +125,17 @@ form {
   align-items: center;
   justify-content: center;
   gap: 1.25rem;
-  font-family: Arial;
   font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
   text-align: center;
-  color: #fff;
+}
+
+.avaliacao-modulo p {
+  font-family: Arial;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #03422F;
 }
 
 .avaliacao-estrela {
@@ -104,25 +144,26 @@ form {
   height: 4.69rem 0;
   margin: 0 auto;
   padding: 0.63rem;
+  box-shadow: 0rem 0rem 0.325rem #AAAAAA;
   border-radius: 40px;
   text-align: center;
-  background-color: #232324;
+  background-color: #FFFFFF;
 }
 
 .estrela {
   margin: 0 0.63rem 0 0.63rem;
   transition: transform 0.2s, color 0.2s;
-  color: grey;
+  color: #AAAAAA;
   cursor: pointer;
 }
 
 .estrela:hover {
-  color: gold;
+  color: #FFD736;
   transform: scale(1.2);
 }
 
 .estrela.selected {
-  color: gold;
+  color: #FFD736;
 }
 
 .moodle {
@@ -135,22 +176,20 @@ form {
   padding: 0.38rem 0.94rem;
   gap: 0.88rem;
   border-radius: 8px;
-  box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.25);
-  background: #2a2a2a;
+  box-shadow: 0rem 0rem 0.325rem #AAAAAA;
+  background: #2F735E;
   cursor: pointer;
 }
 
 .moodle a {
-  margin-left: 0.31rem;
   font-family: Arial;
   font-size: 1rem;
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
   outline: none;
   color: white;
-  color: var(--Terciaria, #fff);
 }
 
 .botao-enviar {
@@ -164,27 +203,62 @@ form {
   padding: 0.38rem 0.94rem;
   gap: 0.94rem;
   font-size: 1rem;
+  border: 2px solid #2F735E;
   border-radius: 8px;
-  box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.25);
-  background: var(--2, #793cd4);
-  color: var(--Terciaria, #fff);
+  box-shadow: 0rem 0rem 0.325rem #AAAAAA;
+  background-color: white;
+  color: #2F735E;
   cursor: pointer;
 }
 
+.botao-enviar p {
+  margin: 0;
+  color: #2F735E;
+  font-family: Arial;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.botao-enviar:hover {
+  color: white;
+  background-color: #2F735E;
+}
+
+.botao-enviar:hover p {
+  color: white;
+}
+
+.img-enviar {
+  width: auto;
+  height: auto;
+}
+
+.img-enviar-hover {
+  display: none;
+}
+
+.botao-enviar:hover .img-enviar-normal {
+  display: none;
+}
+
+.botao-enviar:hover .img-enviar-hover {
+  display: block;
+}
+
 .textarea {
-  width: 100%;
-  max-width: 32.19rem;
-  margin-top: 1.25rem;
-  padding: 0.63rem;
+  width: 44.3125rem;
+  margin-top: 26px;
+  padding: 0.63rem 0.63rem 4rem 0.63rem;
   border: none;
-  border-radius: 6px;
+  box-shadow: 0rem 0rem 0.325rem #AAAAAA;
+  border-radius: 10px;
   resize: vertical;
-  background: #262626;
-  color: var(--28, #b3b3b3);
+  background-color: white;
+  color: #ACACAC;
 }
 
 .desativado {
-  opacity: 0.4;
+  
   cursor: initial;
 }
 
@@ -196,8 +270,8 @@ form {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
-  margin-top: 1.25rem;
+  width: 100%;
+  margin-top: 22px;
 }
 
 .icon {

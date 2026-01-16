@@ -351,20 +351,13 @@
           color: var(--cor-verde-txt);
         }
 
-        /* Alinhando o Icone do ebook no centro */
-        @media(max-width: 489px) {
-          img {
-            margin-left: 22%;
-          }
-        }
-
         /* Hover effect para ebook-botao - sempre ativo */
         &:hover {
           background-color: #2F735E;
           color: #ffffff;
           background-image: url(../../../../../assets/icons/download-branco.svg);
           background-repeat: no-repeat;
-          background-position: calc(36% - 50px) center;
+          background-position: calc(40% - 50px) center;
           background-size: 22px 24px;
 
           img {

@@ -60,10 +60,12 @@
             'button-finalizar-nao-avaliado':
             this.ltiService.verificaAvaliacaoNaoFoiFeitaEstrelas() &&
             this.ltiService.dados_completos.userTopico[
-            this.moduloService.controll_topico].UsuarioTopicos[0].encerrado == true
+            this.moduloService.controll_topico].UsuarioTopicos[0].encerrado == true,
+            'sozinho-proximo':
+            this.verificaVoltar() == false &&
+            this.verificaProximo() == false
         }"
       >
-        <mat-icon>check</mat-icon>
         <p>
             {{
             this.ltiService.verificaAvaliacaoNaoFoiFeitaEstrelas()
@@ -71,6 +73,7 @@
               : "Módulo concluído"
             }}
         </p>
+        <mat-icon>check</mat-icon>
         </div>
             <div
                class="button-finalizar-box button-finalizar-desabilitado"
@@ -80,8 +83,13 @@
                 this.moduloService.controll_topico
                 ].UsuarioTopicos[0].encerrado == false
                 "
+               [ngClass]="{
+                 'sozinho-proximo':
+                 this.verificaVoltar() == false &&
+                 this.verificaProximo() == false
+               }"
               >
-            <mat-icon>check</mat-icon>
             <p>Concluir Módulo</p>
+            <mat-icon>check</mat-icon>
             </div>
         </div>

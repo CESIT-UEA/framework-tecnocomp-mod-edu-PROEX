@@ -140,7 +140,7 @@ input[type="checkbox"] {
 .active-topico-container {
   background-color: var(--cor-branco-padrao);
   box-shadow: var(--sombra-fraca);
-  font-weight: bold;
+  font-weight: normal;
   color: var(--cor-verde-txt);
 }
 
