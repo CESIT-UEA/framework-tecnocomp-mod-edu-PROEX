@@ -339,8 +339,9 @@
 
       button.ebook-botao {
         display: flex;
-        justify-self: center;
-        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
 
         background-color: transparent;
         box-shadow: none;
@@ -348,6 +349,7 @@
 
         a {
           display: inline-flex;
+          width: auto;
           color: var(--cor-verde-txt);
         }
 
@@ -374,6 +376,7 @@
 
   /* Efeitos hover para textoApoio, saibaMais e referencias - apenas quando módulo NÃO está concluído */
   &.botao-estilo:not(:has(.buttons-final .atividade-botao.active-correto)) {
+
     .textoApoio,
     .saibaMais,
     .referencias {
@@ -386,6 +389,7 @@
 
   /* Quando módulo está concluído, desabilitar hover e cursor pointer */
   &.botao-estilo:has(.buttons-final .atividade-botao.active-correto) {
+
     .textoApoio,
     .saibaMais,
     .referencias {
@@ -542,7 +546,9 @@
     }
   }
 
-  a {
+  .container-main-conteudo-links-voltar a,
+  .link-proximo,
+  .link-voltar {
     display: block;
     width: 100%;
     text-align: center;
