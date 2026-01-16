@@ -10,6 +10,10 @@
   font-weight: 700;
   background: #F9FFF9;
   position: relative;
+
+  @media (max-width: 640px) {
+    justify-content: start;
+  }
 }
 
 .container-modulo-concluido {
@@ -50,17 +54,35 @@
   padding: 0;
   text-align: center;
   color: white;
+
+  @media (max-width: 640px) {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+  }
 }
 
 .concluido {
-  margin-bottom: 1.88rem;
+  padding-top: 2rem;
+  padding-bottom: 0;
 }
 
+/* Imagem do modulo concluído e título principal */
 .descricao-conclusao {
-  margin-bottom: 2.5rem;
   font-size: 1.75rem;
   line-height: normal;
   text-align: center;
+
+  @media (max-width: 640px) {
+    margin-bottom: 0.94rem;
+    font-size: 1.65rem;
+  }
+
+  @media (max-width: 490px) {
+    font-size: 1.58rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.5rem;
+  }
 }
 
 .descricao-conclusao p {
@@ -68,6 +90,9 @@
   font-style: bold;
   font-weight: 700;
   color: #03422F;
+  padding-top: 1rem;
+  padding-bottom: 2.25rem;
+
 }
 
 .descricao-modulo {
@@ -75,6 +100,18 @@
   font-size: 1.75rem;
   line-height: normal;
   text-align: center;
+
+  @media (max-width: 640px) {
+    font-size: 1.65rem;
+  }
+
+  @media (max-width: 490px) {
+    font-size: 1.58rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.5rem;
+  }
 }
 
 .descricao-modulo p {
@@ -83,6 +120,19 @@
   font-weight: 700;
   color: #2F735E;
   margin-bottom: 18px;
+  font-size: 1.625rem;
+
+  @media (max-width: 640px) {
+    font-size: 1.55rem;
+  }
+
+  @media (max-width: 490px) {
+    font-size: 1.45rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.375rem;
+  }
 }
 
 .descricao-modulo .pontuacao {
@@ -91,6 +141,19 @@
   font-style: bold;
   font-weight: 700;
   color: #03422F;
+  padding-top: 0;
+
+  @media (max-width: 640px) {
+    font-size: 1.4rem;
+  }
+
+  @media (max-width: 490px) {
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.25rem;
+  }
 }
 
 .pontuacao {
@@ -111,6 +174,18 @@
   line-height: normal;
   text-align: center;
   color: #44A834;
+
+  @media (max-width: 640px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 490px) {
+    font-size: 1.42rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.35rem;
+  }
 }
 
 form {
@@ -118,8 +193,13 @@ form {
   flex-direction: column;
   align-items: center;
   width: 52%;
+
+  @media (max-width: 640px) {
+    width: 90%;
+  }
 }
 
+/* Mensagem de como você avalia este módulo e caixa de estrelas */
 .avaliacao-modulo {
   display: flex;
   align-items: center;
@@ -128,14 +208,34 @@ form {
   font-size: 1rem;
   line-height: normal;
   text-align: center;
+
+  @media (max-width: 640px) {
+    flex-direction: column-reverse;
+  }
 }
 
+/* Mensagem de como você avalia este módulo */
 .avaliacao-modulo p {
   font-family: Arial;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
   color: #03422F;
+  text-wrap: nowrap;
+  margin-right: 5.75rem;
+
+  @media (max-width: 640px) {
+    margin-right: 0;
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 490px) {
+    font-size: 1.15rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.125rem;
+  }
 }
 
 .avaliacao-estrela {
@@ -162,6 +262,7 @@ form {
   transform: scale(1.2);
 }
 
+/* box-final */
 .estrela.selected {
   color: #FFD736;
 }
@@ -179,6 +280,10 @@ form {
   box-shadow: 0rem 0rem 0.325rem #AAAAAA;
   background: #2F735E;
   cursor: pointer;
+
+  @media (max-width: 640px) {
+    width: 230px !important;
+  }
 }
 
 .moodle a {
@@ -190,6 +295,18 @@ form {
   text-decoration: none;
   outline: none;
   color: white;
+
+  @media (max-width: 640px) {
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 490px) {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 0.875rem;
+  }
 }
 
 .botao-enviar {
@@ -209,6 +326,11 @@ form {
   background-color: white;
   color: #2F735E;
   cursor: pointer;
+
+  @media (max-width: 640px) {
+    width: 230px;
+    max-width: 230px;
+  }
 }
 
 .botao-enviar p {
@@ -217,6 +339,18 @@ form {
   font-family: Arial;
   font-size: 1rem;
   font-weight: 700;
+
+  @media (max-width: 640px) {
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 490px) {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 0.875rem;
+  }
 }
 
 .botao-enviar:hover {
@@ -245,6 +379,7 @@ form {
   display: block;
 }
 
+/* Caixa de texto para avaliação */
 .textarea {
   width: 44.3125rem;
   margin-top: 26px;
@@ -255,10 +390,16 @@ form {
   resize: vertical;
   background-color: white;
   color: #ACACAC;
+
+  @media (max-width: 640px) {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .desativado {
-  
+
   cursor: initial;
 }
 
@@ -272,6 +413,22 @@ form {
   justify-content: space-between;
   width: 100%;
   margin-top: 22px;
+  padding-bottom: 3rem;
+
+  @media (max-width: 640px) {
+    gap: 0.63rem;
+    flex-direction: column;
+padding-bottom: 1rem;
+    button {
+      width: 230px;
+    }
+  }
+}
+
+.header-atividade {
+  @media (max-width: 640px) {
+    position: relative;
+  }
 }
 
 .icon {
@@ -320,9 +477,10 @@ form {
 }
 
 @media (max-width: 500px) {
+
   .avaliacao-modulo,
   .box-final {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .box-final {
