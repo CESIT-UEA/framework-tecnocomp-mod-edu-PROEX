@@ -289,7 +289,8 @@
       top: -5px;
       right: -1px;
       font-size: 27px;
-      background-image: url(../../../../../assets/check.svg);
+      color: #58DB43;
+      background-image: none;
     }
 
     /* Botôes do final */
@@ -383,6 +384,10 @@
       &:hover {
         background-color: #2F735E;
         color: #ffffff;
+
+        img {
+          filter: brightness(0) invert(1);
+        }
       }
     }
   }
@@ -411,17 +416,8 @@
     width: 15px;
     height: 15px;
   }
-
-  .concluido {
-    position: absolute;
-    top: -5px;
-    right: -1px;
-    font-size: 30px;
-    background-image: url(../../../../../assets/check.svg);
-  }
-
-
 }
+
 
 .container-main-conteudo-link {
   display: flex;
