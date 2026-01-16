@@ -1,28 +1,40 @@
 <header class="header">
-    <img src="assets/tecnocomp.png" alt="Logo tecnocomp">
+    <img src="assets/uea_01.svg" alt="Logo tecnocomp">
 </header>
 <main class="main">
     <section class="main-section">
         <form class="main-section-form" [formGroup]="formAva">
-            <p style="color: #C3A1F5; font-size: 20px; padding: 40px; display: flex; justify-content: center; align-items: center; column-gap: 10px;">
-                <img [src]="formCurrent.icone" [alt]="formCurrent.alt">
-                 {{ this.formCurrent.titulo }}</p>
+            <div class="form-header">
+                <p class="form-title">
+                    <img [src]="formCurrent.icone" [alt]="formCurrent.alt">
+                    {{ this.formCurrent.titulo }}
+                </p>
+                <hr class="form-divider">
+            </div>
             <div class="main-section-form-campo">
                 <label>Nome do AVA</label>
                 <input type="text" placeholder="Digite o nome do AVA" formControlName="nome">
-                <p class="validators" *ngIf="this.formAva.controls['nome'].status === 'INVALID' && formAva.value.nome.length!==0 && formAva.value.nome.length < 4">Mínimo: 4 caracteres.</p>
-                <p class="validators" *ngIf="this.formAva.controls['nome'].status === 'INVALID' && formAva.value.nome.length > 15">Máximo: 15 caracteres.</p>
+                <p class="validators"
+                    *ngIf="this.formAva.controls['nome'].status === 'INVALID' && formAva.value.nome.length!==0 && formAva.value.nome.length < 4">
+                    Mínimo: 4 caracteres.</p>
+                <p class="validators"
+                    *ngIf="this.formAva.controls['nome'].status === 'INVALID' && formAva.value.nome.length > 15">Máximo:
+                    15 caracteres.</p>
             </div>
             <div class="main-section-form-campo">
                 <label>URL do AVA</label>
                 <input type="text" placeholder="Digite a URL do AVA" formControlName="url">
-                <p class="validators" *ngIf="this.formAva.controls['url'].status === 'INVALID' && formAva.value.url.length!==0 && formAva.value.url.length <= 10">Mínimo: 10 caracteres.</p>
+                <p class="validators"
+                    *ngIf="this.formAva.controls['url'].status === 'INVALID' && formAva.value.url.length!==0 && formAva.value.url.length <= 10">
+                    Mínimo: 10 caracteres.</p>
             </div>
             <div class="buttons">
                 <button routerLink="/" class="button-um">{{ this.formCurrent.text_button_one }}</button>
-                <button class="button-dois" (click)="this.formCurrent.buttonCadastro(this.idAVa)" [disabled]="buttonDisabled" [ngClass]="{'button-disabled': this.buttonDisabled, 'button-enable': !buttonDisabled}">{{ this.formCurrent.text_button_two }}</button>
+                <button class="button-dois" (click)="this.formCurrent.buttonCadastro(this.idAVa)"
+                    [disabled]="buttonDisabled"
+                    [ngClass]="{'button-disabled': this.buttonDisabled, 'button-enable': !buttonDisabled}">{{
+                    this.formCurrent.text_button_two }}</button>
             </div>
         </form>
     </section>
 </main>
-
