@@ -241,7 +241,7 @@ form {
 .avaliacao-estrela {
   display: flex;
   align-items: center;
-  height: 4.69rem 0;
+  height: auto;
   margin: 0 auto;
   padding: 0.63rem;
   box-shadow: 0rem 0rem 0.325rem #AAAAAA;
@@ -418,7 +418,8 @@ form {
   @media (max-width: 640px) {
     gap: 0.63rem;
     flex-direction: column;
-padding-bottom: 1rem;
+    padding-bottom: 1rem;
+
     button {
       width: 230px;
     }
@@ -448,7 +449,7 @@ padding-bottom: 1rem;
   justify-content: center;
   width: 1.75rem;
   height: 1.75rem;
-  border: 1px solid var(--Primaria, #9665df);
+  border: 1px solid rgba(0, 102, 50, 1);
   border-radius: 28px;
   color: black;
   background-color: white;
@@ -504,8 +505,48 @@ padding-bottom: 1rem;
   }
 }
 
+
+
 @media (max-width: 375px) {
   .descricao-conclusao {
     margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .descricao-conclusao {
+    font-size: 1.3rem;
+  }
+
+  .descricao-modulo {
+    font-size: 1.3rem;
+  }
+
+  .descricao-modulo p {
+    font-size: 1.2rem;
+  }
+
+  .avaliacao-estrela {
+
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .estrela {
+    margin: 0 0.15rem;
+  }
+
+  .foto-header {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.8rem;
+    margin-right: 0.2rem;
+  }
+
+  .icon {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
   }
 }
