@@ -34,7 +34,7 @@ export class CadastroAvaComponent implements OnInit{
             buttonCadastro: () => this.adicionarAva()
           },
           {
-            icone: "../../../assets/icons/edit.svg",
+            icone: "../../../assets/icons/editar.svg",
             titulo: "Editar AVA",
             alt: "Ícone de editar", 
             text_button_one: "Cancelar",
