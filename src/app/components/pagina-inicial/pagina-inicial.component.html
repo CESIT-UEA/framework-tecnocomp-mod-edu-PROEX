@@ -62,13 +62,17 @@
         </div>
         <section *ngIf="this.nomeAva.value.length > 0 && this.filterListaAvas.length === 0 && this.listaAvas.length > 0" class="mensagem-ava">
             <h3>Nenhum ava Encontrado</h3>
+            <div class="bloco-dois">
+            <a routerLink="/ava/adicionar"><span>+</span>Adicionar</a>
+        </div>    
         </section>
         <section *ngIf="listaAvas.length === 0" class="mensagem-ava">
             <h3>Nenhum AVA adicionado!</h3>
-        </section>
-        <div class="bloco-dois">
+            <div class="bloco-dois">
             <a routerLink="/ava/adicionar"><span>+</span>Adicionar</a>
         </div>    
+        </section>
+        
     </section>
 </main>
 

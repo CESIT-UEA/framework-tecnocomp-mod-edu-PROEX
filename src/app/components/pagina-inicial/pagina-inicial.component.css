@@ -34,7 +34,6 @@
 .main-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 90%;
   min-height: 88vh;
   margin: 0 auto;
@@ -122,31 +121,48 @@
 }
 
 .bloco-dois {
-  align-self: flex-end;
-  padding: 1.88rem 0 1.25rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 24px auto 0;
+  padding: 0 0 1.25rem 0;
 }
 
 .bloco-dois a {
   display: flex;
+  align-items: center;
+  justify-content: center;
   column-gap: 0.63rem;
-  padding: 0.88rem 0.63rem;
+  padding: 0.88rem 1.5rem;
   font-size: 1rem;
+  font-weight: 700;
   border: none;
   border-radius: 8px;
   text-decoration: none;
   box-shadow: -5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-  background-color: #333338;
+  background: linear-gradient(0deg, #2F735E, #2F735E),
+    linear-gradient(90deg, #2F735E 0%, #116259 100%);
   color: white;
   cursor: pointer;
 }
 
 .bloco-dois a:hover {
-  background-color: #28282b;
+  opacity: 0.9;
 }
 
 .bloco-dois a>span:first-child {
-  font-size: 2.5rem;
-  color: #C3A1F5;
+  font-size: 1.5rem;
+  color: white;
+  line-height: 1;
+}
+
+.mensagem-ava {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mensagem-ava h3 {
