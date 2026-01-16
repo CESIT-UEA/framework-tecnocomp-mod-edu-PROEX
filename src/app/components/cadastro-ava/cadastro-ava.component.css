@@ -18,12 +18,12 @@
 
 .main,
 .main-section {
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: var(--fonte-inter-padrao);
+   font-weight: bold;
    width: 100%;
    min-height: 90vh;
    background-color: white;
    color: #03422F;
-   font-weight: 400;
 }
 
 .main-section {
@@ -36,7 +36,8 @@
    background-color: #ffffff;
    box-shadow: var(--sombra-fraca);
    margin: 0 auto;
-   border-radius: 12px;
+   border-top: 5px solid #2F735E;
+   border-radius: 50px 50px 12px 12px;
    overflow: hidden;
 }
 
@@ -48,7 +49,7 @@
 .form-title {
    color: #2F735E;
    font-size: 20px;
-   padding: 2rem 1rem 1rem 1rem;
+   padding: 1.5rem 1rem 1rem 1rem;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -69,6 +70,7 @@
    display: flex;
    flex-direction: column;
    padding: 16px 40px;
+
 }
 
 .main-section-form-campo input {
@@ -95,7 +97,8 @@
 
 .buttons {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
+   gap: 1.5rem;
    padding: 40px;
 }
 
@@ -106,7 +109,6 @@
    font-size: 16px;
    cursor: pointer;
    border-radius: 8px;
-   transition: all 0.3s ease;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -142,11 +144,13 @@
    filter: brightness(0) invert(1);
 }
 
+/* Botão desabilitado */
 .button-disabled {
-   background-color: #116259 !important;
+   background: linear-gradient(0deg, #2F735E, #2F735E),
+      linear-gradient(90deg, #2F735E 0%, #116259 100%) !important;
    border-color: #116259 !important;
    color: #ffffff !important;
-   opacity: 0.5;
+
    cursor: not-allowed !important;
 }
 

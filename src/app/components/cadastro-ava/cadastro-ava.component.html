@@ -6,7 +6,6 @@
         <form class="main-section-form" [formGroup]="formAva">
             <div class="form-header">
                 <p class="form-title">
-                    <img [src]="formCurrent.icone" [alt]="formCurrent.alt">
                     {{ this.formCurrent.titulo }}
                 </p>
                 <hr class="form-divider">
@@ -29,11 +28,13 @@
                     Mínimo: 10 caracteres.</p>
             </div>
             <div class="buttons">
-                <button routerLink="/" class="button-um">{{ this.formCurrent.text_button_one }}</button>
+                <button routerLink="/" class="button-um"><span>{{ this.formCurrent.text_button_one }}</span></button>
                 <button class="button-dois" (click)="this.formCurrent.buttonCadastro(this.idAVa)"
                     [disabled]="buttonDisabled"
-                    [ngClass]="{'button-disabled': this.buttonDisabled, 'button-enable': !buttonDisabled}">{{
-                    this.formCurrent.text_button_two }}</button>
+                    [ngClass]="{'button-disabled': this.buttonDisabled, 'button-enable': !buttonDisabled}">
+                    <img [src]="formCurrent.icone" [alt]="formCurrent.alt" width="20px" height="20px">
+                    <span>{{ this.formCurrent.text_button_two }}</span>
+                </button>
             </div>
         </form>
     </section>

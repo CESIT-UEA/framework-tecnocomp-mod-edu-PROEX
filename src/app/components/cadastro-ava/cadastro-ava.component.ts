@@ -26,7 +26,7 @@ export class CadastroAvaComponent implements OnInit{
     listaAvas: Ava[] = [];
     configForm: FormAva[] = [
           {
-            icone: "../../../assets/icons/plus.png", 
+            icone: "../../../assets/icons/plus.svg", 
             titulo: "Adicionar AVA",
             alt: "Ícone de adicionar", 
             text_button_one: "Cancelar", 
@@ -34,7 +34,7 @@ export class CadastroAvaComponent implements OnInit{
             buttonCadastro: () => this.adicionarAva()
           },
           {
-            icone: "../../../assets/icons/edit.png",
+            icone: "../../../assets/icons/edit.svg",
             titulo: "Editar AVA",
             alt: "Ícone de editar", 
             text_button_one: "Cancelar",
