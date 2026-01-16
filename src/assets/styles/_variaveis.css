@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --cor--teste: yellow;
 
@@ -18,19 +25,19 @@
     --cor-verde-template-txt: #B1FFFF;
     --cor-verde-template-bg: #0C4A49;
     --cor-verde-navegacao: #2C7760;
-    --cor-verde-txt: rgba(47, 115, 94, 1);
-    --cor-verde-escuro: rgba(12, 74, 73, 1);
-    --cor-verde-escuro-forte: rgba(3, 66, 47, 1);
+    --cor-verde-txt: #2f735e;
+    --cor-verde-escuro: #0c4a49;
+    --cor-verde-escuro-forte: #03422f;
     --cor-cinza-padrao: #676767;
     /* 
 
     */
 
     --cor-linha: #8FCBBF;
-    --cor-linha-forte: rgb(38, 152, 134);
+    --cor-linha-forte: #269886;
 
-    --cor-linha-cinza: rgb(162, 162, 162);
-    --cor-linha-verde-forte: rgba(38, 152, 134, 0.502);
+    --cor-linha-cinza: #a2a2a2;
+    --cor-linha-verde-forte: #26988680;
 
     --border-verde-link: #2F735E;
     --border-verde-video: #26AA86;
@@ -39,6 +46,11 @@
     --sombra-forte: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.5);
     --sombra-leve: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     --sombra-fraca: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
+    --fonte-arial-padrao: arial;
+    --fonte-arial-destaque: 'ArialRoundedBold';
+    --fonte-inter-padrao: 'Inter';
+
 }
 
 app-atividade {
