@@ -53,10 +53,16 @@
   -webkit-text-fill-color: transparent;
 }
 
+.main-section-form {
+  margin-top: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
 .main-section-form input {
   width: 100%;
   height: 2.5rem;
-  padding: 0;
+  padding: 0 0 0 2rem;
   border: none;
   border-bottom: 2px solid #808080;
   background-color: transparent;
@@ -65,10 +71,12 @@
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: center;
+  position: relative;
+  z-index: 2;
 }
 
 .main-section-form input::-webkit-input-placeholder {
-  padding-left: 2rem;
+  padding-left: 0;
   color: #C0C0C0;
 }
 
@@ -150,7 +158,7 @@
   border: none;
   border-radius: 8px;
   text-decoration: none;
-  box-shadow: -5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: -1px 2px 8px 0px rgba(0, 0, 0, 0.35);
   background: linear-gradient(0deg, #2F735E, #2F735E),
     linear-gradient(90deg, #2F735E 0%, #116259 100%);
   color: white;
