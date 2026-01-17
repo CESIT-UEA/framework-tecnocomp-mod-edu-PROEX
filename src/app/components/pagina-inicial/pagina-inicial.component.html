@@ -7,29 +7,28 @@
         <div>
             <div class="bloco-um">
                 <h1>Adicione e gerencie seus AVAs com facilidade!</h1>
-                <form class="main-section-form"> 
-                    <input 
-                        type="text" 
-                        placeholder="Lista de AVAs" 
-                        style="font-size: 25px; color: white;" 
-                        [formControl]="nomeAva"
-                    >
+                <form class="main-section-form">
+                    <input type="text" placeholder="Lista de AVAs" style="font-size: 25px; color: white;"
+                        [formControl]="nomeAva">
                 </form>
             </div>
-            <h3 style="color: white;" *ngIf="this.nomeAva.value.length === 0 && this.listaAvas.length > 0">
+            <h3 style="color: #2F735E; font-family: Arial;"
+                *ngIf="this.nomeAva.value.length === 0 && this.listaAvas.length > 0">
                 {{ this.listaAvas.length }} AVAs adicionado(s)
             </h3>
-            <section class="cards" *ngIf="this.nomeAva.value.length > 0 && this.filterListaAvas.length > 0" >
+            <section class="cards" *ngIf="this.nomeAva.value.length > 0 && this.filterListaAvas.length > 0">
                 <div *ngFor="let ava of this.filterListaAvas; let i = index">
                     <div class="cards-card">
                         <p>{{ ava.nome }}</p>
                         <section class="cards-card-body">
                             <div class="cards-card-edicoes">
                                 <a (click)="openDialog(i)">
-                                    <img src="../../../assets/icons/remover-ava.png" alt="Ícone para deletar o ava">
+                                    <img src="../../../assets/icons/lixeira_excluir.svg" class="bordar-ava"
+                                        alt="Ícone para deletar o ava">
                                 </a>
                                 <a routerLink="/ava/editar/{{i + 1}}">
-                                    <img src="../../../assets/icons/editar-ava.png" alt="Ícone para editar o ava">
+                                    <img src="../../../assets/icons/editar_ava.svg" class="bordar-ava"
+                                        alt="Ícone para editar o ava">
                                 </a>
                             </div>
                             <div class="cards-card-link">
@@ -46,10 +45,12 @@
                         <section class="cards-card-body">
                             <div class="cards-card-edicoes">
                                 <a (click)="openDialog(i)">
-                                    <img src="../../../assets/icons/remover-ava.png" alt="Ícone para deletar o ava">
+                                    <img src="../../../assets/icons/lixeira_excluir.svg" class="bordar-ava"
+                                        alt="Ícone para deletar o ava">
                                 </a>
                                 <a routerLink="/ava/editar/{{i + 1}}">
-                                    <img src="../../../assets/icons/editar-ava.png" alt="Ícone para editar o ava">
+                                    <img src="../../../assets/icons/editar_ava.svg" class="bordar-ava"
+                                        alt="Ícone para editar o ava">
                                 </a>
                             </div>
                             <div class="cards-card-link">
@@ -60,19 +61,24 @@
                 </div>
             </section>
         </div>
-        <section *ngIf="this.nomeAva.value.length > 0 && this.filterListaAvas.length === 0 && this.listaAvas.length > 0" class="mensagem-ava">
+        <section *ngIf="this.nomeAva.value.length > 0 && this.filterListaAvas.length === 0 && this.listaAvas.length > 0"
+            class="mensagem-ava">
             <h3>Nenhum ava Encontrado</h3>
             <div class="bloco-dois">
-            <a routerLink="/ava/adicionar"><span>+</span>Adicionar</a>
-        </div>    
+                <a routerLink="/ava/adicionar"><span>+</span>Adicionar</a>
+            </div>
         </section>
+
         <section *ngIf="listaAvas.length === 0" class="mensagem-ava">
             <h3>Nenhum AVA adicionado!</h3>
             <div class="bloco-dois">
-            <a routerLink="/ava/adicionar"><span>+</span>Adicionar</a>
-        </div>    
+                <a routerLink="/ava/adicionar"><span>+</span>Adicionar</a>
+            </div>
         </section>
-        
+
+        <div class="bloco-dois posicionado-direita"
+            *ngIf="listaAvas.length > 0 && (this.nomeAva.value.length === 0 || this.filterListaAvas.length > 0)">
+            <a routerLink="/ava/adicionar"><span>+</span>Adicionar</a>
+        </div>
     </section>
 </main>
-

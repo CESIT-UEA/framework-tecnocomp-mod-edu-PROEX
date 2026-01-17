@@ -89,7 +89,8 @@
 .cards-card {
   padding: 1.25rem;
   border-radius: 8px;
-  background-color: #2E2E2E;
+  background-color: var(--cor-branco-padrao);
+  box-shadow: var(--sombra-forte);
 }
 
 .cards-card p {
@@ -97,7 +98,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
-  color: white;
+  color: #03422F;
 }
 
 .cards-card-body {
@@ -106,8 +107,12 @@
   justify-content: space-between;
 }
 
+.cards-card-edicoes {
+  display: flex;
+  gap: 10px;
+}
+
 .cards-card-edicoes img {
-  padding: 0.94rem 0.94rem 0 0;
   cursor: pointer;
 }
 
@@ -116,7 +121,7 @@
   border-radius: 8px;
   font-weight: 700;
   text-decoration: none;
-  background-color: #9256ED;
+  background-color: #116259;
   color: white;
 }
 
@@ -127,6 +132,11 @@
   width: 100%;
   margin: 24px auto 0;
   padding: 0 0 1.25rem 0;
+}
+
+.bloco-dois.posicionado-direita {
+  justify-content: flex-end;
+  margin-top: auto;
 }
 
 .bloco-dois a {
@@ -171,6 +181,20 @@
   text-align: center;
   color: #878787;
 }
+
+.bordar-ava {
+  border: 1px solid #2F735E;
+  border-radius: 7px;
+  padding: 6px;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+}
+
 
 @media (max-width: 1024px) {
   .cards {

@@ -1,6 +1,8 @@
 .button-um {
-    background: rgba(255, 255, 255, 0.10);
-    color: white !important;
+    background: rgb(255, 255, 255);
+    border: 2px solid #2F735E;
+    border-radius: 10px;
+    color: #2F735E !important;
 }
 
 .button-dois {
