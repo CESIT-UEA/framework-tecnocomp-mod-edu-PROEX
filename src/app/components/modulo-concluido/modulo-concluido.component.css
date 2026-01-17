@@ -1,4 +1,4 @@
-:host() {
+:host {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,8 +11,10 @@
   background: #F9FFF9;
   position: relative;
   box-sizing: border-box;
+}
 
-  @media (max-width: 640px) {
+@media (max-width: 640px) {
+  :host {
     justify-content: start;
   }
 }
@@ -464,7 +466,7 @@ form {
 }
 
 @media (max-width: 674px) {
-  :host() {
+  :host {
     justify-content: start;
   }
 

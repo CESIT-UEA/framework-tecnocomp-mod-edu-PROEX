@@ -1,60 +1,34 @@
-<div
-    class="container-main-conteudo-links-voltar"
-    [ngClass]="{
+<div class="container-main-conteudo-links-voltar" [ngClass]="{
       'container-links':
       (this.verificaVoltar() && this.verificaProximo()) ||
        this.verificaProximo() == false
-    }"
->
-    <div
-        *ngIf="this.verificaVoltar()"
-        class="link-voltar"
-        (click)="voltar()"
-        [ngClass]="{
+    }">
+  <div *ngIf="this.verificaVoltar()" class="link-voltar" (click)="voltar()" [ngClass]="{
           'sozinho-voltar':
             this.verificaVoltar() == true &&
             this.verificaProximo() == false
-        }"
-    >
-    <img
-       src="../../../assets/arrow-left-circle.svg"
-       alt="Icone para voltar unidade"
-       width="28px"
-       height="28px"
-   />
-        Tópico Anterior
-    </div>
+        }">
+    <img src="../../../assets/arrow-left-circle.svg" alt="Icone para voltar unidade" width="28px" height="28px" />
+    Tópico Anterior
+  </div>
 
-    <div
-        *ngIf="verificaProximo()"
-        class="link-proximo"
-        (click)="proximo()"
-        [ngClass]="{
+  <div *ngIf="verificaProximo()" class="link-proximo" (click)="proximo()" [ngClass]="{
           'sozinho-proximo':
             this.verificaVoltar() == false &&
             this.verificaProximo() == true,
             'opactiy-active':
             this.ltiService.dados_completos.userTopico[
             this.moduloService.controll_topico].UsuarioTopicos[0].encerrado == false
-        }"
-    >
-        Próximo Tópico
-     <img
-        src="a../../../../../../assets/icons/avancarUnidade.svg"
-        alt="Icone para avançar unidade"
-        width="30px"
-        height="30px"
-     />
-    </div>
-        <div
-          class="button-finalizar-box"
-          *ngIf="
+        }">
+    Próximo Tópico
+    <img src="../../../../../../assets/icons/avancarUnidade.svg" alt="Icone para avançar unidade" width="30px"
+      height="30px" />
+  </div>
+  <div class="button-finalizar-box" *ngIf="
           !verificaProximo() &&
           this.ltiService.dados_completos.userTopico[
           this.moduloService.controll_topico
-         ].UsuarioTopicos[0].encerrado == true"
-          routerLink="../../../avaliar"
-          [ngClass]="{
+         ].UsuarioTopicos[0].encerrado == true" routerLink="../../../avaliar" [ngClass]="{
            'button-finalizar-avaliado':
             !this.ltiService.verificaAvaliacaoNaoFoiFeitaEstrelas(),
             'button-finalizar-nao-avaliado':
@@ -64,32 +38,27 @@
             'sozinho-proximo':
             this.verificaVoltar() == false &&
             this.verificaProximo() == false
-        }"
-      >
-        <p>
-            {{
-            this.ltiService.verificaAvaliacaoNaoFoiFeitaEstrelas()
-              ? "Concluir Módulo"
-              : "Módulo concluído"
-            }}
-        </p>
-        <mat-icon>check</mat-icon>
-        </div>
-            <div
-               class="button-finalizar-box button-finalizar-desabilitado"
-               *ngIf="
+        }">
+    <p>
+      {{
+      this.ltiService.verificaAvaliacaoNaoFoiFeitaEstrelas()
+      ? "Concluir Módulo"
+      : "Módulo concluído"
+      }}
+    </p>
+    <mat-icon>check</mat-icon>
+  </div>
+  <div class="button-finalizar-box button-finalizar-desabilitado" *ngIf="
                 !verificaProximo() &&
                 this.ltiService.dados_completos.userTopico[
                 this.moduloService.controll_topico
                 ].UsuarioTopicos[0].encerrado == false
-                "
-               [ngClass]="{
+                " [ngClass]="{
                  'sozinho-proximo':
                  this.verificaVoltar() == false &&
                  this.verificaProximo() == false
-               }"
-              >
-            <p>Concluir Módulo</p>
-            <mat-icon>check</mat-icon>
-            </div>
-        </div>
+               }">
+    <p>Concluir Módulo</p>
+    <mat-icon>check</mat-icon>
+  </div>
+</div>
