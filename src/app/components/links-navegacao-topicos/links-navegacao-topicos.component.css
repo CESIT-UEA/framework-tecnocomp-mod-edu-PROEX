@@ -92,6 +92,7 @@
     background-image: url('../../../assets/icons/voltarUnidade_verde.svg');
     background-size: contain;
     background-repeat: no-repeat;
+    transform: rotate(180deg);
 
     img {
       display: none;
@@ -168,7 +169,10 @@
     justify-content: center;
   }
 
-  @media (max-width: 640px) {
+}
+
+@media (max-width: 640px) {
+  .button-finalizar-box {
     width: 1.56rem;
     height: 1.56rem;
     margin-top: 0;
@@ -182,10 +186,14 @@
     background-image: url('../../../assets/icons/voltarUnidade_verde.svg');
     background-size: contain;
     background-repeat: no-repeat;
+    border: none;
+    box-shadow: none;
+  }
 
-    img {
-      display: none;
-    }
+  .button-finalizar-box p,
+  .button-finalizar-box mat-icon,
+  .button-finalizar-box img {
+    display: none;
   }
 }
 
@@ -206,20 +214,45 @@
   font-size: 1.13rem;
   column-gap: 0.63rem;
   color: white;
+}
 
-  p {
-    margin: 0;
-    color: white;
+.button-finalizar-desabilitado p {
+  margin: 0;
+  color: white;
+}
+
+.button-finalizar-desabilitado mat-icon {
+  color: white;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .button-finalizar-desabilitado {
+    width: 1.56rem;
+    height: 1.56rem;
+    margin-top: 0;
+    margin-bottom: 0.19rem;
+    margin-left: auto;
+    margin-right: 1.56rem;
+    padding: 0;
+    font-size: 0;
+    overflow: hidden;
+    background-color: transparent;
+    background-image: url('../../../assets/icons/voltarUnidade_verde.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    box-shadow: none;
   }
 
-  mat-icon {
-    color: white;
-    width: 30px;
-    height: 30px;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .button-finalizar-desabilitado p,
+  .button-finalizar-desabilitado mat-icon {
+    display: none;
   }
 }
 
@@ -263,6 +296,7 @@
 }
 
 @media (max-width: 350px) {
+
   .link-proximo,
   .link-voltar {
     font-size: 0.75rem;

@@ -1,17 +1,20 @@
-:host() {
+:host {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100%;
+  min-height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   background: #F9FFF9;
   position: relative;
+  box-sizing: border-box;
+}
 
-  @media (max-width: 640px) {
+@media (max-width: 640px) {
+  :host {
     justify-content: start;
   }
 }
@@ -87,12 +90,10 @@
 
 .descricao-conclusao p {
   font-family: Arial;
-  font-style: bold;
   font-weight: 700;
   color: #03422F;
-  padding-top: 1rem;
-  padding-bottom: 2.25rem;
-
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .descricao-modulo {
@@ -119,7 +120,7 @@
   font-style: bold;
   font-weight: 700;
   color: #2F735E;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   font-size: 1.625rem;
 
   @media (max-width: 640px) {
@@ -382,14 +383,14 @@ form {
 /* Caixa de texto para avaliação */
 .textarea {
   width: 44.3125rem;
-  margin-top: 26px;
-  padding: 0.63rem 0.63rem 4rem 0.63rem;
+  margin-top: 15px;
+  padding: 0.63rem 0.63rem 1rem 0.63rem;
   border: none;
   box-shadow: 0rem 0rem 0.325rem #AAAAAA;
   border-radius: 10px;
   resize: vertical;
   background-color: white;
-  color: #ACACAC;
+  color: #444;
 
   @media (max-width: 640px) {
     width: 100%;
@@ -412,8 +413,8 @@ form {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: 22px;
-  padding-bottom: 3rem;
+  margin-top: 20px;
+  padding-bottom: 1.5rem;
 
   @media (max-width: 640px) {
     gap: 0.63rem;
@@ -465,7 +466,7 @@ form {
 }
 
 @media (max-width: 674px) {
-  :host() {
+  :host {
     justify-content: start;
   }
 
