@@ -39,9 +39,12 @@
   }
 
   /* Layout para telas de Celulares */
-  @media (max-width: 489px) {
+  @media (max-width: 640px) {
     width: 100%;
     flex-grow: 1;
+    flex-direction: column;
+    row-gap: 0;
+    /* Controlaremos o gap manualmente via margens nos filhos */
   }
 }
 
@@ -528,30 +531,77 @@
 
 .container-main-conteudo-links-voltar {
   display: none;
+
+  @media (max-width: 640px) {
+    display: flex;
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-@media(max-width: 489px) {
+@media (max-width: 640px) {
+  :host {
+    height: auto;
+    min-height: 100vh;
+  }
+
   .div-slide {
-    width: 90%;
-    height: 40vh;
+    width: 90% !important;
+    height: auto !important;
+    margin-bottom: 20px;
 
     .container-video {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
+      width: 100% !important;
     }
   }
 
-  .container-main-conteudo-links-voltar a,
-  .link-proximo,
-  .link-voltar {
-    display: block;
-    width: 100%;
-    text-align: center;
+  .botoes {
+    width: 90% !important;
+    max-width: 90% !important;
+    padding: 1.2rem 1rem;
+    margin-bottom: 30px;
+
+    .botoes-cima {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+      padding: 15px 0;
+
+      .saibaMais,
+      .referencias,
+      .textoApoio {
+        min-width: 30% !important;
+        min-height: 70px !important;
+        font-size: 13px !important;
+        flex: 1;
+      }
+    }
+
+    .buttons-final {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      button {
+        width: 100% !important;
+        min-width: unset !important;
+      }
+
+      a {
+        width: 100%;
+        display: block;
+      }
+    }
   }
 
-  .container-main-conteudo-links-voltar {
-    display: initial;
+  .titulo-topico ul li {
+    font-size: 1.4rem;
+    padding-top: 20px;
   }
 }
 
@@ -581,75 +631,6 @@
   }
 }
 
-@media (min-width: 490px) and (max-width: 768px) {
-  :host {
-    display: flex;
-    flex-direction: column;
-    height: initial;
-    min-height: 90vh;
-  }
-
-
-
-  .container-main-conteudo {
-    width: 100%;
-    flex-grow: 1;
-  }
-
-  /* title */
-  .div-slide {
-    width: 90%;
-    height: 40vh;
-
-    .container-video {
-      width: 82%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-  .titulo-topico ul li {
-    margin-bottom: 0.63rem;
-    padding: 1.88rem 0 0 0;
-    font-size: 1.4rem;
-    text-align: center;
-  }
-
-  .botoes-cima,
-  .botoes-baixo {
-    margin: 0.31rem 0;
-  }
-
-  .botoes {
-    max-width: none;
-    padding: 1.2rem 1rem;
-  }
-
-  .section-texto {
-    flex-direction: row;
-    gap: 0;
-    margin-bottom: 0.5rem;
-  }
-
-  .saibaMais {
-    margin: 0 0.2rem;
-  }
-
-  .buttons-final {
-    align-items: center;
-
-    img {
-      margin-left: 1.88rem;
-    }
-  }
-
-  a {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-}
-
 @media (min-width: 385px) and (max-width: 489px) {
   .botoes {
     .botoes-cima {
@@ -661,74 +642,6 @@
         min-width: 39% !important;
         font-size: 0.88rem !important;
       }
-    }
-  }
-}
-
-@media (min-width: 490px) and (max-width: 640px) {
-  :host {
-    display: flex;
-    flex-direction: column;
-    height: initial;
-    min-height: 90vh;
-  }
-
-  .container-main-conteudo {
-    width: 100%;
-    flex-grow: 1;
-  }
-
-  .div-slide {
-    width: 90%;
-    height: 40vh;
-
-    .container-video {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-
-
-  .botoes {
-    width: 90%;
-    max-width: none;
-    padding: 1.2rem 1rem;
-
-    .botoes-cima {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin: 0.31rem 0;
-      gap: 1.5rem;
-
-      .saibaMais,
-      .referencias,
-      .textoApoio {
-        min-width: 35% !important;
-        min-height: 4.38rem !important;
-        display: flex !important;
-        flex-direction: column !important;
-        font-size: 0.88rem !important;
-
-        img {
-          width: 1.25rem;
-          height: 1.25rem;
-        }
-      }
-    }
-  }
-
-  .botao-estilo .buttons-final {
-    align-items: center;
-
-    button {
-      min-width: 18.75rem;
-    }
-
-    .ebook-botao img {
-      margin-left: 22%;
     }
   }
 }
