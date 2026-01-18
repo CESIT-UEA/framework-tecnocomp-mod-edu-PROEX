@@ -154,9 +154,9 @@ app-video-section iframe {
 }
 
 #icon {
-  width: 1.88rem;
-  height: 1.88rem;
-  font-size: 2.19rem;
+  width: 1.9rem;
+  height: 2.6rem;
+  font-size: 2.6rem;
   color: #fff;
   cursor: pointer;
 }
@@ -195,6 +195,11 @@ app-video-section iframe {
   justify-content: center;
   height: 100%;
   color: #faf8e6;
+
+  @media (max-width: 640px) {
+    width: 100%;
+
+  }
 }
 
 .container-direito {
@@ -203,6 +208,10 @@ app-video-section iframe {
   justify-content: center;
   height: 100%;
   padding-top: calc(40vh - 15.47vw - 2px);
+
+  @media (max-width: 640px) {
+    padding-top: 0;
+  }
 }
 
 .container-esquerdo h1 {
@@ -217,6 +226,11 @@ app-video-section iframe {
   font-family: var(--fonte-arial-destaque);
   font-size: 2.25rem;
   color: var(--cor-verde-txt);
+
+  @media (max-width: 640px) {
+    font-size: 1.4375rem !important;
+  }
+
 }
 
 .position {

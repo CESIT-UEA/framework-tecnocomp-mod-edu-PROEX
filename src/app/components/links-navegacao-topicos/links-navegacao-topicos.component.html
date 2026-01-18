@@ -11,20 +11,20 @@
         class="link-voltar"
         (click)="voltar()"
         [ngClass]="{
-          sozinho:
+          'sozinho-voltar':
             this.verificaVoltar() == true &&
             this.verificaProximo() == false
         }"
     >
-     <img
-        *ngIf="this.moduloService.controll_topico != 0"
-        src="../../../../assets/icons//"
-        alt="Icone para voltar unidade"
-        width="30px"
-        height="30px"
-    />
+    <img
+       src="../../../assets/arrow-left-circle.svg"
+       alt="Icone para voltar unidade"
+       width="28px"
+       height="28px"
+   />
         Tópico Anterior
     </div>
+
     <div
         *ngIf="verificaProximo()"
         class="link-proximo"

@@ -10,20 +10,17 @@
   top: 2%;
   right: 8%;
   z-index: 2;
-  border: 3px solid;
-  border-image-source: linear-gradient(180deg, #1A6D53 0%, #39A935 100%);
-  border-image-slice: 1;
+  border: 3px solid #1A6D53;
   border-radius: 8px;
   background-color: var(--cor-branco-padrao);
-  cursor: pointer;
 }
 
 .nome p {
   max-width: 100%;
-  margin-top: 0.94rem;
   font-family: var(--fonte-arial-destaque);
   font-size: 1rem;
   font-weight: 400;
+  font-style: normal;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -35,15 +32,24 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 0.63rem;
+  padding: 0 15px;
   font-family: var(--fonte-arial-destaque);
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 400;
+  font-style: normal;
   color: rgba(3, 66, 47, 1);
 }
 
 .cima-p {
-  margin-left: 0.94rem;
+  margin-left: 0.1rem;
+  font-family: var(--fonte-arial-destaque);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.img_fecha {
+  margin-left: 77%;
+  cursor: pointer;
 }
 
 .meio {

@@ -69,10 +69,10 @@
               " (click)="clickOlho()" [ngStyle]="{
                 color:
                   (resposta === alternativa.descricao && this.abre == true) || (this.ltiService.dados_completos?.userTopico?.[this.idTopico]?.UsuarioTopicos[0].resposta_errada == alternativa.descricao && this.abre == true || this.abre == null)
-                    ? '#A174E2'
+                    ? 'rgba(255, 0, 0, 1)'
                     : this.abre == false
-                    ? 'white'
-                    : null
+                    ? '#7FAF9A'
+                    : '#A174E2'
               }">remove_red_eye</mat-icon>
           </div>
           <div class="texto-baixo" *ngIf="
@@ -180,8 +180,8 @@
                     (this.abre == true || this.abre == null)
                       ? 'rgba(68, 168, 52, 1)'
                       : this.abre == false
-                      ? 'white'
-                      : null
+                      ? '#7FAF9A'
+                      : '#7FAF9A'
                 }">remove_red_eye</mat-icon>
             </div>
             <div class="texto-baixo" *ngIf="resposta === alternativa.descricao && this.abre == true" [ngClass]="{

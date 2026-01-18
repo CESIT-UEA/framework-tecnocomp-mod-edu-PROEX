@@ -1,6 +1,6 @@
 :host {
   height: 100%;
-  background-color: black;
+  background-color: white;
   display: block;
 }
 
@@ -43,7 +43,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: max-content;
   padding: 0.63rem;
   text-align: center;
   background-color: #fff;
@@ -110,6 +110,7 @@
 }
 
 @media (max-width: 489px) {
+
   .container-links-text-caixa,
   #container-links-text-frase {
     width: 95%;

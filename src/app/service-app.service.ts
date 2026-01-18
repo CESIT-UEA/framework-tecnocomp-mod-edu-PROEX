@@ -17,6 +17,8 @@ import { ModuloService } from './personalizavel/modulo.service';
 export class ServiceAppService {
   player: any; // Armazena o player do YouTube
   controlAtividade: number = 1;
+  private dadosCompletosSource = new BehaviorSubject<any>(null);
+  dadosCompletos$ = this.dadosCompletosSource.asObservable();
   /**
    * url da API
    */
@@ -542,5 +544,21 @@ export class ServiceAppService {
     headers: headers,
   });
 }
+
+getDadosCompletosAsObservable(): void {
+    const dadosArmazenados = localStorage.getItem(this.storageKey);
+
+    if (dadosArmazenados) {
+      const dadosCompletos = JSON.parse(dadosArmazenados);
+      this.dadosCompletosSource.next(dadosCompletos); 
+      // console.log('Service data atualizado: ', dadosCompletos);
+    } else {
+      this.dadosCompletosSource.next(null);
+    }
+  }
+
+  clearDados() {
+    this.dadosCompletosSource.next(null)
+  }
 
 }

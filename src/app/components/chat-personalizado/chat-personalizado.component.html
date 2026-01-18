@@ -1,0 +1,60 @@
+<!-- Botão flutuante -->
+<button id="chat-button" (click)="alternarChat()">
+  <img src="../../../assets/icons/fechar chat - VERDE.svg" alt="icone chat SabIA" class="chat-icon">
+</button>
+
+<!-- Janela do chat -->
+<div id="chat-container" #chatContainer [ngClass]="{'chat-container-open': aberto}">
+
+  <button class="button-redimensionar" (pointerdown)="IniciarRedimensionar($event)"><img src="../../../assets/icons/redimensionar-cinza.svg" alt="icone de ampliar chat" class="icon-ampliar">
+  </button>
+
+  <div id="chat-header">
+
+    <div class ="chat-avatar"><img src="../../../assets/icons/sabIA 2 (1).svg" alt="avatar do SabIA"></div>
+    <div class ="header-text">
+      <p class="header-text-title">SabIA</p>
+      <p class="header-text-descricao">Interaja com o nosso chat para ajudar no seu aprendizado.</p>
+    </div>
+
+
+    <button class="chat-close" (click)="alternarChat()">&times;</button>
+
+  </div>
+
+<div id="chat-messages" #chatMessages>
+
+
+    <div class="chat-assistente">Seja bem-vindo!</div>
+    <div class="chat-assistente">Inicie uma conversa com o nosso assistente.</div>
+
+
+        <div *ngFor="let msg of mensagens"
+          class="message"
+          [ngClass]="{
+          'user-message': msg.tipo === 'user',
+          'chat-assistente': msg.tipo === 'assistente'
+        }">
+          {{ msg.texto }}
+        </div>
+
+        <!-- digitando -->
+    <div *ngIf="carregando" class="carregando-mensagem">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+        <!-- carregando -->
+
+
+  </div>
+
+  <div id="chat-footer">
+    <input type="text" id="chat-input" (keydown.enter)="enviarMensagem()" placeholder="Digite sua mensagem..." [formControl]="input" />
+    <button id="chat-send" [class.active]="input.value"
+          (click)="enviarMensagem()"
+          ><img src="../../../assets/icons/Vector.svg" alt="incone de enviar" class="send-icon"></button>
+  </div>
+</div>
+

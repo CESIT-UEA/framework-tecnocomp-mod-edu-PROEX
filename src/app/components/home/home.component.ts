@@ -43,7 +43,18 @@ export class HomeComponent {
 
   ngOnInit(): void {
     const ltik = this.route.snapshot.queryParamMap.get('ltik');
-    if (ltik) {
+    // busca token no local storage
+    let token = localStorage.getItem('token')
+    if (ltik && ltik != token) {
+      this.appService.clearDados()
+      
+      localStorage.removeItem('token');
+      localStorage.removeItem('bloqueio');
+      localStorage.removeItem('topicos');
+      localStorage.removeItem('url_retorno');
+      localStorage.removeItem('dados_completos_do_modulo');
+
+
       this.moduloService.getUserInfo(ltik).subscribe(
         (data) => {
           this.tokenData = data;
@@ -67,11 +78,12 @@ export class HomeComponent {
 
           localStorage.setItem('token', this.tokenData.user.ltik);
 
-          localStorage.setItem('url_retorno', this.tokenData.user.return_url);
+          localStorage.setItem('url_retorno', this.tokenData.userModulo.return_url);
           localStorage.setItem(
             'topicos',
             JSON.stringify(this.tokenData.topicos)
           );
+          
 
           let bloqueio = localStorage.getItem('bloqueio');
           this.moduloService.topicos = this.tokenData.topicos;
@@ -79,14 +91,18 @@ export class HomeComponent {
           this.moduloService.bloqueio = bloqueio
             ? JSON.parse(bloqueio)
             : this.tokenData.userTopico;
+
+          this.appService.getDadosCompletosAsObservable()
         },
         (error) => {
           console.error('Error:', error);
         }
       );
+    } else {
+        this.appService.getDadosCompletos();
+        this.appService.getDadosCompletosAsObservable()
     }
-
-    this.appService.getDadosCompletos();
+    
 
   }
 
