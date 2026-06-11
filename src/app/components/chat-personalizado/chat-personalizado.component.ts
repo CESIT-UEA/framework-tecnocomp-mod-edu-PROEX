@@ -111,16 +111,23 @@ export class ChatPersonalizadoComponent {
 
       setTimeout(() => this.scrollToBottom());
 
-      this.chatService.enviarMensagemParaChat(texto).subscribe(response => {
+      this.chatService.enviarMensagemParaChat(texto).subscribe({
+        next: (response) => {
+          this.carregando = false
+          this.mensagens.push({
+            texto: response.dados.output,
+            tipo: 'assistente'
+          });
 
-        this.carregando = false
-
-        this.mensagens.push({
-          texto: response.output,
-          tipo: 'assistente'
-        });
-
-        setTimeout(() => this.scrollToBottom());
+          setTimeout(() => this.scrollToBottom());
+        },
+        error: (error) => {
+          this.carregando = false
+          this.mensagens.push({
+            texto: 'Desculpe, tivemos uma falha na comunicação!',
+            tipo: 'assistente'
+          })
+        }
       });
     }
 

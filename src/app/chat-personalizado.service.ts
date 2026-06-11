@@ -1,17 +1,19 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { filter, Observable } from 'rxjs';
 import { ServiceAppService } from './service-app.service';
+import { environment } from 'src/environments/environment.development';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ChatPersonalizadoService {
 
-
-  private chatUrl =  "https://tecnocomp.uea.edu.br:5678/webhook/chat-personalizado";
+  private urlApi =  environment.baseUrl
   private sessionId!: string;
   private moduloAtual!: string;
+  private idModulo! :number;
+  private ltik!: any;
 
   constructor(private http: HttpClient, private apiService: ServiceAppService) {
     this.inicializarSessaoPorModulo()
@@ -23,11 +25,17 @@ export class ChatPersonalizadoService {
       throw new Error('Sessão do chat ainda não inicializada');
     }
 
-    return this.http.post<any>(this.chatUrl, { 
+     const headers = new HttpHeaders({
+          'Content-Type': 'application/json',
+          Authorization: 'Bearer ' + this.ltik,
+      });
+
+    return this.http.post<any>(`${this.urlApi}/enviar-mensagem-agente`, { 
       mensagem, 
+      nomeModulo: this.moduloAtual,
       sessionId: this.sessionId,
-      modulo: this.moduloAtual
-    });
+      idModulo: this.idModulo
+    }, { headers });
   }
 
 
@@ -39,6 +47,8 @@ export class ChatPersonalizadoService {
       )
       .subscribe(dados => {
         const modulo = dados.modulo.nome_modulo;
+        this.idModulo = dados.modulo.id
+        this.ltik = dados.user.ltik
 
         if (this.moduloAtual === modulo) return;
 
@@ -67,5 +77,5 @@ export class ChatPersonalizadoService {
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '')
       .replace(/\s+/g, '_');
-  } 
+  }  
 }

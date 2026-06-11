@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl:'https://tecnocomp.uea.edu.br:8005',
+  baseUrl:'https://api-lti-proex.tecnocomp.cloud',
 };
