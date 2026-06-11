@@ -1,0 +1,24 @@
+<section class="container">
+    <h1 class="titulo">Leve seus cursos de extensão no bolso!</h1>
+    <div class="botoes">
+        <div class="container-botao-download" *ngIf="!downloadService.getHiddenButton()">
+            <button class="botao botao-um" (click)="downloadService.installPromptEvent()">
+                <img class="download-verde" src="../../../assets/icons/icone-download-verde-2.svg" alt="">
+                <img class="download-branco" src="../../../assets/icons/download-branco-grande.svg">
+                <p class="txt-botao">Instalar o Mboepi App agora</p>
+            </button>
+        </div>
+        <button class="botao botao-dois" (click)="abrirNoNavegador()">
+            <img class="nav-verde" src="../../../assets/icons/icone-navegador-verde-rodape.svg" alt="">
+            <img class="nav-branco" src="../../../assets/icons/continuar_branco 1.svg" alt="">
+            <p class="txt-botao">Continuar no navegador</p>
+        </button>
+    </div>
+</section>
+<section class="container-logo-uea">
+    <img class="logo-uea" src="../../../assets/logo UEA 1.png" alt="">
+</section>
+<section class="container-final">
+    <h3 class="titulo-rodape">Plataforma oficial de cursos de extensão da Universidade do Estado do Amazonas
+</h3>
+</section>

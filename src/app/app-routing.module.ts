@@ -15,9 +15,10 @@ import { TopicoComponent } from './personalizavel/modulo/topico/topico.component
 import { PaginaInicialComponent } from './components/pagina-inicial/pagina-inicial.component';
 import { CadastroAvaComponent } from './components/cadastro-ava/cadastro-ava.component';
 import { ModuloConcluidoComponent } from './components/modulo-concluido/modulo-concluido.component';
+import { AppPropagandaComponent } from './components/app-propaganda/app-propaganda.component';
 
 const routes: Routes = [
-  { path: '', component: PaginaInicialComponent },
+  { path: '', component: AppPropagandaComponent },
   { path: 'avaliar', component: ModuloConcluidoComponent },
   { path: 'ava/editar/:id', component: CadastroAvaComponent },
   { path: 'ava/adicionar', component: CadastroAvaComponent },
