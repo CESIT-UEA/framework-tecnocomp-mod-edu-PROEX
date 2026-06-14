@@ -79,7 +79,7 @@
   font-size: 1rem;
   resize: vertical;
   outline: none;
-  color: #EFEFEF4D !important;
+  color: rgba(47, 115, 94, 1) !important;
 
   @media (max-width: 640px) {
     font-size: 0.95rem;
