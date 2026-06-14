@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Injectable, OnInit } from '@angular/core';
-import { BehaviorSubject, Observable, of } from 'rxjs';
+import { Injectable, NgZone, OnInit } from '@angular/core';
+import { BehaviorSubject, Observable, of, Subject } from 'rxjs';
 import { Bloqueio } from './bloqueioInterface';
 import { Topico } from './components/forum/topico.interface';
 import { TopicoF } from './components/forum/topico-forum/topico-forum.interface';
@@ -17,6 +17,12 @@ import { ModuloService } from './personalizavel/modulo.service';
 export class ServiceAppService {
   player: any; // Armazena o player do YouTube
   controlAtividade: number = 1;
+  private dadosCompletosSource = new BehaviorSubject<any>(null);
+  dadosCompletos$ = this.dadosCompletosSource.asObservable();
+
+  private videoFinalizadoSubject = new Subject<any>();
+
+  videoFinalizado$ = this.videoFinalizadoSubject.asObservable();
   /**
    * url da API
    */
@@ -45,7 +51,8 @@ export class ServiceAppService {
   constructor(
     private http: HttpClient,
     private _snackBar: MatSnackBar,
-    public moduloService: ModuloService
+    public moduloService: ModuloService,
+    private ngZone: NgZone
   ) {}
 
   /**
@@ -428,16 +435,17 @@ export class ServiceAppService {
             ?.VideoUrls[this.currentVideoIndex].id,
           this.dados_completos.user.ltik
         ).subscribe((response) => {
-          console.log('Vídeo finalizado:', response);
-          this.removeDadosCompletos();
-          this.setDadosCompletos(response);
-        });
-      }
+        this.ngZone.run(() => {
+            this.removeDadosCompletos();
+            this.setDadosCompletos(response);
+
+          this.videoFinalizadoSubject.next(response);})
+      })
       /*       setTimeout(() => {
         this.proximo();
       }, 3000); */
     }
-  }
+  }}
 
   proximo(): void {
     console.log(this.currentVideoIndex);
@@ -542,5 +550,21 @@ export class ServiceAppService {
     headers: headers,
   });
 }
+
+getDadosCompletosAsObservable(): void {
+    const dadosArmazenados = localStorage.getItem(this.storageKey);
+
+    if (dadosArmazenados) {
+      const dadosCompletos = JSON.parse(dadosArmazenados);
+      this.dadosCompletosSource.next(dadosCompletos); 
+      // console.log('Service data atualizado: ', dadosCompletos);
+    } else {
+      this.dadosCompletosSource.next(null);
+    }
+  }
+
+  clearDados() {
+    this.dadosCompletosSource.next(null)
+  }
 
 }

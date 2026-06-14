@@ -1,0 +1,47 @@
+<section class="container">
+    <div class="lado-esquerdo">
+        <div class="meio-circulo"></div>
+        <img 
+            *ngIf="activeBotaoMobile"
+            class="mobile-modulo-home"
+            src="../../../assets/mobile-modulo-home.png" 
+            alt="imagem de um smartphone no modulo inicial da plataforma"
+        >
+        <img 
+            *ngIf="!activeBotaoMobile"
+            class="desktop-modulo-home"
+            src="../../../assets/desktop-modulo-home.png" 
+            alt="imagem de um desktop no modulo inicial da plataforma"
+        >
+    </div>
+    <div class="lado-direito">
+        <div class="container-direito">
+
+            <h1 class="titulo">
+                Como instalar?
+            </h1>
+            <div class="botoes">
+                <button class="botao-um" [ngClass]="{'botao-active': activeBotaoMobile}" (click)="ativarMobile()">
+                    <img *ngIf="activeBotaoMobile" src="../../../assets/icons/icone-mobile-branco.svg" alt="">
+                    <img *ngIf="!activeBotaoMobile" src="../../../assets/icons/mobile-cinza.svg" alt="">
+                    <p class="paragrafo mobile-txt">Mobile</p>
+                </button>
+                <button class="botao-dois" [ngClass]="{'botao-active': !activeBotaoMobile}" (click)="desativarMobile()">
+                    <img *ngIf="activeBotaoMobile" src="../../../assets/icons/desktop-cinza.svg" alt="">
+                    <img *ngIf="!activeBotaoMobile" src="../../../assets/icons/desktop-branco.svg" alt="">
+                    <p class="paragrafo desktop-txt">Desktop</p>
+                </button>
+            </div>
+            <div class="orientacoes-mobile" *ngIf="activeBotaoMobile">
+                <div class="textos-mobile" *ngFor="let frase of orientacoesMobile; let i = index">
+                    <h2 class="frase-mobile">{{ i + 1 }}.{{ frase }}</h2>
+                </div>
+            </div>
+            <div class="orientacoes-desktop" *ngIf="!activeBotaoMobile">
+                <div class="textos-desktop" *ngFor="let frase of orientacoesDesktop; let i = index">
+                    <h2 class="frase-desktop">{{ i + 1 }}.{{ frase }}</h2>
+                </div>
+            </div>
+        </div>
+        </div>
+</section>

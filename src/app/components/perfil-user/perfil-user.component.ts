@@ -12,6 +12,14 @@ export class PerfilUserComponent{
 
   @HostListener('document:click', ['$event'])
   clickout(event: MouseEvent) {
+    const target = event.target as HTMLElement | null;
+
+    // Fechar ao clicar diretamente no ícone de fechamento dentro do componente
+    if (target?.classList?.contains('img_fecha')) {
+      this.ltiService.fechaMenuUser();
+      return;
+    }
+
     if (
       this.ltiService.perfilUser &&
       !this.eRef.nativeElement.contains(event.target)

@@ -1,90 +1,120 @@
-.container{
+.container {
   width: 100%;
-  background-color: #1B1B23;
+  background-color: white;
 }
+
 .foto-apoio {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(
-      167deg,
-      rgba(61, 34, 102, 0.7) 3.02%,
-      rgba(34, 25, 72, 0.42) 24.84%,
-      rgba(16, 19, 53, 0.24) 54.42%,
-      rgba(11, 20, 69, 0.37) 77.21%,
-      rgba(34, 45, 102, 0.7) 100%
-    ),
-    #000;
+  width: 100%;
+  margin-bottom: 6.13rem;
+  background-color: rgba(249, 255, 249, 1);
 }
+
 .foto-apoio img {
   width: 100%;
   height: 100%;
-  padding: 40px 0;
+}
+
+.imagem {
+  display: flex;
+  flex-direction: column;
+  gap: 1.06rem;
 }
 
 .texto {
-  width: 100%;
-  padding: 50px 20px;
-  gap: 20px;
   display: flex;
   align-items: center;
   justify-content: start;
+  width: 100%;
+  padding: 2.19rem 2.5rem;
+  gap: 1.25rem;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
+
 .texto p {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
+
+.linha-divisao {
+  width: 100%;
+  height: 0.03rem;
+  border: none;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.171);
+}
+
 .icon {
   text-align: end;
 }
-.blocos{
+
+.blocos {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
+  font-family: var(--fonte-arial-padrao);
+  font-weight: 400;
 }
-.bloco{
-  width: 100%;
-  height: 200px;
+
+.bloco {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
-  color: white;
-  font-size: 15px;
-  padding: 20px;
-}
-.bloco h2{
+  align-items: start;
   width: 100%;
-  font-size: 15px;
-  border-bottom: 1px solid #9665DF;
+  height: 12.5rem;
+  padding: 1.25rem;
+  color: rgba(3, 66, 47, 1);
+  font-size: 0.94rem;
+
+  h2 {
+    width: 100%;
+    font-size: 0.94rem;
+    border-bottom: 1px solid rgba(121, 193, 78, 1);
+    white-space: nowrap;
+    font-family: var(--fonte-arial-padrao);
+    font-weight: 700;
+  }
 }
 
-@media (max-width: 1100px){
+.inst {
+  align-items: center;
+}
+
+
+
+@media (max-width: 1100px) {
   .texto {
     flex-direction: column;
   }
 }
-@media (max-width: 800px){
-  .blocos{
+
+@media (max-width: 800px) {
+  .blocos {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 600px){
-  .blocos{
+
+@media (max-width: 600px) {
+  .blocos {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 450px){
-  .blocos{
+
+@media (max-width: 450px) {
+  .blocos {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-  .bloco{
-    height: 140px;
-    padding: 10px;
+
+  .bloco {
+    height: 8.75rem;
+    padding: 0.63rem;
   }
+
   .texto p {
-    margin-bottom: 5px;
+    margin-bottom: 0.31rem;
   }
 }

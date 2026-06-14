@@ -1,0 +1,71 @@
+<section class="container">
+    <section class="lado-esquerdo">
+        <img src="../../../assets/mboepi-logo_vector.svg" class="mboepi-logo" alt="mboepi logo">
+        <h1 class="titulo frase">Acesse seus cursos de extensão de forma simples, rápida e inteligente</h1>
+        <div class="meio-circulo"></div>
+        <div class="botoes">
+            <div class="container-botao-download" *ngIf="!downloadService.getHiddenButton()">
+                <button class="button-download"  (click)="downloadService.installPromptEvent()">
+                    <img class="icone-download" src="../../../assets/icons/download-propaganda.svg" alt="Ícone para baixar a plataforma Tecnocomp+">
+                    <p class="paragrafo" style="color: white; font-size: 20px;" >Instalar o App</p>
+                </button>
+            </div>
+            <button class="button-navegador" (click)="abrirNoNavegador()">
+                <img class="icone-navegador-verde" src="../../../assets/icons/icone-navegador.svg" alt="ícone navegador">
+                <img class="icone-navegador-branco" src="../../../assets/icons/icone-navegador-branco.svg" alt="ícone navegador">
+                <p class="paragrafo" style="font-size: 20px;" >Abrir no Navegador</p>
+            </button>
+        </div>
+    </section>
+    <section class="lado-direito">
+        <img  
+            class="mobile-modulo-home"
+            src="../../../assets/mobile-modulo-home.png" 
+            alt="imagem de um smartphone no modulo inicial da plataforma"
+            >
+        <img  
+            class="desktop-modulo-home"
+            src="../../../assets/desktop-modulo-home.png" 
+            alt="imagem de um desktop no modulo inicial da plataforma"
+        >
+    </section>
+</section>
+<section class="container-sobre-mboepi">
+    <h1 class="titulo titulo-sobre-mboepi">O que é o Mboepi App?</h1>
+    <section class="container-explicacao">
+        <div class="texto-sobre-mboepi">
+            <p class="paragrafo" style="line-height: 23px;font-size: 24px; color: #126259; width: 60%; margin: 0 auto; font-weight: 700; text-align: justify;">
+                O Mboepi App é um aplicativo progressivo (PWA) que permite acessar o Ambiente Virtual de Aprendizagem diretamente do seu celular ou computador, sem precisar baixar pela loja de aplicativos.
+            </p>
+        </div>
+        <div class="destaques-sobre-app">
+            <div class="itens-destaque" *ngFor="let frase of destaquesVantagensMboepi">
+                <img src="../../../assets/icons/check.svg" alt="check de vantagens">
+                <p class="paragrafo" style="font-size: 24px; color: #126259; font-weight: 700;">
+                    {{ frase }}
+                </p>
+            </div>
+        </div>
+    </section>
+</section>
+<section class="container-principais-vantagens">
+    <h1 class="titulo titulo-sobre-mboepi">Principais Vantagens</h1>
+    <div class="container-grid">
+        <div 
+            class="cards-pricipais-vantagens" 
+            *ngFor="let vantagem of principaiVantagens; let isLast = last" 
+            [class.ultimo]="isLast"
+    >
+            <div class="card-vantagens">
+                <div class="circulo-imagem" >
+                    <img class="imagem-vantagens" [class.ultimo]="isLast" [src]="vantagem.icone" alt="">
+                </div>
+                <p class="paragrafo" style="font-size: 24px; color: #126259; font-weight: 700;">{{ vantagem.titulo }}</p>
+                <p style="color: #126259; width: 80%; text-align: center;">{{ vantagem.texto }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+<app-tutorial-instalacao></app-tutorial-instalacao>
+<app-tutorial-de-uso></app-tutorial-de-uso>
+<app-rodape-propaganda></app-rodape-propaganda>

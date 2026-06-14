@@ -68,6 +68,11 @@ import { QuestaoAbertasComponent } from './components/questao-abertas/questao-ab
 import { ChatN8nComponent } from './components/chat-n8n/chat-n8n.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { LinksNavegacaoTopicosComponent } from './components/links-navegacao-topicos/links-navegacao-topicos.component';
+import { ChatPersonalizadoComponent } from './components/chat-personalizado/chat-personalizado.component';
+import { AppPropagandaComponent } from './components/app-propaganda/app-propaganda.component';
+import { TutorialInstalacaoComponent } from './components/tutorial-instalacao/tutorial-instalacao.component';
+import { TutorialDeUsoComponent } from './components/tutorial-de-uso/tutorial-de-uso.component';
+import { RodapePropagandaComponent } from './components/rodape-propaganda/rodape-propaganda.component';
 
 @NgModule({
   declarations: [
@@ -118,6 +123,11 @@ import { LinksNavegacaoTopicosComponent } from './components/links-navegacao-top
     QuestaoAbertasComponent,
     ChatN8nComponent,
     LinksNavegacaoTopicosComponent,
+    ChatPersonalizadoComponent,
+    AppPropagandaComponent,
+    TutorialInstalacaoComponent,
+    TutorialDeUsoComponent,
+    RodapePropagandaComponent,
   ],
   imports: [
     BrowserModule,

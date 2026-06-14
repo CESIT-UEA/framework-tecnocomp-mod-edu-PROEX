@@ -1,15 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
-* {
+@import url('./assets/styles/_variaveis.css');
+
+/* You can add global styles to this file, and also import other style files */* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   user-select: none;
 }
 
 html,
 body {
   height: 100vh;
-  background-color: #000000;
+  background-color: rgba(37, 159, 108);
 }
 
 body {
@@ -24,6 +25,7 @@ body {
 .center-2 {
   margin: 0 auto;
 }
+
 .mat-body p,
 .mat-body-2 p,
 .mat-typography .mat-body p,
@@ -31,6 +33,7 @@ body {
 .mat-typography p {
   margin: 0;
 }
+
 .mat-mdc-progress-bar.mat-warn {
   --mdc-linear-progress-active-indicator-color: #44ba31;
   --mdc-linear-progress-track-color: #818181;
@@ -41,18 +44,18 @@ body {
 }
 
 .mat-mdc-snack-bar-container .mdc-snackbar__action {
-  --mdc-snackbar-container-color: #2e2e2e;
   border-radius: 5px;
+  --mdc-snackbar-container-color: #2e2e2e;
   color: #793cd4 !important;
 }
 
 .mat-mdc-dialog__title {
-  margin-top: 10px;
+  margin-top: 0.63rem;
 }
 
 .mat-mdc-dialog-container {
   --mdc-dialog-container-color: #2e2e2e;
-  padding: 10px;
+  padding: 0.63rem;
   --mdc-dialog-container-shape: 8px !important;
   --mdc-dialog-container-elevation: -4px 4px 10px 0px rgba(0, 0, 0, 0.5) !important;
 }
@@ -60,41 +63,76 @@ body {
 .mat-mdc-dialog-actions,
 .mdc-dialog__title {
   justify-content: center !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 0.63rem !important;
   color: white !important;
 }
 
 
-:root{
+:root {
   --chat--window--bottom: 10%;
   --chat--toggle--background: #793cd4 !important;
   --chat--toggle--hover--background: #793cd4 !important;
   --chat--toggle--active--background: #793cd4 !important;
-  --chat--header--background:#5e17eb !important;
-  --chat--message--user--background:#5e17eb !important;
-  --chat--window--right:2%;
+  --chat--header--background: #5e17eb !important;
+  --chat--message--user--background: #5e17eb !important;
+  --chat--window--right: 2%;
+
+  --cor--teste: yellow;
+
+  --cor-branco-padrao: white;
+  --cor-branco-suave: #f9f9f9;
+
+
+  --cor-preto-padrao: black;
+  --cor-preto-suave: #3A3A3A;
+
+
+  --cor-verde-template-txt: #B1FFFF;
+  --cor-verde-template-bg: #0C4A49;
+  --cor-verde-navegacao: #2C7760;
+  --cor-verde-txt: rgba(47, 115, 94, 1);
+  --cor-verde-escuro: rgba(12, 74, 73, 1);
+
+  --cor-linha: #8FCBBF;
+  --cor-linha-forte: #269886;
+
+  --cor-linha-cinza: #A2A2A2;
+  --cor-linha-verde-forte: #26988680;
+
+  --border-verde-link: #2F735E;
+
+  --fonte-arial-padrao: arial;
+  --fonte-arial-destaque: 'ArialRoundedBold';
+
+  --sombra-muit-forte: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  --sombra-forte: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.5);
+  --sombra-leve: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  --sombra-fraca: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
 }
 
-.n8n-chat-button, .chat-window-wrapper {
-    margin-bottom: 3% !important;
+.n8n-chat-button,
+.chat-window-wrapper {
+  margin-bottom: 3% !important;
 }
 
 .chat-window {
-  height: 500px !important;
   max-height: 70vh !important;
+  height: 31.25rem !important;
 }
 
 @media(max-width: 496px) {
- .n8n-chat-button, .chat-window-wrapper {
+
+  .n8n-chat-button,
+  .chat-window-wrapper {
     margin-bottom: 0% !important;
 
- }
+  }
 
- .chat-window {
-  height: 70vh !important;
-  /* min-height:  calc(100% - var(--chat--window--bottom, var(--chat--spacing)) * 300) !important; */
-  max-height: calc(100% - var(--chat--window--bottom, var(--chat--spacing)) * 2) !important;
- }
+  .chat-window {
+    height: 70vh !important;
+    /* min-height:  calc(100% - var(--chat--window--bottom, var(--chat--spacing)) * 300) !important; */
+    max-height: calc(100% - var(--chat--window--bottom, var(--chat--spacing)) * 2) !important;
+  }
 
-} 
-
+}

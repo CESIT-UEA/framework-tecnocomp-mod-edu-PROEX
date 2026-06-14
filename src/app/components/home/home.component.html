@@ -16,10 +16,11 @@
         }"
       >
         <img
-          src="assets/tecnocomp.png"
-          alt="Tecnocom+ LOGO"
+        style="height: 57px;"
+          src="assets/uea_01.svg"
+          alt="Logo UEA"
           routerLink="./"
-          (click)="clickHeader(0)"
+          (click)="clickHeader(0) "
         />
         <nav>
           <div class="links">
@@ -63,7 +64,7 @@
                 {{ this.appService.dados_completos.user.nome[0] }}
               </div>
               <mat-icon
-                style="color: white; cursor: pointer"
+                style="color: rgba(0, 102, 51, 1); cursor: pointer"
                 (click)="
                   this.appService.abreMenuUser(); $event.stopPropagation()
                 "
@@ -117,10 +118,10 @@
             <div class="container-direito">
               <img
                 class="imagem-acima"
-                src="../../../../assets/imagem-acima-botoes.png"
+                src="../../../../assets/logo_home.svg"
                 alt=""
-                width="300px"
-                height="220px"
+                width="58%"
+              
               />
               <app-botoes-section
                 nome_ebook="Ebook de Teste"

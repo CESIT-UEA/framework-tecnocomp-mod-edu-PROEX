@@ -3,7 +3,7 @@
     <div class="header-links">
       <!-- Imagem do ícone de download do ebook -->
       <img
-        src="assets/icons/saibaMais.svg"
+        src="../../../../../assets/icons/referencias_white.svg"
         alt="Icone para download do ebook"
         width="28px"
         height="28px"
@@ -14,7 +14,7 @@
   <!-- ícone que quando clicado volta para a página geral da unidade -->
   <img
     (click)="linksClick.emit()"
-    src="assets/icons/close.svg"
+    src="../../../../../assets/icons/close.svg"
     alt="Icone para ir para a atividade da unidade"
     width="30px"
     height="30px"
@@ -27,7 +27,7 @@
   <!-- ngFor que percorre o vetor de objetos que contém descrição e link de informaçõoes adicionais -->
   <div class="container-links-text-caixa" *ngFor="let item of links">
     <div class="container-links-text-caixa-descricao-conteudo">
-      <img src="../../../../../assets/img/youtube.png" alt="imagem da logo do youtube">
+      <img src="../../../../../assets/youtube-svg.svg" alt="imagem da logo do youtube">
       <p class="container-links-text-caixa-descricao1">Descrição:</p>
     </div>
       <!-- a cada iteração do ngFor tem uma descrição e um link diferente sendo exibido -->

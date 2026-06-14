@@ -1,0 +1,28 @@
+.container {
+    height: 100vh;
+    background-color: white;
+}
+
+.titulo {
+    font-family: var(--fonte-arial-destaque);
+    color: #009D4E;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.container-telas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin: 0 30px;
+}
+
+.imagem {
+    height: 400px;
+    width: 100%;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+}

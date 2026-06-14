@@ -2,20 +2,12 @@
   <h2>{{ pergunta }}</h2>
 
   <form [formGroup]="form" (ngSubmit)="enviarResposta()">
-    <textarea
-      formControlName="resposta"
-      rows="6"
-      placeholder="Digite sua resposta..."
-      [readonly]="form.disabled"
-      [ngStyle]="form.disabled ? { color: 'white' } : {}"
-    ></textarea>
+    <textarea formControlName="resposta" rows="6" placeholder="Digite sua resposta..." [readonly]="form.disabled"
+      [ngStyle]="form.disabled ? { color: 'white' } : {}"></textarea>
 
-    <button
-      type="submit"
-      *ngIf="!form.disabled"
-      [disabled]="form.invalid || loading"
-    >
-      {{ loading ? "Enviando..." : "Enviar Resposta" }}
+    <button type="submit" *ngIf="!form.disabled" [disabled]="form.invalid || loading">
+      <img src="assets/icons/escrever.svg" alt="" width="20px" height="20px">
+      <span>{{ loading ? "Enviando..." : "Enviar Resposta" }}</span>
     </button>
   </form>
 

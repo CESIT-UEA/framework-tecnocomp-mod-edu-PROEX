@@ -1,0 +1,78 @@
+.container-atividade {
+  margin: 3.13rem 0;
+  color: white;
+}
+
+.correto {
+  border-color: green;
+  color: green;
+}
+
+.errado {
+  border-color: red;
+  color: red;
+}
+
+.container-resposta {
+  margin-bottom: 2.19rem;
+  border-radius: 8px;
+  background: var(--24, #4F4F4F);
+}
+
+.container-resposta-conteudo {
+  display: flex;
+  align-items: center;
+}
+
+.container-resposta-conteudo p {
+  padding: 0.94rem 1.88rem;
+  font-family: Arial;
+  font-size: 1.38rem;
+  font-weight: 400;
+  line-height: 1.88rem;
+  color: #FFF;
+}
+
+.corretoVisivel,
+.erradoVisivel {
+  display: block;
+  margin: 0 auto;
+  padding: 0 0.63rem;
+  font-family: Arial;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.88rem;
+  color: #B3B3B3;
+}
+
+.corretoVisivel {
+  border: 1px solid #498040;
+}
+
+.erradoVisivel {
+  border: 1px solid rgb(175, 12, 12);
+}
+
+.olhoIMG {
+  padding: 0.63rem;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 0;
+}
+
+.botao button {
+  padding: 0.38rem 1.06rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-family: Arial;
+  font-size: 1.13rem;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #361B5E;
+  color: #818181;
+}
+

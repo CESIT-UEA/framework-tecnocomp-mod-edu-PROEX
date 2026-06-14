@@ -1,81 +1,239 @@
 .container-main-conteudo-links-voltar {
-  display: grid;
+  display: flex;
   align-items: center;
-  color: white;
-  height: 10vh;
-  padding-top: calc(2% - 5px); 
-  position: relative;
+  justify-content: flex-end;
+  min-height: 10vh;
+  max-height: 10vh;
+  color: var(--cor-branco-padrao);
+
+  @media (max-width: 640px) {
+    min-height: 3vh;
+    max-height: 3vh;
+    color: transparent;
+  }
 }
-.button {
-  border-radius: 8px;
-  background: linear-gradient(
-      90deg,
-      rgba(92, 51, 153, 0.75) 0%,
-      rgba(71, 42, 125, 0.61) 14.78%,
-      rgba(57, 36, 107, 0.53) 24.39%,
-      rgba(29, 38, 92, 0.45) 57.95%,
-      rgba(40, 53, 122, 0.6) 85.46%,
-      rgba(51, 68, 153, 0.75) 100%
-    ),
-    #0f0f0f;
-  padding: 6px 15px;
-  margin: 0 auto;
+
+.img_voltar {
   cursor: pointer;
-  position: absolute;
-  left: 40%;
 }
+
+.button {
+  padding: 0.56rem 0.94rem;
+  margin: 0 auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 .link-proximo {
   display: inline-grid;
   grid-template-columns: auto auto;
   align-items: center;
-  text-decoration: none;
-  font: normal 400 16px Arial;
-  column-gap: 10px;
-  padding-right: 20px;
-  /* padding-bottom: 10px; */
-  width: fit-content;
   justify-self: end;
+  width: fit-content;
+  height: 2.5rem;
+  margin-right: 3.44rem;
+  padding: 0 1.88rem;
+  font: normal 400 1rem Arial;
+  font-size: 1.13rem;
+  column-gap: 0.63rem;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: var(--cor-verde-txt);
   cursor: pointer;
+
+  @media (max-width: 640px) {
+    width: 1.56rem;
+    height: 1.56rem;
+    margin-top: 0;
+    margin-bottom: 0.19rem;
+    margin-left: auto;
+    margin-right: 1.56rem;
+    padding: 0;
+    font-size: 0;
+    overflow: hidden;
+    background-color: transparent;
+    background-image: url('../../../assets/icons/voltarUnidade_verde.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    img {
+      display: none;
+    }
+  }
 }
 
 .link-voltar {
   display: inline-grid;
   grid-template-columns: auto auto;
   align-items: center;
-  text-decoration: none;
-  font-family: Arial;
-  font-size: 16px;
-  line-height: normal;
-  column-gap: 10px;
-  padding-left: 20px;
-  /* padding-bottom: 10px; */
-  width: fit-content;
   justify-self: start;
+  width: fit-content;
+  height: 2.5rem;
+  margin-left: 3.44rem;
+  padding: 0 1.88rem;
+  font: normal 400 1rem Arial;
+  font-size: 1.13rem;
+  column-gap: 0.63rem;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: var(--cor-verde-txt);
   cursor: pointer;
+
+  @media (max-width: 640px) {
+    width: 1.56rem;
+    height: 1.56rem;
+    margin-top: 0;
+    margin-bottom: 0.19rem;
+    margin-left: 1.56rem;
+    padding: 0;
+    font-size: 0;
+    overflow: hidden;
+    background-color: transparent;
+    background-image: url('../../../assets/icons/anterior-verde.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    img {
+      display: none;
+    }
+  }
 }
+
 .container-links {
   grid-template-columns: auto auto;
   justify-content: space-between;
 }
+
 .sozinho-proximo {
   justify-self: end;
 }
+
+.sozinho-voltar {
+  justify-self: start;
+}
+
 .opactiy-active {
   opacity: 0.5;
 }
 
-
 .mat-mdc-progress-spinner {
   background-color: #281446;
-}
-.mat-mdc-progress-spinner {
   --mdc-circular-progress-active-indicator-color: #58db43;
 }
+
 .progress-spinner {
   position: absolute;
   top: 43%;
   right: 10%;
-  font-size: 16px;
+  font-size: 1rem;
+}
+
+.button-finalizar-box {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-self: end;
+  width: fit-content;
+  height: 2.5rem;
+  margin-right: 3.44rem;
+  padding: 0 1.88rem;
+  font: normal 400 1rem Arial;
+  font-size: 1.13rem;
+  column-gap: 0.63rem;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: var(--cor-verde-txt);
+  cursor: pointer;
+  color: white;
+
+  button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  p {
+    margin: 0;
+    color: white;
+  }
+
+  mat-icon {
+    color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 640px) {
+    width: 1.56rem;
+    height: 1.56rem;
+    margin-top: 0;
+    margin-bottom: 0.19rem;
+    margin-left: auto;
+    margin-right: 1.56rem;
+    padding: 0;
+    font-size: 0;
+    overflow: hidden;
+    background-color: transparent;
+    background-image: url('../../../assets/icons/voltarUnidade_verde.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    img {
+      display: none;
+    }
+  }
+}
+
+.button-finalizar-desabilitado {
+  opacity: 0.5;
+  border-radius: 6px;
+  background-color: var(--cor-verde-txt);
+  box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-self: end;
+  width: fit-content;
+  height: 2.5rem;
+  margin-right: 3.44rem;
+  padding: 0 1.88rem;
+  font: normal 400 1rem Arial;
+  font-size: 1.13rem;
+  column-gap: 0.63rem;
+  color: white;
+
+  p {
+    margin: 0;
+    color: white;
+  }
+
+  mat-icon {
+    color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.button-finalizar-nao-avaliado {
+  border-radius: 6px;
+  background-color: var(--cor-verde-txt);
+  box-shadow: 0rem 0rem 0.325rem #AAAAAA;
+}
+
+.button-finalizar-avaliado {
+  border-radius: 6px;
+  border: 1px solid #74cc66;
+  box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  color: #74cc66;
 }
 
 @media (max-width: 800px) {
@@ -84,71 +242,33 @@
   }
 }
 
-@media (max-width: 600px){
-  .container-foto-header{
-    margin: 0  0 0 1rem;
+@media (max-width: 600px) {
+  .container-foto-header {
+    margin: 0 0 0 1rem;
   }
-  #icon{
+
+  #icon {
     margin-right: 1rem;
   }
 
   .container-main-conteudo-links-voltar {
-    height: auto;  
+    height: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .header .logo {
+    padding: 0.63rem 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .link-proximo,
+  .link-voltar {
+    font-size: 0.75rem;
   }
 
-}
-
-.button-finalizar-box {
-  margin-left: 20px;
-  display: flex;
-  height: 40px;
-  padding: 10px 35px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-  cursor: pointer;
-}
-
-.button-finalizar-box button {
-  background-color: transparent;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-.button-finalizar-desabilitado {
-  border-radius: 6px;
-  opacity: 0.5;
-  background: #793cd4;
-  box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.25);
-}
-.button-finalizar-nao-avaliado {
-  border-radius: 6px;
-  background: #793cd4;
-  box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.25);
-}
-.button-finalizar-avaliado {
-  border-radius: 6px;
-  border: 1px solid #74CC66;
-  box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.25);
-  color: #74CC66;
-}
-
-
-@media(max-width: 375px){
-  .header .logo{
-    padding: 10px 0;
-  }
-  /* .container-main-conteudo-links-voltar{
-    padding-top: calc(18% - 5px);
-} */
-}
-
-@media(max-width: 350px){
-  .link-proximo, .link-voltar{
-    font-size: 12px;
-  }
-  .header .logo{
-    padding: 15px 0;
+  .header .logo {
+    padding: 0.94rem 0;
   }
 }

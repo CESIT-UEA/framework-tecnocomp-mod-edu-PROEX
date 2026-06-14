@@ -1,12 +1,10 @@
 button {
-    display: flex;
-    background-color: black;
-    border: none;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    border: 1px solid #515151;
-    border-radius: 6px;
-    padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.63rem;
+  padding: 0.25rem 0.63rem;
+  border: 1px solid #515151;
+  border-radius: 6px;
+  background-color: black;
+  cursor: pointer;
 }
-

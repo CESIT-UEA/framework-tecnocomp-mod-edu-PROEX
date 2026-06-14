@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ModuloService } from 'src/app/personalizavel/modulo.service';
 import { ServiceAppService } from 'src/app/service-app.service';
 
 @Component({
@@ -14,7 +16,11 @@ export class ModuloConcluidoComponent {
   disabled_estrelas = false;
   editar = false;
 
-  constructor(public ltiService: ServiceAppService, private fb: FormBuilder) {}
+  constructor(
+    public ltiService: ServiceAppService, 
+    private fb: FormBuilder, 
+    private router: Router, 
+    private moduloService: ModuloService) {}
 
   ngOnInit() {
     this.ltiService.getDadosCompletos();
@@ -111,5 +117,13 @@ export class ModuloConcluidoComponent {
   cancelar(){
     this.desativarForm()
     this.editar = false
+  }
+
+  voltarModulo6() {
+    // Define o tópico 6 (índice 5)
+    this.moduloService.controll_topico = 5;
+    // Navega de volta para os tópicos do módulo
+    const nomeModulo = this.ltiService.dados_completos.modulo.nome_modulo;
+    this.router.navigate(['/modulo', nomeModulo, 'topicos']);
   }
 }

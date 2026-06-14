@@ -129,6 +129,21 @@ export class SobreComponent {
    */
   currentVideoIndex: number = 0;
 
+  get imgpreviou(): string {
+  return this.currentVideoIndex === this.cardEquipes.length - 1
+    ? '../../../../assets/icons/previous-disable.svg'
+    : '../../../../assets/icons/previous.svg';
+}
+  get imgpreviou2(): string {
+  return this.currentVideoIndex === 0
+    ? '../../../../assets/icons/previous2-disable.svg'
+    : '../../../../assets/icons/previous2.svg';
+}
+
+ get cursorDisable(): boolean {
+  return this.currentVideoIndex === 0 || this.currentVideoIndex === this.cardEquipes.length - 1;
+}
+
   /**
    * @ignore
    */

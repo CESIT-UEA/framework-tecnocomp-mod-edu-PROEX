@@ -1,22 +1,14 @@
 <div class="container-modulo-concluido">
-  
+  <button class="botao-fechar" (click)="voltarModulo6()">
+    <img src="../../../assets/icons/x.svg" alt="Fechar" />
+  </button>
 </div>
-<header class="header-atividade">
-  <img
-    (click)="voltar()"
-    src="assets/icons/close.svg"
-    alt="Ícone para ir para a atividade da unidade"
-    width="30px"
-    height="30px"
-    style="cursor: pointer"
-  />
-</header>
 
 <div class="container">
   <div class="descricao-conclusao">
     <img
       class="concluido"
-      src="../../../assets/icons/concluido.svg"
+      src="../../../assets/icons/bxs_badge-check.svg"
       alt="Concluído"
     />
     <p>Parabéns! Você concluiu o módulo com sucesso!</p>
@@ -54,6 +46,7 @@
           </mat-icon>
           <mat-icon
             style="cursor: initial"
+            style="color: #2F735E"
             class="icon"
             *ngIf="this.editar == false"
             >autorenew</mat-icon
@@ -90,7 +83,7 @@
         <div class="final">
           <div class="moodle" (click)="this.ltiService.retornarLms()">
             <img
-              src="../../../assets/icons/voltarMoodle.svg"
+              src="../../../assets/icons/chapeuzinho_avalicao_modulo .svg"
               alt="Ícone para voltar ao AVA"
               width="22px"
               height="24px"
@@ -106,8 +99,9 @@
           *ngIf="this.ltiService.verificaAvaliacaoNaoFoiFeitaEstrelas()"
           [ngClass]="{ desativado: formAvaliacao.invalid }"
         >
-          <img src="../../../assets/icons/enviar.svg" alt="Editar avaliação" />
-          Enviar Avaliação
+          <img class="img-enviar img-enviar-normal" src="../../../assets/icons/Enviar_avaliacao.svg" alt="Editar avaliação" />
+          <img class="img-enviar img-enviar-hover" src="../../../assets/icons/enviar-branco.svg" alt="Editar avaliação" />
+          <p>Enviar Avaliação</p>
         </button>
 
         <button
