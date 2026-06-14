@@ -101,7 +101,7 @@
 
 .container-links {
   grid-template-columns: auto auto;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .sozinho-proximo {
