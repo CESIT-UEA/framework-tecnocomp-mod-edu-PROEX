@@ -85,7 +85,7 @@
 .progress-spinner {
   position: absolute;
   top: 27%;
-  margin-left: 39%;
+  margin-left: 25%;
   font-family: var(--fonte-arial-destaque);
   font-size: 1rem;
 }
