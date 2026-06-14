@@ -3,7 +3,7 @@
 
   <form [formGroup]="form" (ngSubmit)="enviarResposta()">
     <textarea formControlName="resposta" rows="6" placeholder="Digite sua resposta..." [readonly]="form.disabled"
-      [ngStyle]="form.disabled ? { color: 'white' } : {}"></textarea>
+      [ngStyle]="form.disabled ? { color: '#155724' } : {}"></textarea>
 
     <button type="submit" *ngIf="!form.disabled" [disabled]="form.invalid || loading">
       <img src="assets/icons/escrever.svg" alt="" width="20px" height="20px">
