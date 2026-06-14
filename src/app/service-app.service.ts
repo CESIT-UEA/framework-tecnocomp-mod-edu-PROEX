@@ -499,6 +499,7 @@ export class ServiceAppService {
       'Content-Type': 'application/json',
       Authorization: 'Bearer ' + this.dados_completos.user.ltik,
     });
+    
 
     console.log(body);
     return this.http.post(`${this.apiUrl}/enviar_avaliacao`, body, {
