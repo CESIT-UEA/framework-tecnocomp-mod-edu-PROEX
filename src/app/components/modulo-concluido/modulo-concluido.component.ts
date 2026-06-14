@@ -119,9 +119,7 @@ export class ModuloConcluidoComponent {
     this.editar = false
   }
 
-  voltarModulo6() {
-    // Define o tópico 6 (índice 5)
-    this.moduloService.controll_topico = 5;
+  voltarModulo() {
     // Navega de volta para os tópicos do módulo
     const nomeModulo = this.ltiService.dados_completos.modulo.nome_modulo;
     this.router.navigate(['/modulo', nomeModulo, 'topicos']);
