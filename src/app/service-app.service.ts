@@ -504,7 +504,7 @@ export class ServiceAppService {
       return false;
     }
   }
-  private webhookUrl = 'https://tecnocomp.uea.edu.br:5678/webhook/1cf5320a-77b7-4a3d-98ba-a5a9f83600ac';
+  private webhookUrl = 'https://n8n-proex.tecnocomp.cloud/webhook/1cf5320a-77b7-4a3d-98ba-a5a9f83600ac';
   desativa_chat = false;
 
   enviarResposta(payload: {
