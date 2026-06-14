@@ -116,6 +116,11 @@
   opacity: 0.5;
 }
 
+.sozinho-concluir {
+  justify-self: end;
+  margin-right: 20px;
+}
+
 .mat-mdc-progress-spinner {
   background-color: #281446;
   --mdc-circular-progress-active-indicator-color: #58db43;

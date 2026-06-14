@@ -3,7 +3,8 @@
     [ngClass]="{
       'container-links':
       (this.verificaVoltar() && this.verificaProximo()) ||
-       this.verificaProximo() == false
+       this.verificaProximo() == false,
+       'sozinho-concluir': !verificaVoltar() && !verificaProximo()
     }"
 >
     <div
