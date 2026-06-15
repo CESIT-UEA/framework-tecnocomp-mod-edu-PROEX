@@ -13,7 +13,7 @@
 
     <div *ngSwitchCase="'3'" style="height: 100%">
       <app-referencias
-        [referencias]="this.ltiService.dados_completos.topicos?.[this.moduloService.controll_topico]?.Referencias"
+        [referencias]="this.ltiService.dados_completos.referencias_modulo"
         (referenciasClick)="referenciasClick()"
       ></app-referencias>
     </div>
