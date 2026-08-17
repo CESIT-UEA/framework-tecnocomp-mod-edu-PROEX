@@ -15,6 +15,6 @@ export class RodapePropagandaComponent implements OnInit{
     }
 
     abrirNoNavegador() {
-      window.open('https://homologacao-ava.uea.edu.br', '_blank');
+      window.open('https://mboepi.tecnocomp.cloud', '_blank');
     }
 }
