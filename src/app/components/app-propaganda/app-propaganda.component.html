@@ -34,7 +34,7 @@
     <h1 class="titulo titulo-sobre-mboepi">O que é o Mboepi App?</h1>
     <section class="container-explicacao">
         <div class="texto-sobre-mboepi">
-            <p class="paragrafo" style="line-height: 23px;font-size: 24px; color: #126259; width: 60%; margin: 0 auto; font-weight: 700; text-align: justify;">
+            <p class="paragrafo" style="line-height: 23px;font-size: 24px; color: #126259; margin: 0 auto; font-weight: 700; text-align: justify;">
                 O Mboepi App é um aplicativo progressivo (PWA) que permite acessar o Ambiente Virtual de Aprendizagem diretamente do seu celular ou computador, sem precisar baixar pela loja de aplicativos.
             </p>
         </div>
@@ -60,8 +60,10 @@
                 <div class="circulo-imagem" >
                     <img class="imagem-vantagens" [class.ultimo]="isLast" [src]="vantagem.icone" alt="">
                 </div>
-                <p class="paragrafo" style="font-size: 24px; color: #126259; font-weight: 700;">{{ vantagem.titulo }}</p>
-                <p style="color: #126259; width: 80%; text-align: center;">{{ vantagem.texto }}</p>
+                <div class="p-card-vantagens">
+                    <p class="paragrafo-vantagens" style="font-size: 24px; ; color: #126259; font-weight: 700;">{{ vantagem.titulo }}</p>
+                    <p class="paragrafo-vantagens p2" style="color: #126259;">{{ vantagem.texto }}</p>
+                </div>
             </div>
         </div>
     </div>

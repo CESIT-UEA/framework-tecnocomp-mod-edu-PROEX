@@ -73,6 +73,10 @@
     color: #FFFFFF;
 }
 
+.button-download {
+    width: 100%;
+}
+
 .button-navegador:hover {
     .icone-navegador-branco {
         display: block;
@@ -107,9 +111,14 @@
     width: 22px;
 }
 
-.paragrafo {
+.paragrafo, .paragrafo-vantagens {
     font-family: var(--fonte-arial-destaque);
     font-weight: 400;
+    width: 60%;
+}
+
+.paragrafo-vantagens {
+    text-align: center;
 }
 
 .lado-direito {
@@ -179,7 +188,7 @@
     background-color: #FFFFFF;
     row-gap: 20px;
     border-radius: 20px;
-    padding: 10px;
+    padding: 15px;
     box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.9);
 }
 
@@ -207,10 +216,126 @@
      align-items: center;
 }
 
+.p-card-vantagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.p2 {
+     width: 80%
+}
+
+@media(max-width: 1070px){
+    .container-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lado-esquerdo {
+        width: 100%;
+    }
+
+    .lado-direito {
+        display: none;
+    }
+
+    .meio-circulo {
+        display: none;
+    }
+}
 
 @media(max-width: 712px) {
+    .container {
+        
+    }
+
     .container-explicacao {
         display: flex;
         flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    .container-grid {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .container-principais-vantagens {
+        height: auto;
+        padding-bottom: 3rem;
+    }
+    
+
+    .meio-circulo {
+        position: initial;
+        left: 0;
+        top: 0;
+        height: 0;
+        width: 0;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        z-index: 1;
+    } 
+
+    .botoes {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+     .lado-esquerdo {
+        text-align: center;
+        padding-left: 0px;
+        row-gap: 0px;
+        justify-content: center;
+        row-gap: 3rem;
+    }
+
+    .mboepi-logo {
+        height: initial;
+        width: initial;
+        padding: 1rem 2rem 0;
+    }
+
+    .titulo {
+        padding: 2rem;
+    }
+
+    .botoes {
+        padding: 0 2rem;
+    }
+
+
+    .paragrafo, .destaques-sobre-app {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card-vantagens {
+        flex-direction: initial;
+        column-gap: 2rem;
+    }
+
+
+    .cards-pricipais-vantagens {
+        width: 100%;
+    }
+
+    .p-card-vantagens, .paragrafo-vantagens {
+        align-items: start;   
+    }
+
+    .paragrafo-vantagens {
+        text-align: initial;
+    }
+
+    .p2 {
+         width: 80%;
+    }
+    .card-vantagens {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
     }
 }
+

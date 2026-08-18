@@ -112,3 +112,55 @@
     color: #FFFFFF;
     padding-bottom: 30px;
 }
+
+@media (max-width: 796px) {
+
+    .container {
+        flex-direction: column-reverse;
+        height: auto;
+
+    }
+
+    .container-direito, .lado-direito {
+        width: 100%;
+    }
+
+    .meio-circulo {
+        position: absolute;
+        top: 0;
+        height: 0%;
+        width: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        z-index: 2;
+        background-color: #FFFFFF;
+    } 
+
+    .lado-esquerdo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .titulo {
+        padding-top: 10px;
+    }
+
+    .mobile-modulo-home {
+        position: relative;
+        left: 0%;
+        z-index: 2;
+        text-align: center;
+    }
+    .desktop-modulo-home {
+        width: 400px;
+        padding-bottom: 14px;
+    }
+
+    .lado-direito {
+        height: auto;
+    }
+
+    .orientacoes-mobile {
+        margin: 1rem auto;
+    }
+}
