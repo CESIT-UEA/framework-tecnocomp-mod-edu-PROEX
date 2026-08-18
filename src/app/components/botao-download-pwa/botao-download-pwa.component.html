@@ -1,8 +1,9 @@
 <!-- botão para download da plataforma Tecnocomp -->
 <div class="container-botao-download" *ngIf="!downloadService.getHiddenButton()">
     <button (click)="downloadService.installPromptEvent()">
-    <img src="../../../assets/icons/download.svg" alt="Ícone para baixar a plataforma Tecnocomp+">
-    <p style="color: white; font-size: 18px;" >App</p>
+    <p style="font-size: 18px;" >App</p>
+    <img src="../../../assets/icons/download-propaganda.svg" class="download-branco" height="15px" width="15px" alt="Ícone para baixar a plataforma Tecnocomp+">
+    <img src="../../../assets/icons/download.svg" class="download-verde" height="15px" width="15px" alt="Ícone para baixar a plataforma Tecnocomp+">
     </button>
 </div>
 

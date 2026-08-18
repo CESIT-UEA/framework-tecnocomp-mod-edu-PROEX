@@ -17,8 +17,8 @@
       >
         <img
         style="height: 57px;"
-          src="assets/uea_01.svg"
-          alt="Logo UEA"
+          src="../../../assets/img/logo-mboepi-uea.svg"
+          alt="Logo Mboepi"
           routerLink="./"
           (click)="clickHeader(0) "
         />
@@ -72,6 +72,10 @@
                 keyboard_arrow_down
               </mat-icon>
             </div>
+            <!-- Botão para download do app -->
+           <div class="container-download-app">
+                <app-botao-download-pwa></app-botao-download-pwa>
+           </div>
             <app-perfil-user
               *ngIf="this.appService.perfilUser == true"
             ></app-perfil-user>
@@ -97,10 +101,7 @@
 
         <!-- Section padrão da página incial HOME com video e botões -->
         <section class="container-section" *ngSwitchDefault>
-          <!-- Botão para download do app -->
-           <div class="container-download-app">
-                <app-botao-download-pwa></app-botao-download-pwa>
-           </div>
+          
           <!-- <p style="color: white; text-align: center; font-size: 16px;">Módulo:</p> -->
           <div class="content-container">
             <div class="container-esquerdo">
@@ -129,6 +130,9 @@
                 caminho_ebook="assets/E-book Teste.PDF"
                 urlInicio="topicos"
               ></app-botoes-section>
+              <div class="container-download-app-mobile">
+                <app-botao-download-pwa></app-botao-download-pwa>
+           </div>
             </div>
           </div>
 
