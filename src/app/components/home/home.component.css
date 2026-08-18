@@ -325,6 +325,7 @@ app-video-section iframe {
 
   .header img {
     height: 4.38rem;
+    margin-left: 0.4rem;
   }
 
   .container-esquerdo {
@@ -348,5 +349,9 @@ app-video-section iframe {
 @media (max-width: 640px) {
   mat-sidenav {
     width: 100%;
+  }
+
+  .end-navbar {
+    gap: 1.5rem;
   }
 }
