@@ -30,8 +30,7 @@
   <ul class="container-links-text-lista" *ngIf="referencias" >
     <!-- ngFor que percorre as imagens de referências do livro -->
     <li *ngFor="let item of referencias">
-      <div *ngIf="item.link && item.descricao" class="referencias-div">
-        <img [src]="item.link" alt="img da referencia do livro">
+      <div *ngIf="item.descricao" class="referencias-div">
         <p matTooltip={{item.descricao}} >{{ item.descricao | slice: 0 : 150 }}...</p>
       </div>
     </li>
