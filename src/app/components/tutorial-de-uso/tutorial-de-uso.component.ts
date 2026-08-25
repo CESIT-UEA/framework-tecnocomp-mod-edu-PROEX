@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class TutorialDeUsoComponent {
     fotosApp: string[] = [
-      '../../../assets/tela-modulo-inicial.png',
-      '../../../assets/tela-topicos.png',
-      '../../../assets/tela-atividade.png',
-      '../../../assets/tela-sabia.png'
+      'assets/tela-modulo-inicial.png',
+      'assets/tela-topicos.png',
+      'assets/tela-atividade.png',
+      'assets/tela-sabia.png'
     ]
 }

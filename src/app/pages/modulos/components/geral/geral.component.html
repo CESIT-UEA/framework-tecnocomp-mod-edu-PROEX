@@ -23,7 +23,7 @@
       <!-- Botão que quando clicado vai para o componente saiba-mais -->
       <div class="botoes-cima">
         <button class="textoApoio" (click)="textoApoioClick.emit()">
-          <img src="../../../../../assets/icons/texto-de-apoio.svg" alt="Icone para download do ebook" />
+          <img src="assets/icons/texto-de-apoio.svg" alt="Icone para download do ebook" />
           Slide
           <mat-icon class="concluido" *ngIf="
               this.ltiService.dados_completos.userTopico[
@@ -32,7 +32,7 @@
             ">check</mat-icon>
         </button>
         <button class="saibaMais" (click)="linksClick.emit()">
-          <img src="../../../../../assets/icons/saibaMais.svg" alt="Icone para download do ebook" />
+          <img src="assets/icons/saibaMais.svg" alt="Icone para download do ebook" />
           Saiba mais
           <mat-icon class="concluido" *ngIf="
               this.ltiService.dados_completos.userTopico[
@@ -43,7 +43,7 @@
         <!-- Botão que quando clicado vai para o componente referências -->
 
         <button class="referencias" (click)="referenciasClick.emit()">
-          <img src="../../../../../assets/icons/referencias.svg" alt="Icone para download do ebook" />
+          <img src="assets/icons/referencias.svg" alt="Icone para download do ebook" />
           Referências
           <mat-icon class="concluido" *ngIf="
               this.ltiService.dados_completos.userTopico[
@@ -81,7 +81,7 @@
               this.moduloService.controll_topico
             ].UsuarioTopicos[0].encerrado == false
           " class="atividade-botao active-incorreto" (click)="atividadeClick.emit()">
-          <img src="../../../../../assets/img/erradoAtividade.png" alt="Icone para ir para a atividade da unidade"
+          <img src="assets/img/erradoAtividade.png" alt="Icone para ir para a atividade da unidade"
             width="18px" height="18px" />
           Ops! Refazer Atividade
         </button>
@@ -92,7 +92,7 @@
               this.moduloService.controll_topico
             ].UsuarioTopicos[0].encerrado == true
           " class="atividade-botao active-correto" (click)="atividadeClick.emit()">
-          <img src="../../../../../assets/img/checkAtividade.png" alt="Icone para ir para a atividade da unidade"
+          <img src="assets/img/checkAtividade.png" alt="Icone para ir para a atividade da unidade"
             width="22px" height="24px" />
           Acertou! Ver resposta
         </button>

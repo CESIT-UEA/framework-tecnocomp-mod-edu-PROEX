@@ -44,7 +44,7 @@ export class SobreComponent {
         {
           cargo: 'Coordenador Geral',
           nome: 'João da Mata',
-          image: '../../../../assets/img/equipe/prof-joao.jpeg',
+          image: 'assets/img/equipe/prof-joao.jpeg',
         },
       ],
     },
@@ -54,17 +54,17 @@ export class SobreComponent {
         {
           cargo: 'Designer Gráfico',
           nome: 'Adriene Chaves',
-          image: '../../../../assets/img/equipe/adriene.jpeg',
+          image: 'assets/img/equipe/adriene.jpeg',
         },
         {
           cargo: 'Designer UI/UX',
           nome: 'Lívia Monteiro',
-          image: '../../../../assets/img/equipe/livia.jpeg',
+          image: 'assets/img/equipe/livia.jpeg',
         },
         {
           cargo: 'Designer Instrucional',
           nome: 'Jorge Coutinho',
-          image: '../../../../assets/img/equipe/mikael.jpeg',
+          image: 'assets/img/equipe/mikael.jpeg',
         },
       ],
     },
@@ -74,12 +74,12 @@ export class SobreComponent {
         {
           cargo: 'Instrutor(a)',
           nome: 'Yasmim Moraes',
-          image: '../../../../assets/img/equipe/yasmin.jpeg',
+          image: 'assets/img/equipe/yasmin.jpeg',
         },
         {
           cargo: 'Videomaker',
           nome: 'Jorge Coutinho',
-          image: '../../../../assets/img/equipe/mikael.jpeg',
+          image: 'assets/img/equipe/mikael.jpeg',
         },
       ],
     },
@@ -87,19 +87,19 @@ export class SobreComponent {
       equipe: 'Desenvolvimento e Tecnologia',
       membros: [
         {
-          cargo: 'Desenvolvedor Frontend (1)',
+          cargo: 'Desenvolvedor Full Stack',
           nome: 'Kauê Olímpio',
-          image: '../../../../assets/img/equipe/kaue.jpeg',
+          image: 'assets/img/equipe/kaue.jpeg',
         },
         {
-          cargo: 'Desenvolvedor Frontend (2)',
+          cargo: 'Desenvolvedor Frontend',
           nome: 'Andriw Santos',
-          image: '../../../../assets/img/equipe/andriw.jpeg',
+          image: 'assets/img/equipe/andriw.jpeg',
         },
         {
           cargo: 'Desenvolvedor Full Stack',
           nome: 'Henrique Galvim',
-          image: '../../../../assets/img/equipe/henrique.jpeg',
+          image: 'assets/img/equipe/henrique.jpeg',
         },
       ],
     },
@@ -109,7 +109,7 @@ export class SobreComponent {
         {
           cargo: 'Analista de testes',
           nome: 'Jhonathan Maia',
-          image: '../../../../assets/img/equipe/jonatan.jpeg',
+          image: 'assets/img/equipe/jonatan.jpeg',
         },
       ],
     },
@@ -119,7 +119,7 @@ export class SobreComponent {
         {
           cargo: 'Social Media',
           nome: 'Adriene Chaves',
-          image: '../../../../assets/img/equipe/adriene.jpeg',
+          image: 'assets/img/equipe/adriene.jpeg',
         },
       ],
     },
@@ -131,13 +131,13 @@ export class SobreComponent {
 
   get imgpreviou(): string {
   return this.currentVideoIndex === this.cardEquipes.length - 1
-    ? '../../../../assets/icons/previous-disable.svg'
-    : '../../../../assets/icons/previous.svg';
+    ? 'assets/icons/previous-disable.svg'
+    : 'assets/icons/previous.svg';
 }
   get imgpreviou2(): string {
   return this.currentVideoIndex === 0
-    ? '../../../../assets/icons/previous2-disable.svg'
-    : '../../../../assets/icons/previous2.svg';
+    ? 'assets/icons/previous2-disable.svg'
+    : 'assets/icons/previous2.svg';
 }
 
  get cursorDisable(): boolean {

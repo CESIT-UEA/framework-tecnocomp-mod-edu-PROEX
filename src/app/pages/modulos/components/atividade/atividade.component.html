@@ -50,10 +50,10 @@
               resposta == alternativa.descricao &&
               this.respostaEnviada == true &&
               alternativa.correta == true
-            " src="../../../../../assets/img/checkAtividade.png" alt="" />
+            " src="assets/img/checkAtividade.png" alt="" />
           <img class="img img-errada" *ngIf="
               (resposta === alternativa.descricao && this.respostaEnviada == true && alternativa.correta == false) || this.ltiService.dados_completos?.userTopico?.[this.idTopico]?.UsuarioTopicos[0].resposta_errada == alternativa.descricao && alternativa.correta == false
-            " src="../../../../../assets/img/erradoAtividade.png" alt="" />
+            " src="assets/img/erradoAtividade.png" alt="" />
         </div>
         <div class="container-textos" [ngClass]="{
             'active-alternativa':
@@ -155,21 +155,21 @@
                 alternativa.correta == true &&
                 this.respondidoOficialmente == false &&
                 this.abre != null
-              " src="../../../../../assets/img/checkAtividade.png" alt="" />
+              " src="assets/img/checkAtividade.png" alt="" />
             <img class="img img-correta" *ngIf="
                 this.abre == null &&
                 alternativa.correta == true &&
                 this.respondidoOficialmente == false
-              " src="../../../../../assets/img/checkAtividade.png" alt="" />
+              " src="assets/img/checkAtividade.png" alt="" />
             <img class="img img-correta" *ngIf="
                 this.abre == null &&
                 alternativa.correta == true &&
                 this.respondidoOficialmente == true
-              " src="../../../../../assets/img/checkAtividade.png" alt="" />
+              " src="assets/img/checkAtividade.png" alt="" />
             <img class="img img-errada" *ngIf="
                 resposta === alternativa.descricao &&
                 alternativa.correta == false
-              " src="../../../../../assets/img/erradoAtividade.png" alt="" />
+              " src="assets/img/erradoAtividade.png" alt="" />
           </div>
           <div class="container-textos">
             <div class="texto-cima">

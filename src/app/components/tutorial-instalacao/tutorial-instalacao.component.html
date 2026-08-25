@@ -4,13 +4,13 @@
         <img 
             *ngIf="activeBotaoMobile"
             class="mobile-modulo-home"
-            src="../../../assets/mobile-modulo-home.png" 
+            src="assets/mobile-modulo-home.png" 
             alt="imagem de um smartphone no modulo inicial da plataforma"
         >
         <img 
             *ngIf="!activeBotaoMobile"
             class="desktop-modulo-home"
-            src="../../../assets/desktop-modulo-home.png" 
+            src="assets/desktop-modulo-home.png" 
             alt="imagem de um desktop no modulo inicial da plataforma"
         >
     </div>
@@ -22,13 +22,13 @@
             </h1>
             <div class="botoes">
                 <button class="botao-um" [ngClass]="{'botao-active': activeBotaoMobile}" (click)="ativarMobile()">
-                    <img *ngIf="activeBotaoMobile" src="../../../assets/icons/icone-mobile-branco.svg" alt="">
-                    <img *ngIf="!activeBotaoMobile" src="../../../assets/icons/mobile-cinza.svg" alt="">
+                    <img *ngIf="activeBotaoMobile" src="assets/icons/icone-mobile-branco.svg" alt="">
+                    <img *ngIf="!activeBotaoMobile" src="assets/icons/mobile-cinza.svg" alt="">
                     <p class="paragrafo mobile-txt">Mobile</p>
                 </button>
                 <button class="botao-dois" [ngClass]="{'botao-active': !activeBotaoMobile}" (click)="desativarMobile()">
-                    <img *ngIf="activeBotaoMobile" src="../../../assets/icons/desktop-cinza.svg" alt="">
-                    <img *ngIf="!activeBotaoMobile" src="../../../assets/icons/desktop-branco.svg" alt="">
+                    <img *ngIf="activeBotaoMobile" src="assets/icons/desktop-cinza.svg" alt="">
+                    <img *ngIf="!activeBotaoMobile" src="assets/icons/desktop-branco.svg" alt="">
                     <p class="paragrafo desktop-txt">Desktop</p>
                 </button>
             </div>
