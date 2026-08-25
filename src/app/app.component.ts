@@ -19,7 +19,7 @@ export class AppComponent {
       .subscribe((event: NavigationEnd) => {
               const rota = event.urlAfterRedirects.split('?')[0];
 
-              this.mostrarChat = rota !== '/erro';
+              this.mostrarChat = rota !== '/' && rota !== '/erro';
 
       })
   }
