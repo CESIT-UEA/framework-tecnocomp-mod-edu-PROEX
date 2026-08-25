@@ -73,6 +73,7 @@ import { AppPropagandaComponent } from './components/app-propaganda/app-propagan
 import { TutorialInstalacaoComponent } from './components/tutorial-instalacao/tutorial-instalacao.component';
 import { TutorialDeUsoComponent } from './components/tutorial-de-uso/tutorial-de-uso.component';
 import { RodapePropagandaComponent } from './components/rodape-propaganda/rodape-propaganda.component';
+import { VoltarMoodleRedirectComponent } from './components/voltar-moodle-redirect/voltar-moodle-redirect.component';
 
 @NgModule({
   declarations: [
@@ -128,6 +129,7 @@ import { RodapePropagandaComponent } from './components/rodape-propaganda/rodape
     TutorialInstalacaoComponent,
     TutorialDeUsoComponent,
     RodapePropagandaComponent,
+    VoltarMoodleRedirectComponent,
   ],
   imports: [
     BrowserModule,

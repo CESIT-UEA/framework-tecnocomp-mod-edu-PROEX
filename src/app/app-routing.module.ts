@@ -16,9 +16,10 @@ import { PaginaInicialComponent } from './components/pagina-inicial/pagina-inici
 import { CadastroAvaComponent } from './components/cadastro-ava/cadastro-ava.component';
 import { ModuloConcluidoComponent } from './components/modulo-concluido/modulo-concluido.component';
 import { AppPropagandaComponent } from './components/app-propaganda/app-propaganda.component';
+import { VoltarMoodleRedirectComponent } from './components/voltar-moodle-redirect/voltar-moodle-redirect.component';
 
 const routes: Routes = [
-  { path: '', component: AppPropagandaComponent },
+  { path: '', component: VoltarMoodleRedirectComponent },
   { path: 'avaliar', component: ModuloConcluidoComponent },
   { path: 'ava/editar/:id', component: CadastroAvaComponent },
   { path: 'ava/adicionar', component: CadastroAvaComponent },
