@@ -46,7 +46,8 @@ const routes: Routes = [
 
   { path: 'modulo/:nome_modulo', component: ModuloComponent },
   { path: 'modulo/:nome_modulo/topicos', component: TopicoComponent },
-  { path: '**', component: ErrorComponent },
+   { path: 'erro', component: ErrorComponent },
+  { path: '**', redirectTo: 'erro' }
 ];
 
 @NgModule({
