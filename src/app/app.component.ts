@@ -17,7 +17,7 @@ export class AppComponent {
     this.router.events
       .pipe(filter((event): event is NavigationEnd => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => {
-        const rotaSemChat = ['/'];
+        const rotaSemChat = ['/', '/erro'];
         this.mostrarChat = !rotaSemChat.includes(event.urlAfterRedirects);
       })
   }
