@@ -47,6 +47,7 @@ body {
   border-radius: 5px;
   color: #03422F !important;
   --mdc-snackbar-container-color: linear-gradient(180deg, #FFF 0%, #EEFFFC 100%) !important;
+  background: linear-gradient(180deg, #FFF 0%, #EEFFFC 100%) !important;
 }
 
 .mat-mdc-dialog__title {
