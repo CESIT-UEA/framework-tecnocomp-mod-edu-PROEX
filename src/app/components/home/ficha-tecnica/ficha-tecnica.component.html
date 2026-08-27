@@ -13,9 +13,21 @@
         <p>1.0.0</p>
       </div>
       <hr /> -->
-      <div class="bloco">
+      <div *ngFor="let equipe of this.ltiService.dados_completos.ficha_tecnica.Equipes">
+          <div class="equipe">
+              <h2>{{ equipe.nome }}:</h2>
+              <div class="bloco" *ngFor="let membro of equipe.Membros">
+                <h2>{{ membro.cargo }}:</h2>
+                <p>{{ membro.nome }}</p>
+              </div>
+              <hr />
+      </div>
+          </div>
+      </div>
+
+      <!-- <div class="bloco">
         <h2>Versão do Módulo:</h2>
-        <p>xx.yy.zz</p>
+        <p>1.0.0</p>
       </div>
       <hr />
       <div class="bloco">
@@ -77,7 +89,7 @@
         <p>Lorem ipsum dolor sit amet</p>
       </div>
       <hr />
-    </div>
+    </div> -->
     <div class="laboratorios">
       <div class="bloco">
         <h2>Laboratorios envolvidos:</h2>

@@ -128,10 +128,10 @@ app-video-section iframe {
 }
 
 .header {
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10vh;
   padding: 0.31rem 0;
   background-image: url("../../../assets/fundo_header.png");
   background-repeat: no-repeat;
@@ -148,7 +148,8 @@ app-video-section iframe {
 
 .header img {
   max-height: 5rem;
-  margin-left: 2.5rem;
+  width: 203.61px;
+  margin-left: 0.5rem;
   padding: 0.25rem 0;
   cursor: pointer;
 }
@@ -353,5 +354,25 @@ app-video-section iframe {
 
   .end-navbar {
     gap: 1.5rem;
+  }
+}
+
+@media(max-width: 489px) {
+  .header img {
+    width: 180px;
+  }
+}
+
+@media(max-width: 375px) {
+  .header img {
+    width: 150px;
+  }
+
+}
+
+@media(max-width: 350px) {
+
+  .header img {
+    width: 130px;
   }
 }

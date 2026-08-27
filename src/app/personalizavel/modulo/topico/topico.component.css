@@ -72,14 +72,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-between;
-  padding: 5px 0;
+  padding: 0.31rem 0;
 }
 
 .header .logo {
-  max-height: 57px;
+  max-height: 5rem;
+  width: 203.61px;
   margin-left: 0.5rem;
   cursor: pointer;
-  padding: 4px 0;
+  padding: 0.25rem 0;
 }
 
 #icon {
@@ -281,12 +282,15 @@
   .links {
     display: none;
   }
+  .header .logo {
+    width: 180px;
+  }
 }
 
 
 @media(max-width: 375px) {
   .header .logo {
-    padding: 10px 0;
+    width: 150px;
   }
 
   /* .container-main-conteudo-links-voltar{
@@ -302,6 +306,6 @@
   }
 
   .header .logo {
-    padding: 15px 0;
+    width: 130px;
   }
 }
