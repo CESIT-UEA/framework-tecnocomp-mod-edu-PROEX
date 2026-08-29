@@ -27,10 +27,10 @@ i {
   margin: 0 auto;
 }
 
-.video-container iframe {
+#player-capa {
   width: 100%;
   height: 100%;
-  border: 3px solid var(--border-verde-video);
+  border: 3px solid var(--border-verde-video) !important;
   border-radius: 0.95rem;
   box-shadow: 1px 0px 7px 0px rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: 1px 0px 7px 0px rgba(255, 255, 255, 0.75);

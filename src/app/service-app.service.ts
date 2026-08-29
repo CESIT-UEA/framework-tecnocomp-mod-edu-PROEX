@@ -16,6 +16,7 @@ import { ModuloService } from './personalizavel/modulo.service';
 })
 export class ServiceAppService {
   player: any; // Armazena o player do YouTube
+  playerCapa: any;
   controlAtividade: number = 1;
   private dadosCompletosSource = new BehaviorSubject<any>(null);
   dadosCompletos$ = this.dadosCompletosSource.asObservable();
@@ -53,7 +54,7 @@ export class ServiceAppService {
     private _snackBar: MatSnackBar,
     public moduloService: ModuloService,
     private ngZone: NgZone
-  ) {}
+  ) { }
 
   /**
    * Variavel que guarda a nota total do usuario no modulo
@@ -374,7 +375,6 @@ export class ServiceAppService {
 
   recreatePlayer(): void {
     if (this.player) {
-      console.log('Caiu aqui');
       this.player.destroy(); // Destroi o player existente
     }
 
@@ -411,6 +411,49 @@ export class ServiceAppService {
     }
   }
 
+  loadYouTubeAPICapa(): void {
+    if (!(window as any).YT) {
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      document.body.appendChild(tag);
+
+      (window as any).onYouTubeIframeAPIReady = () => {
+        this.recreatePlayerCapa();
+      };
+    } else {
+      // API já foi carregada
+      this.recreatePlayerCapa();
+    }
+  }
+
+
+  recreatePlayerCapa(): void {
+    if (this.playerCapa) {
+      this.playerCapa.destroy(); // Destroi o player existente
+    }
+
+    const videoId = this.extractVideoId(
+      this.dados_completos.modulo.video_inicial
+    );
+
+    this.playerCapa = new (window as any).YT.Player('player-capa', {
+      height: '100%',
+      width: '100%',
+      videoId: videoId,
+      playerVars: {
+        rel: 0,
+        enablejsapi: 1,
+      },
+      events: {
+        onReady: this.onPlayerReady.bind(this),
+        onStateChange: this.onPlayerStateChange.bind(this),
+      },
+    });
+
+  }
+
+
+
   extractVideoId(url: string): string {
     const match = url.match(
       /(?:https?:\/\/)?(?:www\.)?youtube\.com\/(?:watch\?v=|embed\/|v\/)?([a-zA-Z0-9_-]{11})/
@@ -435,17 +478,19 @@ export class ServiceAppService {
             ?.VideoUrls[this.currentVideoIndex].id,
           this.dados_completos.user.ltik
         ).subscribe((response) => {
-        this.ngZone.run(() => {
+          this.ngZone.run(() => {
             this.removeDadosCompletos();
             this.setDadosCompletos(response);
 
-          this.videoFinalizadoSubject.next(response);})
-      })
-      /*       setTimeout(() => {
-        this.proximo();
-      }, 3000); */
+            this.videoFinalizadoSubject.next(response);
+          })
+        })
+        /*       setTimeout(() => {
+          this.proximo();
+        }, 3000); */
+      }
     }
-  }}
+  }
 
   proximo(): void {
     console.log(this.currentVideoIndex);
@@ -499,7 +544,7 @@ export class ServiceAppService {
       'Content-Type': 'application/json',
       Authorization: 'Bearer ' + this.dados_completos.user.ltik,
     });
-    
+
 
     console.log(body);
     return this.http.post(`${this.apiUrl}/enviar_avaliacao`, body, {
@@ -519,45 +564,45 @@ export class ServiceAppService {
   enviarResposta(payload: {
     pergunta: string;
     respostaAluno: string;
-    teto : number;
+    teto: number;
   }): Observable<any> {
     return this.http.post<any>(this.webhookUrl, payload);
   }
 
   salvarAvaliacaoIA(payload: {
-  idTopico: number;
-  respostaAluno: string;
-  nota: number;
-  justificativa: string;
-  teto: number;
-}): Observable<any> {
-  const token = localStorage.getItem('token');
+    idTopico: number;
+    respostaAluno: string;
+    nota: number;
+    justificativa: string;
+    teto: number;
+  }): Observable<any> {
+    const token = localStorage.getItem('token');
 
-  const body = {
-    idTopico: payload.idTopico,
-    respostaAluno: payload.respostaAluno,
-    nota: payload.nota,
-    justificativa: payload.justificativa,
-    teto: payload.teto,
-    token,
-  };
+    const body = {
+      idTopico: payload.idTopico,
+      respostaAluno: payload.respostaAluno,
+      nota: payload.nota,
+      justificativa: payload.justificativa,
+      teto: payload.teto,
+      token,
+    };
 
-  const headers = new HttpHeaders({
-    'Content-Type': 'application/json',
-    Authorization: 'Bearer ' + token,
-  });
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      Authorization: 'Bearer ' + token,
+    });
 
-  return this.http.post(`${this.apiUrl}/api/salvarAvaliacaoIA`, body, {
-    headers: headers,
-  });
-}
+    return this.http.post(`${this.apiUrl}/api/salvarAvaliacaoIA`, body, {
+      headers: headers,
+    });
+  }
 
-getDadosCompletosAsObservable(): void {
+  getDadosCompletosAsObservable(): void {
     const dadosArmazenados = localStorage.getItem(this.storageKey);
 
     if (dadosArmazenados) {
       const dadosCompletos = JSON.parse(dadosArmazenados);
-      this.dadosCompletosSource.next(dadosCompletos); 
+      this.dadosCompletosSource.next(dadosCompletos);
       // console.log('Service data atualizado: ', dadosCompletos);
     } else {
       this.dadosCompletosSource.next(null);

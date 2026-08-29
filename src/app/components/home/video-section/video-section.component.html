@@ -2,12 +2,6 @@
 <p><i>ASSISTA AO VÍDEO DA APRESENTAÇÃO DO CURSO</i></p>
 <section class="video-section">
   <div class="video-container">
-    <iframe
-      [src]="videoUrl | safeUrlPipe"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <div id="player-capa" style="border: 3px solid var(--border-verde-video); border-radius: 0.95rem; box-shadow: 1px 0px 7px 0px rgba(255, 255, 255, 0.75); -webkit-box-shadow: 1px 0px 7px 0px rgba(255, 255, 255, 0.75); -moz-box-shadow: 1px 0px 7px 0px rgba(255, 255, 255, 0.75);"></div>
   </div>
 </section>

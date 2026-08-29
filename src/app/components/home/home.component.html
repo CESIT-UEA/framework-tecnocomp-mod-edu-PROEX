@@ -19,8 +19,8 @@
         style="height: 57px;"
           src="assets/img/logo-mboepi-uea.svg"
           alt="Logo Mboepi"
-          routerLink="./"
-          (click)="clickHeader(0) "
+          
+          (click)="clickHeader(0); this.appService.retornarLms()"
         />
         <nav>
           <div class="links">
