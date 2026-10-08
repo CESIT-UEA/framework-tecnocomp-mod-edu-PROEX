@@ -1,7 +1,7 @@
 .container {
   height: 100%;
   padding-top: 2.5rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   background-color: rgba(249, 255, 249, 1);
 }
@@ -31,7 +31,7 @@
 }
 
 .titulos h2 {
-  font-family: var(--fonte-arial-padrao);
+  font-family: 'Open Sans', sans-serif;
   font-size: 2.19rem;
   font-weight: 700;
   font-style: bold;
@@ -41,7 +41,7 @@
 }
 
 .titulo {
-  font-family: var(--fonte-arial-padrao);
+  font-family: 'Open Sans', sans-serif;
   font-size: 2.19rem;
   font-weight: 700;
   font-style: bold;
@@ -53,7 +53,7 @@
   display: flex;
   column-gap: 10%;
   padding: 0.63rem 0 2.5rem 0;
-  font-family: var(--fonte-arial-padrao);
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.88rem;
@@ -61,7 +61,7 @@
 
   p {
     width: 75%;
-    font-family: var(--fonte-arial-padrao);
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
     font-style: normal;
@@ -80,7 +80,7 @@
 }
 
 .descricao-titulo {
-  font-family: var(--fonte-arial-padrao);
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   font-weight: bold;
@@ -205,7 +205,7 @@
   margin: 0 auto;
   margin-top: 4.88rem;
   padding: 0.63rem 2.5rem;
-  font-family: var(--fonte-arial-padrao);
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   font-style: bold;
@@ -280,20 +280,20 @@
   margin-top: 0.63rem;
   padding: 0.31rem;
   border-radius: 10px;
-  font-family: var(--fonte-arial-padrao);
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   background-color: rgba(12, 74, 73, 1);
 
   .cargo-membro {
     width: 100%;
-    font-family: var(--fonte-arial-padrao);
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: #FFFFFF;
   }
 
   .nome-membro {
     border-radius: 0 0px 10px 10px;
-    font-family: var(--fonte-arial-padrao);
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: rgb(255, 255, 255, 0.8);
   }
@@ -328,7 +328,7 @@
   height: fit-content;
   margin-top: 0.31rem;
   padding: 0.25rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: normal;

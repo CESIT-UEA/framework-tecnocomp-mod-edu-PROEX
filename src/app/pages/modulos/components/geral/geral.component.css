@@ -55,7 +55,7 @@
   padding: 1.88rem 0 0 0;
   font-family: var(--fonte-arial-destaque);
   font-size: 1.56rem;
-  font-weight: 400;
+  font-weight: bold;
   text-align: center;
   color: var(--border-verde-link);
 
@@ -94,7 +94,7 @@
     font-family: var(--fonte-arial-padrao);
     font-size: 1.13rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     line-height: normal;
     text-align: center;
     border-bottom: 2px solid var(--cor-linha-forte);
@@ -157,7 +157,7 @@
     border-radius: 10px;
     font-family: var(--fonte-arial-destaque);
     font-size: 0.94rem;
-    font-weight: 400 !important;
+    font-weight: 700 !important;
     box-shadow: var(--sombra-forte);
     background: var(--cor-braco-padrao);
     color: var(--cor-verde-txt);

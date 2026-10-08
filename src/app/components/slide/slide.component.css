@@ -29,7 +29,7 @@
 .header-links p {
   font-family: var(--fonte-arial-destaque);
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: bold;
   color: #fff;
 }
 

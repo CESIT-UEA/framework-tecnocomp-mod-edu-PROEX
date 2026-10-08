@@ -29,6 +29,7 @@
   height: 28px;
   color: black;
   background-color: var(--cor-branco-padrao);
+  font-family: 'Open Sans', sans-serif;
   border-radius: 28px;
   border: 1.5px solid var(--Primaria, rgba(0, 102, 50, 1));
 }

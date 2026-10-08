@@ -15,7 +15,7 @@ body {
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .center {
@@ -109,7 +109,7 @@ body {
   --border-verde-link: #2F735E;
 
   --fonte-arial-padrao: arial;
-  --fonte-arial-destaque: 'ArialRoundedBold';
+  --fonte-arial-destaque: 'Open Sans', sans-serif;
 
   --sombra-muit-forte: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   --sombra-forte: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.5);

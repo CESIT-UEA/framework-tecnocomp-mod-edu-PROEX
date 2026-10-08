@@ -1,6 +1,5 @@
-@font-face {
-  font-family: minhaFonte;
-  src: url("../../../assets/fonteProjeto.ttf");
+:host {
+  font-family: "Open Sans", sans-serif;
 }
 
 .main-container {
@@ -83,7 +82,7 @@ app-video-section iframe {
   display: inline-block;
   font-family: var(--fonte-arial-destaque);
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: bold;
   font-style: normal;
   color: #ffffff86;
   cursor: pointer;
@@ -181,6 +180,7 @@ app-video-section iframe {
   border-radius: 28px;
   color: black;
   background-color: white;
+  font-family: "Open sans", sans-serif;
 }
 
 .content-container-section {
@@ -219,6 +219,7 @@ app-video-section iframe {
   font-family: "minhaFonte";
   font-size: 2.25rem;
   text-align: center;
+  font-weight: bold;
   padding: 1.25rem;
   color: var(--border-verde-link);
 }

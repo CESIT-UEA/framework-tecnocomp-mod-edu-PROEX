@@ -1,3 +1,7 @@
+:host {
+  font-family: "Open Sans", sans-serif;
+}
+
 .container-foto-header-active {
   display: inline-flex;
   flex-direction: column;
@@ -17,9 +21,8 @@
 
 .nome p {
   max-width: 100%;
-  font-family: var(--fonte-arial-destaque);
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: bold;
   font-style: normal;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -33,17 +36,15 @@
   justify-content: space-between;
   width: 100%;
   padding: 0 15px;
-  font-family: var(--fonte-arial-destaque);
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: bold;
   font-style: normal;
   color: rgba(3, 66, 47, 1);
 }
 
 .cima-p {
   margin-left: 0.1rem;
-  font-family: var(--fonte-arial-destaque);
-  font-weight: 400;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -62,7 +63,6 @@
   gap: 0.94rem;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 8px;
-  font-family: var(--fonte-arial-destaque);
   font-size: 1rem;
   font-weight: bold;
   box-shadow: var(--sombra-forte);
@@ -86,7 +86,6 @@
   position: absolute;
   top: 27%;
   margin-left: 25%;
-  font-family: var(--fonte-arial-destaque);
   font-size: 1rem;
 }
 
@@ -99,9 +98,8 @@
   margin: 0 auto;
   border: 3px solid var(--Primaria, rgba(57, 169, 53, 1));
   border-radius: 28px;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: bold;
   color: black;
   background-color: white;
 }

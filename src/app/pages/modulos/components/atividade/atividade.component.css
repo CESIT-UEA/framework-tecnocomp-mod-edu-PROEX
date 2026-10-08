@@ -2,6 +2,7 @@
   height: 100%;
   background-color: var(--cor-branco-padrao) !important;
   display: block;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header-atividade {
@@ -24,6 +25,7 @@
 
   p {
     font-size: 1.5rem;
+    font-weight: bold;
     color: white;
   }
 }
@@ -36,7 +38,6 @@
 
   h3 {
     margin-top: 1.25rem;
-    font-family: var(--fonte-arial-padrao);
     font-size: 1.25rem;
     font-weight: 400;
     color: var(--cor-verde-escuro-forte);
@@ -48,7 +49,6 @@
     align-items: center;
     margin-bottom: 1.25rem;
     padding: 0;
-    font-family: var(--fonte-arial-padrao);
     font-size: 1rem;
     font-weight: 400;
     color: var(--cor-verde-escuro-forte);

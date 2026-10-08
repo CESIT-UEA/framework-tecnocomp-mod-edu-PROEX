@@ -3,11 +3,12 @@
   flex-direction: column;
   height: 100%;
   overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header-menu {
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: end;
   color: white;
 }
@@ -23,7 +24,7 @@
 .titulo-topico {
   width: 80%;
   margin-left: 1.25rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.13rem;
   font-style: normal;
   font-weight: 700;
@@ -119,7 +120,7 @@ input[type="checkbox"] {
   background-color: var(--cor-branco-padrao);
   box-shadow: var(--sombra-fraca);
   outline: none;
-  font-family: var(--fonte-arial-padrao);
+
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -175,7 +176,7 @@ input[type="checkbox"] {
   outline: none;
   border: none;
   background-color: #262626;
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   color: #9665df;
 }
@@ -207,7 +208,7 @@ input[type="checkbox"] {
   margin: 0 auto;
   padding-top: 0.31rem;
   padding-bottom: 0.81rem;
-  font-family: var(--fonte-arial-padrao);
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
 }
 
@@ -245,7 +246,7 @@ input[type="checkbox"] {
 .moodle a {
   margin-left: 0.31rem;
   outline: none;
-  font-family: var(--fonte-arial-padrao);
+   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   color: var(--cor-verde-txt);
 }

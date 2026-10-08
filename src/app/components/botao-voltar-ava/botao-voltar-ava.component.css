@@ -1,3 +1,7 @@
+:host {
+  font-family: "Open Sans", sans-serif;
+}
+
 .moodle {
   display: flex;
   align-items: center;
@@ -14,10 +18,9 @@
 
 .moodle a {
   margin-left: 0.31rem;
-  font-family: Arial;
   font-size: 1rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   line-height: normal;
   text-decoration: none;
   outline: none;

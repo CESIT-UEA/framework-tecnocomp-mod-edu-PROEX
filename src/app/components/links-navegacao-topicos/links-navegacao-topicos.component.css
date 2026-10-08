@@ -35,6 +35,7 @@
   padding: 0 1.88rem;
   font: normal 400 1rem Arial;
   font-size: 1.13rem;
+  font-weight: bold;
   column-gap: 0.63rem;
   border-radius: 6px;
   text-decoration: none;
@@ -78,6 +79,7 @@
   text-decoration: none;
   background-color: var(--cor-verde-txt);
   cursor: pointer;
+  font-weight: bold;
 
   @media (max-width: 640px) {
     width: 1.56rem;

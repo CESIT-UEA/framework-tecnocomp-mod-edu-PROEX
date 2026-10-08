@@ -53,7 +53,7 @@
   font-family: var(--fonte-arial-destaque);
   font-size: 1rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   background: white;
   background-size: 200% 100%;
   background-position: right bottom;
@@ -84,7 +84,7 @@
   font-family: var(--fonte-arial-destaque);
   font-size: 0.94rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   line-height: normal;
   text-align: center;
   background: var(--border-verde-link);
