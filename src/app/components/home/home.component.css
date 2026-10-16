@@ -217,13 +217,14 @@ app-video-section iframe {
 
 .container-esquerdo h1 {
   font-family: "minhaFonte";
-  font-size: 2.25rem;
+  font-size: 2.25rem 0;
   text-align: start;
   font-weight: bold;
   padding: 1.25rem;
   color: var(--border-verde-link);
   width: 80%;
   margin: 0 auto;
+  
 }
 
 .text-unidade {
