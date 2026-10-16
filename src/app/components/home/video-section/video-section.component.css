@@ -1,5 +1,6 @@
 :host {
   height: 100%;
+  font-family: "Open Sans", sans-serif;
 }
 
 section {
@@ -11,7 +12,7 @@ section {
 i {
   display: block;
   margin: 0.32rem auto 0.32rem auto;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat' !important;
   font-size: 1rem;
   font-weight: bold;
   text-align: start;

@@ -80,6 +80,7 @@ app-video-section iframe {
 .btn-home,
 .btn-sobre {
   display: inline-block;
+  font-family: var(--fonte-arial-destaque);
   font-size: 1rem;
   font-weight: bold;
   font-style: normal;
@@ -215,16 +216,18 @@ app-video-section iframe {
 }
 
 .container-esquerdo h1 {
+  font-family: "minhaFonte";
   font-size: 2.25rem;
   text-align: start;
   font-weight: bold;
-  padding: 1.25rem 0;
+  padding: 1.25rem;
   color: var(--border-verde-link);
   width: 80%;
   margin: 0 auto;
 }
 
 .text-unidade {
+  font-family: var(--fonte-arial-destaque);
   font-size: 2.25rem;
   color: var(--cor-verde-txt);
 
