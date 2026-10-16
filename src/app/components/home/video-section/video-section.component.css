@@ -10,15 +10,17 @@ section {
 
 i {
   display: block;
-  margin-bottom: 0.63rem;
+  margin: 0.32rem auto 0.32rem auto;
   font-family: 'Montserrat';
   font-size: 1rem;
   font-weight: bold;
-  text-align: center;
+  text-align: start;
   text-decoration: none;
   text-wrap: wrap;
   letter-spacing: 0%;
   color: #999999;
+  width: 80%;
+  
 }
 
 .video-container {

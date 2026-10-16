@@ -5,19 +5,20 @@
 </div>
 
 <div class="container">
-  <div class="descricao-conclusao">
+  <div class="descricao-modulo">
     <img
       class="concluido"
-      src="assets/icons/bxs_badge-check.svg"
+      src="assets/icons/icone-concluido-conteudo.svg"
       alt="Concluído"
     />
-    <p>Parabéns! Você concluiu o módulo com sucesso!</p>
+    <p class="conteudo-concluido-titulo">Conteúdo concluído com sucesso!</p>
+    <p class="texto-informativo">Retorne à plataforma para continuar seu curso.</p>
   </div>
 
-  <div class="descricao-modulo">
+  <!-- <div class="descricao-modulo">
     <p>{{ ltiService.dados_completos.modulo.nome_modulo }}</p>
     <p class="pontuacao">Pontuação: <span class="value">100%</span></p>
-  </div>
+  </div> -->
 
   <div class="avaliacao-modulo">
     <form [formGroup]="formAvaliacao" (ngSubmit)="enviarAvaliacao()">
@@ -88,7 +89,7 @@
               width="22px"
               height="24px"
             />
-            <a>Voltar ao AVA</a>
+            <a>Voltar para o Mboepi</a>
           </div>
         </div>
 
