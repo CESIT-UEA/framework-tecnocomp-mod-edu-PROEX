@@ -336,3 +336,10 @@
     }
 
 }
+
+
+@media (min-width: 840px){
+  #chat-button {
+    bottom: 85px;
+  }
+}
