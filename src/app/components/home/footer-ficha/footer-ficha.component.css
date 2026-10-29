@@ -25,8 +25,9 @@
 
 .texto {
   display: flex;
+  
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
   width: 100%;
   padding: 2.19rem 2.5rem;
   gap: 1.25rem;
@@ -50,8 +51,6 @@
 }
 
 .blocos {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
@@ -61,7 +60,6 @@
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  width: 100%;
   height: 12.5rem;
   padding: 1.25rem;
   color: rgba(3, 66, 47, 1);
